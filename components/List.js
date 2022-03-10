@@ -17,7 +17,7 @@ export default function Example() {
                                             <p className="flex text-sm font-medium text-indigo-600 truncate mr-6">{activity.title}</p>
                                             <div className="flex-shrink-0 flex flex-wrap">
                                                 {activity.etiquetes.map((etiqueta) => (
-                                                    <p className="px-2 my-2 sm:my-0 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                                                    <p key={etiqueta} className="px-2 my-2 sm:my-0 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                                                         {etiqueta}
                                                     </p>
                                                 ))}
