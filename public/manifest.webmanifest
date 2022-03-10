@@ -1,0 +1,15 @@
+{
+    "background_color":"#4f46e5",
+    "description": "Bogd.app",
+    "display": "fullscreen",
+    "icons": [
+      {
+        "src": "/logo.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ],
+    "name": "Bogd.app",
+    "short_name": "Bogd.app",
+    "start_url": "/"
+  }
