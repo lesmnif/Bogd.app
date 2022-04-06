@@ -3,12 +3,7 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { SearchIcon } from "@heroicons/react/solid";
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 import Link from "next/link";
-import Navbar from "./Navbar"
-import Command from "./Command"
 import activities from "../data/activities"
-import List from "./List"
-import DiscreteSlider from "./Slider"
-
 
 const user = {
   name: "Tom Cook",
@@ -17,7 +12,7 @@ const user = {
     "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
 };
 const navigation = [
-  { name: "Bogd.app", href: "#", current: true },
+  { name: "Bogd.app", href: "/activity/CustomActivity", current: true },
   { name: "Team", href: "#", current: false },
   { name: "Projects", href: "#", current: false },
   { name: "Calendar", href: "#", current: false },
@@ -47,12 +42,13 @@ export default function Layout({ children, onQueryChange, query }) {
                   <div className="relative h-16 flex items-center justify-between lg:border-b lg:border-indigo-400 lg:border-opacity-25">
                     <div className="px-2 flex items-center lg:px-0">
                       <div className="flex-shrink-0">
-                        <Link href="/activity/favorites/">
+                        <Link href="/activity/favorites">
                           <a>
                             <img
-                                className="block h-8 w-8"
-                                src="https://tailwindui.com/img/logos/workflow-mark-indigo-300.svg"
+                                className="block h-10 w-10 "
+                                src="/descarga.png"
                                 alt="Workflow"
+                                color="#f9ac45"
                               />
                           </a>
                         </Link>
@@ -228,7 +224,6 @@ export default function Layout({ children, onQueryChange, query }) {
                     />
                   </a>
                 </Link>
-                
               </div>
             </div>
           </header>

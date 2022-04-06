@@ -1,15 +1,17 @@
 const activities = [
   {
     id: 1,
-    title: "El món no explotarà... què m'emporto?",
+    title: "El món explotarà... què m'emporto?",
     descripció:
       "Dinàmica per treballar els diferents rols que podem desenvolupar en un grup",
     participants: "15-20",
     edats: "12-15 anys",
     espai: "Interior",
     durada: "1 h / 1h 30mins ",
-    edatmin: 4,
-    participantsmin: 0,
+    edatmin: 12,
+    edatmax: 15,
+    participantsmin: 15,
+    participantsmax: 20,
     objectiusMoni: (
       <div>
         <ul>
@@ -87,8 +89,10 @@ const activities = [
     edats: "9-11 anys",
     espai: "Interior gran o exterior",
     durada: "10mins",
-    edatmin: 4,
-    participantsmin: 0,
+    edatmin: 9,
+    edatmax: 11,
+    participantsmin: 10,
+    participantsmax: 50,
     objectiusMoni: (
       <div>
         <ul>
@@ -124,7 +128,9 @@ const activities = [
     edats: "4-18 anys",
     espai: "Exterior",
     edatmin: 4,
-    participantsmin: 0,
+    edatmax: 18,
+    participantsmin: 30,
+    participantsmax: 50,
     durada: "1h",
     objectius: (
       <div>
@@ -178,10 +184,12 @@ const activities = [
     descripció: "Un joc ben curiós que ens recordarà a un esport japonès",
     participants: "4",
     edats: "4-18 anys",
-    espai: "Preferible exterior",
     edatmin: 4,
+    edatmax: 18,
+    participantsmin: 4,
+    participantsmax: 20,
+    espai: "Preferible exterior",
     durada: "1h",
-    participantsmin: 0,
 
     objectius: (
       <div>
@@ -237,9 +245,11 @@ const activities = [
     title: "Kubb",
     descripció: "Tira les ampolles i comprova la teva punteria.",
     participants: "10-12",
-    edats: "4-8 anys anys",
+    edats: "4-8 anys",
     edatmin: 4,
-    participantsmin: 0,
+    edatmax: 8,
+    participantsmin: 10,
+    participantsmax: 20,
     espai: "Exterior",
     durada: "20-30 mins",
     objectius: (
@@ -306,8 +316,10 @@ const activities = [
     descripció: "Joc de cartes per a treballar contra l'exclusió social",
     participants: "5-8",
     edats: "12-18 anys ",
-    edatmin: 4,
-    participantsmin: 0,
+    edatmin: 12,
+    edatmax: 18,
+    participantsmin: 5,
+    participantsmax: 10,
     espai: "Interior/Exterior",
     durada: "30-45 mins",
     objectius: (
@@ -359,8 +371,10 @@ const activities = [
       "Adaptació preesportiva del rugby on es poden introduir els aspectes bàsics del joc en un entorn segur i limitant el contacte físic.",
     participants: "Tants com vulguin(mín 5 per equip)",
     edats: "12-18 anys",
-    edatmin: 4,
-    participantsmin: 0,
+    edatmin: 12,
+    edatmax: 18,
+    participantsmin: 10,
+    participantsmax: 50,
     espai: "Exterior",
     durada: "30 mins - 2h (depén edat)",
     objectius: (
@@ -429,7 +443,9 @@ const activities = [
     edats: "4-15 anys",
     espai: "Exterior",
     edatmin: 4,
-    participantsmin: 0,
+    edatmax: 15,
+    participantsmin: 5,
+    participantsmax: 20,
     durada: "15 mins",
     objectiusMoni: (
       <div>
@@ -483,7 +499,9 @@ const activities = [
     participants: "5-15",
     edats: "4-11 anys",
     edatmin: 4,
-    participantsmin: 0,
+    edatmax: 11,
+    participantsmin: 5,
+    participantsmax: 15,
     espai: "Interior",
     durada: "30 mins",
     objectiusMoni: (
@@ -507,7 +525,7 @@ const activities = [
     desenvolupament: `Diem el nom del primer fantasma i la resta comença a caminar en la mateixa direcció i en absolut silenci. L'objectiu del fantasma és agafar els peus d'algú i intentar endevinar-ne el nom. Quan hagi agafat uns peus ha de dir el nom d'aquella persona; en cas de no encertar-lo, continuarà fent de fantasma i ho provarà amb algú altre; si l'encerta, la persona que ha dit passarà a ser el fantasma coix i continuarem jugant. El joc acaba quan els monitors ho decideixin, o quan tothom hagi fet una vegada de fantasma.`,
     avaluació:
       "En acabar es fa una reflexió amb el grup sobre com s'han sentit i quines emocions han experimentat.",
-    etiquetes: ["Competitiu", "Interior", "Jocs curts"],
+    etiquetes: ["Competitiu", "Interior", "Jocs Curts"],
     isFavorite: false  
   },
   {
@@ -516,8 +534,10 @@ const activities = [
     descripció:
       "Esport tradicional d'Itàlia que adopta el nom de l'implement amb què es juga: el tamborí.",
     participants: "Tants com vulguin",
-    edatmin: 4,
-    participantsmin: 0,
+    edatmin: 9,
+    edatmax: 18,
+    participantsmin: 10,
+    participantsmax: 30,
     edats: "9-18 anys",
     espai: "Pista poliesportiva 35x16",
     durada: "45 mins",
@@ -566,7 +586,9 @@ const activities = [
     participants: "Tants com vulguin",
     edats: "4-8 anys",
     edatmin: 4,
-    participantsmin: 0,
+    edatmax: 8,
+    participantsmin: 5,
+    participantsmax: 20,
     espai: "Interior",
     durada: "Máxim 5mins",
     objectius: (
@@ -599,8 +621,10 @@ const activities = [
       "Joc per realitzar quan la temàtica siguin els cavallers. A l’aire lliure amb espai per córrer i amagar-se. Ideal un bosc.",
     participants: "Tants com vulguin",
     edats: "9-15 anys",
-    edatmin: 4,
-    participantsmin: 0,
+    edatmin: 9,
+    edatmax: 15,
+    participantsmin: 5,
+    participantsmax: 20,
     espai: "Exterior",
     durada: "Máxim 30mins",
     objectius: (
@@ -627,8 +651,10 @@ const activities = [
     descripció: "Introducció a un esport poc conegut al nostre país",
     participants: "3 equips de 4",
     edats: "12-18 anys",
-    edatmin: 4,
-    participantsmin: 0,
+    edatmin: 12,
+    edatmax: 18,
+    participantsmin: 12,
+    participantsmax: 24,
     espai: "Exterior",
     durada: "30mins-1h",
     objectius: (
@@ -676,7 +702,9 @@ const activities = [
     participants: "Dos grups iguals.",
     edats: "4-18 anys",
     edatmin: 4,
-    participantsmin: 0,
+    edatmax: 18,
+    participantsmin: 6,
+    participantsmax: 20,
     espai: "Exterior",
     durada: "20mins",
     objectius: (
@@ -715,8 +743,10 @@ const activities = [
       "Adaptació del joc de rol conegut com “el llop” o “l’assassí del poble”. Amb el suport de l’aplicació WhatsApp o Telegram.",
     participants: "5-25",
     edats: "12-18 anys",
-    edatmin: 4,
-    participantsmin: 0,
+    edatmin: 12,
+    edatmax: 18,
+    participantsmin: 5,
+    participantsmax: 25,
     espai: "Interior/Exterior",
     durada: "Depén de la partida",
     objectius: (
@@ -749,8 +779,10 @@ const activities = [
       "Aprendrem com la disponibilitat de recursos influeix en el nombre d’animals d’una població.",
     participants: "15-30",
     edats: "9-15 anys",
-    edatmin: 4,
-    participantsmin: 0,
+    edatmin: 9,
+    edatmax: 15,
+    participantsmin: 15,
+    participantsmax: 30,
     espai: "Exterior",
     durada: "15-20mins",
     objectius: (
@@ -791,8 +823,10 @@ const activities = [
       "Joc competitiu per al qual hem d’intentar que no ens vegin la matrícula que portem enganxada al front.",
     participants: "Mín 8",
     edats: "9-18 anys",
-    edatmin: 4,
-    participantsmin: 0,
+    edatmin: 9,
+    edatmax: 18,
+    participantsmin: 8,
+    participantsmax: 20,
     espai: "Exterior",
     durada: "10mins",
     objectius: (
@@ -820,8 +854,10 @@ const activities = [
     descripció:
       "Dos equips han d'intentar robar una campana i portar-la a la seva base sense fer soroll. En aquest joc guanya el més silenciós.",
     participants: "2-10",
-    edatmin: 4,
-    participantsmin: 0,
+    edatmin: 9,
+    edatmax: 11,
+    participantsmin: 2,
+    participantsmax: 10,
     edats: "9-11 anys",
     espai: "Interior",
     durada: "20mins",
@@ -856,7 +892,9 @@ const activities = [
       "Joc alternatiu als jocs de por clàssics per treballar la foscor i passar una bona estona.",
     participants: "Mín 10",
     edatmin: 4,
-    participantsmin: 0,
+    edatmax: 11,
+    participantsmin: 10,
+    participantsmax: 20,
     edats: "4-11 anys",
     espai: "Espai tancat gran/Exterior",
     durada: "1h 30mins",
@@ -913,8 +951,10 @@ const activities = [
       "Activitat basada en el divertit joc de taula 'Qui és qui?'', en què els infants i joves es convertiran en els personatges del joc.",
     participants: "20-40",
     edats: "12-15 anys",
-    edatmin: 4,
-    participantsmin: 0,
+    edatmin: 12,
+    edatmax: 15,
+    participantsmin: 20,
+    participantsmax: 40,
     espai: "Interior/Exterior",
     durada: "1h 30mins",
     objectiusMoni: (
@@ -958,8 +998,10 @@ const activities = [
       "Joc curt i molt dinàmic que consisteix en capturar jugadors del grup contrari a partir d'una línia de joc o 'trinxera'.",
     participants: "Mín 10 per equip / 2 equips",
     edats: "12-15 anys",
-    edatmin: 4,
-    participantsmin: 0,
+    edatmin: 12,
+    edatmax: 15,
+    participantsmin: 20,
+    participantsmax: 30,
     espai: "Interior/Exterior",
     durada: "Depén de la partida",
     objectiusMoni: (
@@ -1007,7 +1049,7 @@ const activities = [
         
         5. En tot moment, sigui quin sigui el nombre de jugadors s'ha de continuar el joc intentant capturar l'adversari.`,
     avaluació: `Quan els jugadors hagin fet la primera ronda, segur que voldran repetir per desenvolupar o millorar estratègies de captura. En un moment donat del joc -a criteri del monitor, per equilibrar forces, per donar més joc o per allargar el joc- pot introduir una variant. Es traça ràpidament una segona línia paral·lela a la principal a un metre de distància i es fa passar pel passadís format els jugadors que han perdut (primer els d'un equip i després els de l'altre). Han de fer- ho d'un en un evitant que els seus captadors els puguin tornar a capturar. Aquest cop el seu equip no els pot ajudar. Els jugadors que aconsegueixin passar sense ser capturats tornaran al seu equip. El joc recomençarà on s'havia quedat.`,
-    etiquetes: ["Competitiu", "Exterior", "Jocs curts"],
+    etiquetes: ["Competitiu", "Exterior", "Jocs Curts"],
     isFavorite: false  
   },
   {
@@ -1016,7 +1058,9 @@ const activities = [
     descripció: "Joc per treballar la velocitat i la reacció.",
     participants: "5+",
     edatmin: 4,
-    participantsmin: 0,
+    edatmax: 18,
+    participantsmin: 5,
+    participantsmax: 10,
     edats: "4-18 anys",
     espai: "Interior/Exterior",
     durada: "7-10mins",
@@ -1048,8 +1092,10 @@ const activities = [
       "Joc dinàmic i ràpid, on l'objectiu és fer baixar de categoria als grups i pujar al seu lloc, tot dient una frase i fent o no certs moviments. Tot ha de ser sempre de forma molt coordinada i ràpida. Joc de sobretaula, dies de pluja, vora el foc, abans d'anar a dormir, etc.",
     participants: "Mín14(7/2), Máxim33(11/3), Ideal21(7/3)",
     edats: "12-18 anys",
-    edatmin: 4,
-    participantsmin: 0,
+    edatmin: 12,
+    edatmax: 18,
+    participantsmin: 14,
+    participantsmax: 33,
     espai: "Interior/Exterior",
     durada: "40-100mins",
     objectiusMoni: (
@@ -1134,7 +1180,9 @@ const activities = [
     participants: "Com més millor",
     edats: "4-18 anys",
     edatmin: 4,
-    participantsmin: 0,
+    edatmax: 18,
+    participantsmin: 5,
+    participantsmax: 50,
     espai: "Interior/Exterior",
     durada: "10mins",
     objectiusMoni: (
@@ -1181,7 +1229,9 @@ const activities = [
     participants: "8-20(nombre parell)",
     edats: "4-11 anys",
     edatmin: 4,
-    participantsmin: 0,
+    edatmax: 11,
+    participantsmin: 8,
+    participantsmax: 20,
     espai: "Exterior",
     durada: "20mins",
     objectiusMoni: (
@@ -1225,7 +1275,7 @@ const activities = [
         Ens servirà per saber com reaccionen els infants davant del resultat de la partida.
         Si fem servir alguna de les variants proposades podem analitzar com s’ha treballat la confiança entre els membres de cada equip, quins són els infants més ràpids en desplaçar-se d’un espai a l’altre, quins companys s’ajuden entre ells...
         És un joc que ens pot donar informació sobre quins són els rols de cada infant dins d’un equip de joc.`,
-    etiquetes: ["Competitiu", "Jocs de nit", "Exterior"],
+    etiquetes: ["Competitiu", "Jocs de Nit", "Exterior"],
     isFavorite: false  
   },
   {
@@ -1235,8 +1285,10 @@ const activities = [
       "Joc d'agilitat i força que consisteix en agafar mocadors o fulards.",
     participants: "12-30",
     edats: "9-15 anys",
-    edatmin: 4,
-    participantsmin: 0,
+    edatmin: 9,
+    edatmax: 15,
+    participantsmin: 12,
+    participantsmax: 30,
     espai: "Exterior/Interior",
     durada: "15mins",
     objectiusMoni: (
@@ -1278,7 +1330,7 @@ const activities = [
     avaluació: `Durant el joc podem observar com els infants es relacionen entre ells.
         Al final del joc podem preguntar als infants: com s’han sentit i què els ha semblat més difícil i com ho modificarien.
         Podem observar quines facilitats o dificultats tenen els infants a l’hora de jugar a aquesta activitat.`,
-    etiquetes: ["Competitiu", "Exterior", "Jocs curts"],
+    etiquetes: ["Competitiu", "Exterior", "Jocs Curts"],
     isFavorite: false  
   },
   {
@@ -1288,8 +1340,10 @@ const activities = [
       "Els infants elaboraran una caixa de sentiments on aniran depositant tots aquells sentiments que han vivenciat, descobert o que vulguin canviar.",
     participants: "Tans com vulguin",
     edats: "9-18 anys",
-    edatmin: 4,
-    participantsmin: 0,
+    edatmin: 9,
+    edatmax: 18,
+    participantsmin: 5,
+    participantsmax: 50,
     espai: "Interior",
     durada: "1h 30m per elaborar la caixa",
     objectiusMoni: (
@@ -1333,8 +1387,10 @@ const activities = [
     descripció:
       "Dinàmica per a reflexionar sobre les qualitats positives del grup i d’un mateix.",
     participants: "10+",
-    edatmin: 4,
-    participantsmin: 0,
+    edatmin: 9,
+    edatmax: 18,
+    participantsmin: 10,
+    participantsmax: 50,
     edats: "9-18 anys",
     espai: "Interior",
     durada: "1h aprox",
@@ -1379,8 +1435,10 @@ const activities = [
     descripció:
       "Joc per treballar les habilitats motrius bàsiques i la cooperació.",
     participants: "9+",
-    edatmin: 4,
-    participantsmin: 0,
+    edatmin: 9,
+    edatmax: 11,
+    participantsmin: 9,
+    participantsmax: 20,
     edats: "9-11 anys",
     espai: "Exterior/Interior",
     durada: "10mins",
@@ -1416,7 +1474,9 @@ const activities = [
     participants: "Tans com vulguin",
     edats: "4-8 anys",
     edatmin: 4,
-    participantsmin: 0,
+    edatmax: 8,
+    participantsmin: 5,
+    participantsmax: 30,
     espai: "Exterior/Interior",
     durada: "5-10mins",
     objectius: (
@@ -1438,7 +1498,7 @@ const activities = [
       "Cooperatiu",
       "Interior",
       "Exterior",
-      "Jocs curts",
+      "Jocs Curts",
     ],
     isFavorite: false  
   },
@@ -1449,8 +1509,10 @@ const activities = [
       "Joc de coneixença per als primers dies d’esplai, on començarem a descobrir que és més el que ens uneix que el que ens separa.",
     participants: "Tans com vulguin",
     edats: "9-18 anys",
-    edatmin: 4,
-    participantsmin: 0,
+    edatmin: 9,
+    edatmax: 18,
+    participantsmin: 5,
+    participantsmax: 30,
     espai: "Interior",
     durada: "15mins",
     objectius: (
@@ -1470,7 +1532,7 @@ const activities = [
         
         Això sí, les preguntes no poden fer esment a temes físics, de gènere o de nacionalitat.`,
     avaluació: `Al final de la dinàmica es fa una reflexió sobre el que ens ha unit. Ha estat el fet de ser noi o noia, el país de procedència o la condició física, intel·lectual o sensorial? Independentment de la nacionalitat, gènere o condició física, tenim més coses en comú del que podem arribar a pensar. Això ens ha de permetre viure i conviure.`,
-    etiquetes: ["Coneixença", "Interior", "Jocs curts"],
+    etiquetes: ["Coneixença", "Interior", "Jocs Curts"],
     isFavorite: false  
   },
   {
@@ -1480,7 +1542,9 @@ const activities = [
       "Amb el joc de l’observador serem conscients de com la majoria de coses que ens envolten ens passen desapercebudes, sobretot si estem al medi natural!",
     participants: "Máx 25",
     edatmin: 4,
-    participantsmin: 0,
+    edatmax: 11,
+    participantsmin: 5,
+    participantsmax: 25,
     edats: "4-11 anys",
     espai: "Exterior(vegetació)",
     durada: "20-30mins",
@@ -1515,8 +1579,10 @@ const activities = [
     participants: "Mín 25",
     edats: "9-11 anys",
     espai: "Interior/Exterior",
-    edatmin: 4,
-    participantsmin: 0,
+    edatmin: 9,
+    edatmax: 11,
+    participantsmin: 25,
+    participantsmax: 50,
     durada: "10-20mins",
     objectiusMoni: (
       <div>
@@ -1606,7 +1672,9 @@ const activities = [
     participants: "8-15",
     edats: "4-15 anys",
     edatmin: 4,
-    participantsmin: 0,
+    edatmax: 15,
+    participantsmin: 8,
+    participantsmax: 15,
     espai: "Interior",
     durada: "90 mins",
     objectiusMoni: (
@@ -1649,8 +1717,10 @@ const activities = [
       "Joc que consisteix en familiaritzar-se amb un objecte mitjançant el tacte tot tenint els ulls embenats. El participant que toca la figura l'ha de definir de manera que l'altre participant pugui dibuixar-la sense haver tingut cap contacte amb aquesta.",
     participants: "+2(sempre parells)",
     edats: "9-11 anys",
-    edatmin: 4,
-    participantsmin: 0,
+    edatmin: 9,
+    edatmax: 11,
+    participantsmin: 2,
+    participantsmax: 20,
     espai: "Interior/Exterior",
     durada: "30 mins",
     objectiusMoni: (
@@ -1686,7 +1756,7 @@ const activities = [
     introducció: `Els dos membres de la parella s'han de situar donant-se l'esquena. Un d'ells romandrà amb els ulls tapats amb una bena o mocador i tindrà un objecte que no haurà vist prèviament. L'altre participant, que tampoc haurà vist l'objecte, l'haurà de dibuixar seguint la descripció del company.`,
     desenvolupament: `Quan els participants estiguin disposats correctament, es tapen els ulls d'un dels membres de la parella i posteriorment se li entrega un objecte. Mentre es familiaritza amb l'objecte l'ha d'anar descrivint de manera que l'altre membre de la parella pugui plasmar al paper allò que ell està tocant. Un cop acabat el dibuix, els dos participants poden veure l'objecte, de manera que podran comparar la realitat amb el que ells han percebut, descrit, entès i dibuixat.`,
     avaluació: `Quan els participants veuen el dibuix al costat de l'objecte, és important que valorin com s'ajusta a la realitat. Tot i saber dibuixar millor o pitjor, el que és important, és que siguin capaços de reconèixer aquelles parts que han sabut identificar mitjançant el tacte i de quina manera ho han comunicat, així com l'atenció que prenem al que ens expliquen els altres. Sovint les persones no ens entenem, ja sigui perquè no ens sabem explicar o perquè interpretem els missatges d'una altra manera. Conèixer aquesta realitat ens pot ajudar a millorar la nostra comunicació.`,
-    etiquetes: ["Coneixença", "Interior", "Jocs curts"],
+    etiquetes: ["Coneixença", "Interior", "Jocs Curts"],
     isFavorite: false  
   },
   {
@@ -1697,8 +1767,10 @@ const activities = [
     participants: "Grup de monitors",
     edats: "Monitors",
     espai: "Interior",
-    edatmin: 4,
-    participantsmin: 0,
+    edatmin: 18,
+    edatmax: 18,
+    participantsmin: 2,
+    participantsmax: 10,
     durada: "40 mins",
     objectius: (
       <div>
@@ -1734,8 +1806,10 @@ const activities = [
       "Els infants es posaran a la pell dels animals marins per tal de prendre consciència de la importància de no abocar deixalles al mar.",
     participants: "15-50",
     edats: "9-11 anys",
-    edatmin: 4,
-    participantsmin: 0,
+    edatmin: 9,
+    edatmax: 11,
+    participantsmin: 15,
+    participantsmax: 50,
     espai: "Exterior/Interior",
     durada: "20-30 mins",
     objectiusMoni: (
@@ -1791,8 +1865,10 @@ const activities = [
       "Taller d'expressió plàstica per a treballar la creativitat i la percepció de l'espai urbà a partir de la construcció de maquetes d'edificis.",
     participants: "Fins 10",
     edats: "12-15 anys",
-    edatmin: 4,
-    participantsmin: 0,
+    edatmin: 12,
+    edatmax: 15,
+    participantsmin: 1,
+    participantsmax: 10,
     espai: "Exterior/Interior",
     durada: "2-3h",
     objectius: (
@@ -1862,8 +1938,10 @@ const activities = [
       "Joc de coneixença tant per a monitors com per a infants o joves en què una resposta ràpida serà molt important per a l’execució de l’activitat.",
     participants: "Mín 10",
     edats: "9-18 anys",
-    edatmin: 4,
-    participantsmin: 0,
+    edatmin: 9,
+    edatmax: 18,
+    participantsmin: 10,
+    participantsmax: 20,
     espai: "Exterior/Interior",
     durada: "10-15mins",
     objectiusMoni: (
@@ -1915,7 +1993,9 @@ const activities = [
     participants: "Indiferent",
     edats: "4-18 anys",
     edatmin: 4,
-    participantsmin: 0,
+    edatmax: 18,
+    participantsmin: 1,
+    participantsmax: 20,
     espai: "Exterior/Interior",
     durada: "1h",
     objectius: (
@@ -1943,8 +2023,10 @@ const activities = [
     descripció:
       "Joc en equip per treballar la memòria i conèixer nous personatges de la vida quotidiana.",
     participants: "Tants com vulguin",
-    edatmin: 4,
-    participantsmin: 0,
+    edatmin: 12,
+    edatmax: 15,
+    participantsmin: 1,
+    participantsmax: 30,
     edats: "12-15 anys",
     espai: "Exterior/Interior",
     durada: "30mins",
@@ -2001,7 +2083,9 @@ const activities = [
     participants: "Parelles o equips",
     edats: "4-15 anys",
     edatmin: 4,
-    participantsmin: 0,
+    edatmax: 15,
+    participantsmin: 4,
+    participantsmax: 20,
     espai: "Exterior/Interior",
     durada: "20mins",
     objectius: (
@@ -2035,8 +2119,10 @@ const activities = [
       "Dinàmica de grup, tant per a infants com per a l’equip de monitors/es per detectar com podem discriminar sense ni adonar-nos-en.",
     participants: "Tants com vulguin",
     edats: "9-18 anys",
-    edatmin: 4,
-    participantsmin: 0,
+    edatmin: 9,
+    edatmax: 18,
+    participantsmin: 1,
+    participantsmax: 30,
     espai: "Interior",
     durada: "45mins(5 mins/persona)",
     objectius: (
@@ -2074,8 +2160,10 @@ const activities = [
     title: "Cavallers, princeses i dracs",
     descripció: "El joc de Pedra-Paper-Tisora, amb els rols canviats.",
     participants: "Tants com vulguin",
-    edatmin: 4,
-    participantsmin: 0,
+    edatmin: 9,
+    edatmax: 18,
+    participantsmin: 1,
+    participantsmax: 30,
     edats: "9-18 anys",
     espai: "Interior/Exterior",
     durada: "5 mins",
@@ -2095,7 +2183,7 @@ const activities = [
     avaluació: `Es tracta d'una activitat on es trenca el rol de gènere: és la dona qui guanya l'home, i no se la representa com una persona submisa a ell. S'esborra la imatge de la princesa que només fa que esperar el seu príncep blau que vingui a rescatar-la. Es pot utilitzar com a breu activitat per introduir el tema del gènere amb l'equip de monitores i monitors o amb el grup de joves. A partir d'aquí es pot reflexionar sobre els rols que sempre s'associen a homes i dones. Un punt de partida són els contes clàssics.
  
         Amb infants no caldrà fer tota aquesta reflexió, però sí que caldrà apuntar com és que la dona pot guanyar el príncep, i si a la vida real és així.`,
-    etiquetes: ["Cooperatiu", "Jocs curts", "Interior"],
+    etiquetes: ["Cooperatiu", "Jocs Curts", "Interior"],
     isFavorite: false  
   },
   {
@@ -2106,7 +2194,9 @@ const activities = [
     participants: "Fins 50, subgrups de 5/10",
     edats: "4-18 anys",
     edatmin: 4,
-    participantsmin: 0,
+    edatmax: 18,
+    participantsmin: 10,
+    participantsmax: 50,
     espai: "Exterior",
     durada: "2h",
     objectius: (
@@ -2154,8 +2244,10 @@ const activities = [
       "L’activitat proposada és un joc dirigit on es pretén que els joves experimentin diferents fases en un procés de resolució (competitivitat, frustració, col·laboració i cooperació)",
     participants: "Máx 30",
     edats: "16-18 anys",
-    edatmin: 4,
-    participantsmin: 0,
+    edatmin: 16,
+    edatmax: 18,
+    participantsmin: 1,
+    participantsmax: 30,
     espai: "Exterior/Interior",
     durada: "1h",
     objectius: (
@@ -2202,8 +2294,10 @@ const activities = [
     participants: "2 equips(8/8)",
     edats: "9-18 anys",
     espai: "Exterior/Interior",
-    edatmin: 4,
-    participantsmin: 0,
+    edatmin: 9,
+    edatmax: 18,
+    participantsmin: 16,
+    participantsmax: 16,
     durada: "30mins-1h",
     objectius: (
       <div>
@@ -2258,8 +2352,10 @@ const activities = [
       "Experimentar la desesperant situació i la magnitud de papers i burocràcia que ha de fer una persona immigrant quan vol aconseguir la ciutadania del nostre país.",
     participants: "Tants com vulguis",
     edats: "12-18 anys",
-    edatmin: 4,
-    participantsmin: 0,
+    edatmin: 12,
+    edatmax: 18,
+    participantsmin: 1,
+    participantsmax: 30,
     espai: "Exterior",
     durada: "30mins-1h",
     objectius: (
@@ -2288,8 +2384,10 @@ const activities = [
     descripció: "Joc de pistes basat en l'experiència del room escape",
     participants: "Grups de 4-5",
     edats: "12-18 anys",
-    edatmin: 4,
-    participantsmin: 0,
+    edatmin: 12,
+    edatmax: 18,
+    participantsmin: 5,
+    participantsmax: 30,
     espai: "Interior(2-3 sales)",
     durada: "30 o 60 mins",
     objectius: (
@@ -2328,8 +2426,10 @@ const activities = [
       "Joc de rotllana on un jugador no té lloc per seure, i haurà de mirar d’aconseguir-lo incitant els altres jugadors a moure’s.",
     participants: "10+",
     edats: "9-11 anys",
-    edatmin: 4,
-    participantsmin: 0,
+    edatmin: 9,
+    edatmax: 11,
+    participantsmin: 10,
+    participantsmax: 50,
     espai: "Interior/Exterior",
     durada: "10mins",
     objectiusMoni: (
@@ -2361,7 +2461,7 @@ const activities = [
       "Cooperatiu",
       "Exterior",
       "Interior",
-      "Jocs curts",
+      "Jocs Curts",
       "Sense material",
     ],
     isFavorite: false  
@@ -2407,8 +2507,8 @@ const activities = [
     title: "Fem barrets",
     descripció: "Taller de realització de barrets de paper.",
     participants: "Indiferent",
-    participantsmin: 0,
-    participantsmax: 1000,
+    participantsmin: 1,
+    participantsmax: 50,
     edats: "9-11 anys",
     edatmin: 9,
     edatmax: 11,
@@ -2502,7 +2602,7 @@ const activities = [
         Al final del joc, podem preguntar als infants com s'han sentit i què els ha semblat més difícil.
         Podem analitzar amb els infants els pensaments i sentiments viscuts: cooperació, conflicte, acord, subordinació...
         Al final podem fer una anàlisi per a valorar els obstacles i la riquesa de la cooperació.`,
-    etiquetes: ["Cooperatiu", "Interior", "Jocs curts"],
+    etiquetes: ["Cooperatiu", "Interior", "Jocs Curts"],
     isFavorite: false  
   },
   {
@@ -2549,7 +2649,7 @@ const activities = [
         Què us ha sorprès?
         Amb qui heu estat més vegades junts?
         Què heu trobat a faltar? (així també descobrirem més gustos dels joves)`,
-    etiquetes: ["Cooperatiu", "Interior", "Jocs curts", "Narració i expressió"],
+    etiquetes: ["Cooperatiu", "Interior", "Jocs Curts", "Narració i expressió"],
     isFavorite: false  
   },
   {
@@ -2558,7 +2658,7 @@ const activities = [
     descripció: `Dinàmica on es busca la interacció entre els membres del grup, que es barregin, a partir de les instruccions donades tot acabant en una disposició aleatòria.`,
     participants: "10+",
     participantsmin: 10,
-    participantsmax: 1000,
+    participantsmax: 50,
     edats: "9-15 anys",
     edatmin: 9,
     edatmax: 15,
@@ -2590,7 +2690,7 @@ const activities = [
         
         Haver barrejat al grup ens pot convenir de cara a una activitat de coneixença, de reflexió, per fer equips o grups de treball, etc.`,
     avaluació: `És important no fer-se pesat amb aquesta dinàmica, val més una bona pregunta que no allargar-ho com si fos un joc. La fila índia és una posició una mica incòmoda pel grup, no permet la interacció entre els diferents membres i abusar-ne pot portar a situacions en que els participants desconnectin pel fet de no entendre el que s'està fent.`,
-    etiquetes: ["Cooperatiu", "Interior", "Jocs curts", "Sense material"],
+    etiquetes: ["Cooperatiu", "Interior", "Jocs Curts", "Sense material"],
     isFavorite: false  
   },
   {
@@ -2599,7 +2699,7 @@ const activities = [
     descripció: `Aquesta és una dinàmica que pretén portar el joc a una nova dimensió i fer descobrir als participants les possibilitats de poder idear jocs i activitats sense necessitat d’excessius béns materials. Està pensada sobretot per a grups de joves o, fins i tot, de monitors i monitores.`,
     participants: "2+",
     participantsmin: 2,
-    participantsmax: 1000,
+    participantsmax: 50,
     edats: "12-18 anys",
     edatmin: 12,
     edatmax: 18,
@@ -2626,7 +2726,7 @@ const activities = [
     introducció: `Des d’un inici, a l’espai hi ha un seguit d’objectes del quotidià. Tant hi fa la quantitat, però com menys millor. `,
     desenvolupament: `Els participants es col·loquen per parelles o grupets i ordenadament s’acosten als objectes. Amb cinc minuts com a màxim han de pensar un joc breu per la resta de participants que inclogui els objectes que tenen. La gràcia és pensar jocs originals, adaptant jocs coneguts o inventant normes noves. Un cop el tenen, l’expliquen a la resta. Tot seguit l’apliquen tots. A continuació, una altra parella o grupet s’encarrega d’idear un altre joc diferent, que al seu temps explicaran als altres i el jugaran tots junts.`,
     avaluació: `Sempre que sigui possible, és interessant la figura d’un “secretari” que anoti els diferents jocs que van sorgint dels objectes, per recollir i fer tangible la gran quantitat d’opcions que entre tots som capaços de pensar. És una dinàmica útil per fer una mena de brainstorming (pluja d’idees), que ajuda a generar moltes idees i crea un ambient innovador i creatiu.`,
-    etiquetes: ["Cooperatiu", "Interior", "Exterior", "Jocs curts"],
+    etiquetes: ["Cooperatiu", "Interior", "Exterior", "Jocs Curts"],
     isFavorite: false  
   },
   {
@@ -2635,10 +2735,10 @@ const activities = [
     descripció: `Entre diversos equips es plantejaran diferents activitats d’esplai, cadascú aportant el seu granet de sorra.`,
     participants: "Múltiples de 5",
     participantsmin: 5,
-    participantsmax: 1000,
+    participantsmax: 50,
     edats: "Monitors",
     edatmin: 18,
-    edatmax: 60,
+    edatmax: 18,
     espai: "Interior/Exterior",
     durada: "45-60mins",
     duradamin: 45,
@@ -2700,7 +2800,7 @@ const activities = [
     avaluació: `Durant el joc podem observar com els infants es relacionen entre ells.
         Podem observar com gestionen el fet de ser descoberts.
         Si s’ha aconseguit un espai pla, llis i reconegut per facilitar la participació de discapacitats.`,
-    etiquetes: ["Cooperatiu", "Exterior", "Jocs de nit"],
+    etiquetes: ["Cooperatiu", "Exterior", "Jocs de Nit"],
     isFavorite: false  
   },
   {
@@ -2755,6 +2855,7 @@ const activities = [
     descripció: `Es tracta d’un esport col·lectiu en què es juga amb un disc volador. Hi competeixen dos equips que amb ràpids desmarcatges i precises passades intenten marcar el major nombre de gols a la zona d’anotació de l’equip contrari.`,
     participants: "Mín 12(6/6)",
     participantsmin: 12,
+    participantsmax: 24,
     edats: "4-15",
     edatmin: 4,
     edatmax: 15,
@@ -2797,7 +2898,7 @@ const activities = [
     title: "Gimcana dels ocells",
     descripció: `Joc per fer a l’aire lliure i descobrir diferents tipus d’ocells i les seves principals característiques. Cada grup haurà de superar unes proves per aconseguir una sèrie de pistes que el portaran a descobrir un ocell en concret. Cal una breu preparació, on l’educador ha de dissenyar un seguit d’explicacions de cada ocell i les proves a superar per aconseguir les pistes.`,
     participants: "-50 (Grups de 5 o 10)",
-    participantsmin: 5,
+    participantsmin: 10,
     participantsmax: 50,
     edats: "4-18",
     edatmin: 4,
@@ -2846,7 +2947,7 @@ const activities = [
     descripció: `Joc de persecució en què els participants escenifiquen diversos personatges. És d’intensitat mitjana–alta i permet treballar la capacitat de reacció, així com els nervis o la por.`,
     participants: "Tants com vulguin",
     participantsmin: 2,
-    participantsmax: 1000,
+    participantsmax: 50,
     edats: "4-8",
     edatmin: 4,
     edatmax: 8,
@@ -2881,7 +2982,7 @@ const activities = [
         És un bon element per començar a treballar la por.
         
         Referent a l'espai: un pati d’escola o un espai de 50 metres de llarg per 10 metres d’ample. També es pot jugar en un espai interior ampli i sense obstacles.`,
-    etiquetes: ["Exterior", "Jocs curts"],
+    etiquetes: ["Exterior", "Jocs Curts"],
     isFavorite: false  
   },
   {
@@ -2892,8 +2993,10 @@ const activities = [
     participants: "20-60(grups de 5-8)",
     edats: "9-11 anys",
     espai: "Exterior/Interior",
-    edatmin: 4,
-    participantsmin: 0,
+    edatmin: 9,
+    edatmax: 11,
+    participantsmin: 20,
+    participantsmax: 50,
     durada: "15-30mins",
     objectiusMoni: (
       <div>
@@ -2925,7 +3028,7 @@ const activities = [
       "Cooperatiu",
       "Exterior",
       "Interior",
-      "Jocs curts",
+      "Jocs Curts",
       "Sense material",
     ],
     isFavorite: false  
@@ -3001,7 +3104,7 @@ const activities = [
         En un moment donat el pare gegantàs es desperta i corre a atrapar els altres jugadors i quan atrapa algú se l'emporta a la seva cova i torna a dormir. El joc continua igual unes quantes vegades fins que el director de l'activitat veu que els infants es cansen. Mentre el pare gegantàs va a caçar nens i nens, els de la cova intentaran escapar-se.`,
     avaluació: `Per una banda, amb infants molt petits cal tenir present que no saben què vol dir perseguir. Al començament, és possible que alguns nens que haurien de fugir es deixin atrapar perquè volen canviar el rol. Això s'ha d'anar treballant i en la mesura que en prenguin consciència els infants aniran jugant cada vegada millor als jocs de persecució.
         D'altra banda, en la mesura que els infants entenen aquest tipus de joc són dels jocs que més els agraden. Penseu que els jocs motrius són els més atractius en infants de 5 anys cap endavant.`,
-    etiquetes: ["Exterior", "Jocs curts"],
+    etiquetes: ["Exterior", "Jocs Curts"],
     isFavorite: false  
   },
   {
@@ -3193,7 +3296,7 @@ const activities = [
     descripció: `Joc que juguen els dominicans de Palavé a totes hores i que combina estratègia i força. L'equip que encerta en quina mà està amagada la pedreta pot fer un salt i guanya qui arriba més lluny!`,
     participants: "2 equips iguals",
     participantsmin: 5,
-    participantsmax: 1000,
+    participantsmax: 50,
     edats: "4-15",
     edatmin: 4,
     edatmax: 15,
@@ -3229,7 +3332,7 @@ const activities = [
     descripció: `Joc per afavorir el coneixement dels jocs populars i dels trets característics de la cultura africana, així com fomentar la inclusió dins del grup – classe. Tanmateix, podem observar i treballar les relacions interpersonals que s'estableixen dins del grup, a més de les destreses motrius bàsiques.`,
     participants: "8+",
     participantsmin: 8,
-    participantsmax: 1000,
+    participantsmax: 50,
     edats: "9-15",
     edatmin: 9,
     edatmax: 15,
@@ -3286,7 +3389,7 @@ const activities = [
         
         Tot seguit el joc tornarà a començar, tot canviant els rols dels infants.`,
     avaluació: `Finalitzarem l'activitat, tot reflexionant amb els infants sobre les seves sensacions i emocions durant el transcurs del joc. Seguidament deixarem un espai perquè els nens i nenes proposin aspectes a millorar del joc i parlin sobre les estratègies que han anat adoptant per tal d'aconseguir el seu objectiu. Tanmateix com a docents donarem el nostre punt de vista sobre com els infants han anat interactuant durant el transcurs del joc, tot emfatitzant els objectius establerts amb anterioritat. Per concloure, fomentarem l'intercanvi de coneixements entre els infants sobre els trets característics de la cultura africana, així com tractarem de desmuntar diferents mites envers la immigració.`,
-    etiquetes: ["Exterior", "Interior", "Jocs curts"],
+    etiquetes: ["Exterior", "Interior", "Jocs Curts"],
     isFavorite: false  
   },
   {
@@ -3295,7 +3398,7 @@ const activities = [
     descripció: `Divertir-se jugant a la versió dominicana del Pi.`,
     participants: "Tants com vulguin",
     participantsmin: 5,
-    participantsmax: 1000,
+    participantsmax: 50,
     edats: "9-18",
     edatmin: 9,
     edatmax: 18,
@@ -3416,7 +3519,7 @@ const activities = [
     introducció: `Farem una rotllana i escollirem diversos voluntaris perquè abandonin la sala. El dinamitzador explica als que es queden que cadascú, en el moment en què se li passa el llapis, ha de dibuixar una lluna “a l’aire”. Un cop dibuixada, la resta de participants hauran d’aplaudir o criticar-ho negativament. Aquest criteri es durà a terme segons el monitor/a o l’infant que rep el llapis doni les gràcies o bé decideixi no fer-ho.`,
     desenvolupament: `Cada participant entra d’un en un. D’aquesta manera la dinàmica dura més. Si algun participant no entén per què els membres de la rotllana actuen d’una forma a d’una altra, ho ha d’acabar descobrint per poder entrar a la rotllana i dir el motiu que porta a l’aplaudiment o bé al rebuig de la lluna dibuixada pels altres membres.`,
     avaluació: `Un cop han fet el joc tots els voluntaris i, tant si han descobert el per què de l’actitud de la resta de participants com si no ho han fet, hem de debatre i reflexionar sobre: la importància de dir gràcies, si normalment donem les gràcies, si dir gràcies implica major acceptació del nostre entorn, com ens sentim quan la gent ens aplaudeix o quan ens valoren negativament, com ens sentim quan ens donen les gràcies...`,
-    etiquetes: ["Exterior", "Interior", "Jocs curts"],
+    etiquetes: ["Exterior", "Interior", "Jocs Curts"],
     isFavorite: false
   },
   {
@@ -3459,7 +3562,7 @@ const activities = [
     avaluació: `Durant el joc podem observar com els infants es relacionen entre ells.
         Podem observar quines facilitats o dificultats tenen els infants a l’hora de resoldre les incògnites.
         Crear pistes i trossos de fitxes molt visuals, clares i senzilles per a tots tipus de públics. El mapa ha de ser molt detallat i no es descartaria pistes en Braille per persones amb deficiència visual.`,
-    etiquetes: ["Exterior", "Jocs de nit"],
+    etiquetes: ["Exterior", "Jocs de Nit"],
     isFavorite: false  
   },
   {
@@ -3542,7 +3645,7 @@ const activities = [
     participantsmax: 20,
     edats: "Monitors",
     edatmin: 18,
-    edatmax: 60,
+    edatmax: 18,
     espai: "Interior/Exterior",
     durada: "Tot el curs de l'esplai",
     objectiusMoni: (

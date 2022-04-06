@@ -2,17 +2,22 @@ import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
 import { useState } from 'react';
 import { ClockIcon, CalendarIcon, LocationMarkerIcon, UsersIcon } from '@heroicons/react/solid'
+import Typography from '@mui/material/Typography';
+import { Grid } from '@mui/material';
+
+
+
 
 function valuetext(value) {
-  return `${value}°C`;
+  return `${value} Participants`;
 }
 
 export default function DiscreteSlider({onQueryChange, onQueryChangePart, sliderage, sliderpart}) {
 
   return (
-    <Box sx={{ width: 300 }} className="w-50 ml-auto mr-10 flex ">
+    <Box sx={{ width: 150 }} className=" w-25 ml-auto mx-auto">
       <Slider
-        className="mx-10"
+        className=""
         aria-label="Edats"
         defaultValue={4}
         getAriaValueText={valuetext}
@@ -26,9 +31,9 @@ export default function DiscreteSlider({onQueryChange, onQueryChangePart, slider
         min={4}
         max={18}
       />
-
       <Slider
-        aria-label="Participants"
+
+        aria-label= "Participants"
         defaultValue={0}
         getAriaValueText={valuetext}
         valueLabelDisplay="auto"

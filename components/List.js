@@ -1,72 +1,61 @@
 import {
   ClockIcon,
-  CalendarIcon,
   LocationMarkerIcon,
   UsersIcon,
 } from "@heroicons/react/solid";
 import Link from "next/link";
 import activitiesData from "../data/activities";
 import { Searcher } from "fast-fuzzy";
-import Toggle from "../components/Toggle";
-import DiscreteSlider from "./Slider";
 import { useEffect, useState } from "react";
-import Checkbox from "../components/Checkbox";
+import useLocalStorage from "./useLocalStorage";
 import Star from "./Star";
-import { render } from "react-dom";
+
+import CustomFilter from "../components/CustomFilter";
+import NoResults from "../components/NoResults";
+import { useRouter } from "next/router";
 
 // Hook
-function useLocalStorage(key, initialValue) {
-  // State to store our value
-  // Pass initial state function to useState so logic is only executed once
-  const [storedValue, setStoredValue] = useState(() => {
-    if (typeof window === "undefined") {
-      return initialValue;
-    }
-    try {
-      // Get from local storage by key
-      const item = window.localStorage.getItem(key);
-      // Parse stored json or if none return initialValue
-      return item ? JSON.parse(item) : initialValue;
-    } catch (error) {
-      // If error also return initialValue
-      console.log(error);
-      return initialValue;
-    }
-  });
-  // Return a wrapped version of useState's setter function that ...
-  // ... persists the new value to localStorage.
-  const setValue = (value) => {
-    try {
-      // Allow value to be a function so we have same API as useState
-      const valueToStore =
-        value instanceof Function ? value(storedValue) : value;
-      // Save state
-      setStoredValue(valueToStore);
-      // Save to local storage
-      if (typeof window !== "undefined") {
-        window.localStorage.setItem(key, JSON.stringify(valueToStore));
-      }
-    } catch (error) {
-      // A more advanced implementation would handle the error case
-      console.log(error);
-    }
-  };
-  return [storedValue, setValue];
-}
 const defaultSearcher = new Searcher(activitiesData, {
   keySelector: (activity) => {
     return [activity.title, activity.descripció, ...activity.etiquetes];
   },
 });
 
-export default function List({ query }) {
-  const [sliderage, setSliderage] = useState(4);
-  const [sliderpart, setSliderpart] = useState(0);
-  const [exterior, setExterior] = useState(false);
-  const [interior, setInterior] = useState(false);
+function useHasMounted() {
+  const [hasMounted, setHasMounted] = useState(false);
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
+  return hasMounted;
+}
+function isValueInRange(range, value) {
+  return range[0] <= value && range[1] >= value;
+}
+export default function List({ query, setQuerySearch }) {
   const [activities, setActivities] = useState([...activitiesData]);
   const [searcher, setSearcher] = useState(defaultSearcher);
-  const [favoritesIds, setFavoritesIds] = useLocalStorage("favorites", "");
+  const [etiquetesFilter, setEtiquetesFilter] = useState([]);
+  const [maxAge, setMaxAge] = useState([]);
+  const [maxPart, setMaxPart] = useState([]);
+  const [favoritesIds, setFavoritesIds] = useLocalStorage("favorites", []);
+  console.log("this is my maxAge", maxAge);
+  const router = useRouter();
+  console.log("this is my maxPart", maxPart);
+  useEffect(() => {
+    const handleStart = (url) => {
+      console.log(`Loading: ${url}`);
+      setMaxAge([]);
+      setMaxPart([]);
+      setEtiquetesFilter([]);
+      setQuerySearch();
+    };
+
+    router.events.on("routeChangeStart", handleStart);
+
+    return () => {
+      router.events.off("routeChangeStart", handleStart);
+    };
+  }, [router]);
 
   useEffect(() => {
     const searcher = new Searcher(activities, {
@@ -77,76 +66,145 @@ export default function List({ query }) {
     setSearcher(searcher);
   }, [activities]);
 
-  const filtrao = query === "" ? activities : searcher.search(query);
-  const filteredAge = filtrao.filter(
-    (activity) => activity.edatmin >= sliderage
-  );
-  const filteredPart = filteredAge.filter(
-    (activity) => activity.participantsmin >= sliderpart
-  );
-  const filteredExt = exterior
-    ? filteredPart.filter((activity) => activity.etiquetes.includes("Exterior"))
-    : filteredPart;
-  const filteredFinal = interior
-    ? filteredExt.filter((activity) => activity.etiquetes.includes("Interior"))
-    : filteredExt;
-    
-    
-    // var totalIds = activities.filter((activity) => activity.isFavorite === true)
-    // .map((activity) => activity.id)
-    // console.log("this is my totalIds", totalIds)
-    
-    let favorites = favoritesIds
-    console.log("this is the result of my function",favoritesIds.includes(activities[0].id))
-    for (let i = 0; i < activities.length; i++) {
-        if (activities[i].isFavorite === true) {
-          if(!favoritesIds.includes(activities[i].id)){
-            {
-              console.log(activities[i].isFavorite)
-              favorites.push(activities[i].id);
-            }
-          }
-        }
-    }
-  
-    useEffect(() => {
-    
-    console.log("this is my favorites before setting it", favorites)
-    setFavoritesIds(favorites);
-  }, [activities]);
+  const filteredQuery = query === "" ? activities : searcher.search(query);
+  const filteredAge =
+    maxAge.length === 0
+      ? filteredQuery
+      : filteredQuery.filter((activity) => {
+          return maxAge.some(
+            (ageInterval) =>
+              isValueInRange(ageInterval, activity.edatmin) ||
+              isValueInRange(ageInterval, activity.edatmax)
+          );
+        });
 
-  console.log("this is my favoriteIds", favoritesIds)
+  const filteredPart =
+    maxPart.length === 0
+      ? filteredAge
+      : filteredAge.filter((activity) => {
+          return maxPart.some((partInterval) => {
+            return (
+              isValueInRange(partInterval, activity.participantsmin) ||
+              isValueInRange(partInterval, activity.participantsmax)
+            );
+          });
+        });
+  console.log("this is my filteredPart array", filteredPart);
+  const filteredFinal =
+    etiquetesFilter.length === 0
+      ? filteredPart
+      : filteredPart.filter((activity) =>
+          etiquetesFilter.every((etiqueta) =>
+            activity.etiquetes.includes(etiqueta)
+          )
+        );
 
-  return (
+  const hasMounted = useHasMounted();
+  if (!hasMounted) {
+    return null;
+  }
+
+  return filteredFinal.length === 0 ? (
+    <NoResults />
+  ) : (
     <div className="bg-white shadow overflow-hidden sm:rounded-md">
-      <Checkbox
-        onQueryChange={() => setExterior(!exterior)}
-        onQueryChangeInt={() => setInterior(!interior)}
-        Interior={interior}
-        Exterior={exterior}
-      />
-      <DiscreteSlider
-        onQueryChange={(newQuery) => setSliderage(newQuery)}
-        onQueryChangePart={(newQuery) => setSliderpart(newQuery)}
-        sliderage={sliderage}
-        sliderpart={sliderpart}
-      />
+      <div className=" my-4">
+        {/* <Checkbox
+          onQueryChange={() => setExterior(!exterior)}
+          onQueryChangeInt={() => setInterior(!interior)}
+          Interior={interior}
+          Exterior={exterior}
+        /> */}
+        <CustomFilter
+          etiquetesFilter={etiquetesFilter}
+          maxAge={maxAge}
+          maxPart={maxPart}
+          onQueryChangePart={(newQuery) => {
+            setMaxPart((prevState) => {
+              const newPart = [...prevState];
+              const alreadyHasNewQuery = newQuery.every((element) => {
+                return maxPart.some((interval) => interval.includes(element));
+              });
+
+              if (alreadyHasNewQuery) {
+                const index = newPart.indexOf(newQuery);
+                newPart.splice(index, 1);
+                return newPart;
+              } else {
+                newPart.push(newQuery);
+                return newPart;
+              }
+            });
+          }}
+          onQueryChangeEtiquetes={(newQuery) => {
+            setEtiquetesFilter((prevState) => {
+              const newEtiquetes = [...prevState];
+              if (!etiquetesFilter.includes(newQuery)) {
+                newEtiquetes.push(newQuery);
+                return newEtiquetes;
+              } else if (etiquetesFilter.includes(newQuery)) {
+                const index = newEtiquetes.indexOf(newQuery);
+                newEtiquetes.splice(index, 1);
+                return newEtiquetes;
+              }
+            });
+          }}
+          onQueryChangeAge={(newQuery) => {
+            setMaxAge((prevState) => {
+              const newAges = [...prevState];
+              if (
+                newQuery.every((element) => {
+                  return (
+                    maxAge[0]?.includes(element) ||
+                    maxAge[1]?.includes(element) ||
+                    maxAge[2]?.includes(element) ||
+                    maxAge[3]?.includes(element)
+                  );
+                }) === false
+              ) {
+                newAges.push(newQuery);
+                return newAges;
+              } else if (
+                newQuery.every((element) => {
+                  return (
+                    maxAge[0]?.includes(element) ||
+                    maxAge[1]?.includes(element) ||
+                    maxAge[2]?.includes(element) ||
+                    maxAge[3]?.includes(element)
+                  );
+                }) === true
+              ) {
+                const index = newAges.indexOf(newQuery);
+                newAges.splice(index, 1);
+                return newAges;
+              }
+            });
+          }}
+        />
+        {/* <DiscreteSlider
+          onQueryChange={(newQuery) => setSliderage(newQuery)}
+          onQueryChangePart={(newQuery) => setSliderpart(newQuery)}
+          sliderage={sliderage}
+          sliderpart={sliderpart}
+        /> */}
+      </div>
       <ul role="list" className="divide-y divide-gray-200">
         {filteredFinal.map((activity) => (
           <li key={activity.id}>
-            <pre>{activity.id} is in {JSON.stringify(favoritesIds)}? {JSON.stringify(favoritesIds.includes(activity.id))}</pre>
             <Star
-              isFavorite={activity.isFavorite}
               isFilled={favoritesIds.includes(activity.id)}
               id={activity.id}
               onClick={(id) => {
-                return setActivities((oldActivities) => {
-                  const newActivities = [...oldActivities];
-                  newActivities[activity.id - 1] = {
-                    ...newActivities[activity.id - 1],
-                    isFavorite: !newActivities[activity.id - 1].isFavorite,
+                return setFavoritesIds((oldFavoritesIds) => {
+                  const newFavoritesIds = [...oldFavoritesIds];
+                  if (!favoritesIds.includes(activity.id)) {
+                    newFavoritesIds.push(activity.id);
+                    return newFavoritesIds;
+                  } else if (favoritesIds.includes(activity.id)) {
+                    const index = favoritesIds.indexOf(activity.id);
+                    newFavoritesIds.splice(index, 1);
+                    return newFavoritesIds;
                   }
-                  return newActivities;
                 });
               }}
             />

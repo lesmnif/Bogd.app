@@ -2,12 +2,21 @@
 import { PaperClipIcon } from '@heroicons/react/solid'
 import id from '../pages/activity/[id]'
 import activities from '../data/activities'
+import Star from "./Star"
+import { useState } from 'react'
+import useLocalStorage from './useLocalStorage'
 
+function useHasMounted() {
+  const [hasMounted, setHasMounted] = useState(false);
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
+  return hasMounted;
+}
 
+export default function Example({activity }) {
 
-export default function Example(props) {
-
-  const activity = props.activity
+  const [favoritesIds, setFavoritesIds] = useLocalStorage("favorites", []);
 
   if (activity === undefined) {
     return null
@@ -15,6 +24,26 @@ export default function Example(props) {
 
   return (
     <div className="bg-white shadow overflow-hidden sm:rounded-lg">
+         <Star
+              
+              isFilled={favoritesIds.includes(activity.id)}
+              id={activity.id} 
+              onClick={(id) => {
+                return setFavoritesIds((oldFavoritesIds) => {
+                  const newFavoritesIds = [...oldFavoritesIds];
+                  if(!favoritesIds.includes(activity.id)){
+                     newFavoritesIds.push(activity.id)
+                     return newFavoritesIds
+                  }
+                  else if(favoritesIds.includes(activity.id)){
+                    const index = favoritesIds.indexOf(activity.id)
+                    newFavoritesIds.splice(index, 1)
+                    return newFavoritesIds
+                    
+                  }
+                })
+              }}
+              />
       <div className="px-4 py-5 sm:px-6">
         <h3 className="text-xl leading-6 font-medium text-gray-900">{activity.title}</h3>
         <p className="mt-1 max-w-2xl text-xs text-gray-500lea text-"><line className="font-bold text-gray-800" >Duració: </line>{activity.durada} <line className="font-bold text-gray-800 ml-2" >Participants: </line> {activity.participants}<line className="font-bold text-gray-800 ml-2" > Espai: </line>{activity.espai}<line className="font-bold text-gray-800 ml-2"> Edats: </line> {activity.edats}</p>

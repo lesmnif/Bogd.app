@@ -13,10 +13,13 @@ const Post = () => {
   const activity = getActivityById(id)
   console.log(id)
   
+  
+  
 
   return <Layout>
     <Activity 
   activity={activity}
+
   />
   </Layout>
   // return <p>Post: {activity?.id}{id}</p>
