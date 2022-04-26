@@ -14,6 +14,9 @@
   }
   ```
 */
+
+import { useRouter } from "next/router";
+
 const CustomActivity = {
   id: "",
   title: "",
@@ -31,19 +34,96 @@ const CustomActivity = {
   introducció: "",
   desenvolupament: "",
   avaluació: "",
-  etiquetes: [],
-  isFavorite: "",
+  etiquetes: ["Custom"],
+  isCustom: true,
 };
 
-import { useState } from "react";
-import Layout from "../../components/Layout";
+import { useEffect, useState } from "react";
+import Layout from "../../components/LayoutNoNavbar";
+import useLocalStorage from "../../components/useLocalStorage";
+import activities from "../../data/activities";
+import Link from "next/link";
+import toast from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
+import { PausePresentation, Router } from "@mui/icons-material";
+
 
 export default function Example() {
   const [customActivity, setCustomActivity] = useState(CustomActivity);
-  console.log("this is my custom activity", customActivity);
+  const [localActivities, setLocalActivities] = useLocalStorage(
+    "localActivities",
+    []
+  );
+  const [isEnabled, setIsEnabled] = useState(true);
+
+  const router = useRouter();
+
+  console.log("this ismy localACtivity", localActivities);
+  function onInputChange(event) {
+    return setCustomActivity((prevState) => {
+      const newCustomActivity = { ...prevState };
+
+      if (!newCustomActivity.etiquetes.includes(event.target.value)) {
+        newCustomActivity.etiquetes = [
+          ...newCustomActivity.etiquetes,
+          event.target.value,
+        ];
+        return newCustomActivity;
+      } else if (newCustomActivity.etiquetes.includes(event.target.value)) {
+        newCustomActivity.etiquetes = newCustomActivity.etiquetes.filter(
+          (etiqueta) => etiqueta !== event.target.value
+        );
+        return newCustomActivity;
+      }
+    });
+  }
+  console.log("this is my newCustomActivity", customActivity)
+  useEffect(() => {
+    setIsEnabled(() => {
+      const form = document.getElementById("my-form");
+      const FilledPart = [];
+      Array.from(form.elements).forEach((element) => {
+        if (element.required === true) {
+          if (element.value.length != 0) {
+            if (
+              (element.id === "edatmin" || element.id === "edatmax") &&
+              parseInt(element.value) >= 4 &&
+              parseInt(element.value) <= 18  
+            ) {
+              FilledPart.push(true);
+              console.log("im entering there bro");
+            } else if (
+              (element.id === "partmin" || element.id === "partmax") &&
+              parseInt(element.value) >= 1 &&
+              parseInt(element.value) <= 100
+            ) {
+              FilledPart.push(true);
+              console.log("im entering the part thing lol");
+            } else if (element.type === "text" || element.type === "textarea") {
+              FilledPart.push(true);
+            }
+          }
+          console.log("this is ym FilledPart", FilledPart);
+        }
+      });
+      return FilledPart.length === 8 ? false : true;
+    });
+  }, [customActivity]);
+
+
+
+  console.log("this is my enabled", isEnabled);
   return (
-    <Layout>
-      <form className="space-y-8 divide-y divide-gray-200">
+    <Layout breadcrumbs={[
+      { name: 'Jocs', href: '/activity/list', current: true},
+      { name: "Crear activitat", href: 'activity/list', current: false},
+    ]} titol="Crear activitat">
+      <form 
+        onSubmit={(event) => event.preventDefault()}
+        id="my-form"
+        aria-required
+        className="space-y-8 divide-y divide-gray-200"
+      >
         {/* <div className="space-y-8 divide-y divide-gray-200">
           <div>
             <div>
@@ -71,7 +151,7 @@ export default function Example() {
                 value={customActivity.title}
                 onChange={(event) =>
                   setCustomActivity((prevState) => {
-                    const newCustomActivity = Object.assign({}, prevState);
+                    const newCustomActivity = { ...prevState };
                     newCustomActivity.title = event.target.value;
                     return newCustomActivity;
                   })
@@ -91,6 +171,7 @@ export default function Example() {
             </label>
             <div className="mt-1">
               <textarea
+                type="text"
                 id="about"
                 name="about"
                 required
@@ -98,7 +179,7 @@ export default function Example() {
                 value={customActivity.descripció}
                 onChange={(event) =>
                   setCustomActivity((prevState) => {
-                    const newCustomActivity = Object.assign({}, prevState);
+                    const newCustomActivity = { ...prevState };
                     newCustomActivity.descripció = event.target.value;
                     return newCustomActivity;
                   })
@@ -116,7 +197,7 @@ export default function Example() {
           <div className="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
             <div className="sm:col-span-3">
               <label
-                htmlFor="first-name"
+                htmlFor="Material"
                 className="block text-sm font-medium text-gray-700"
               >
                 Material
@@ -124,12 +205,12 @@ export default function Example() {
               <div className="mt-1">
                 <input
                   type="text"
-                  name="first-name"
-                  id="first-name"
+                  name="Material"
+                  id="Material"
                   value={customActivity.material}
                   onChange={(event) =>
                     setCustomActivity((prevState) => {
-                      const newCustomActivity = Object.assign({}, prevState);
+                      const newCustomActivity = { ...prevState };
                       newCustomActivity.material = event.target.value;
                       return newCustomActivity;
                     })
@@ -141,7 +222,7 @@ export default function Example() {
 
             <div className="sm:col-span-3">
               <label
-                htmlFor="last-name"
+                htmlFor="Durada"
                 className="block text-sm font-medium text-gray-700"
               >
                 Duració{" "}
@@ -150,18 +231,17 @@ export default function Example() {
               <div className="mt-1">
                 <input
                   type="text"
-                  name="last-name"
-                  id="last-name"
+                  name="Durada"
+                  id="Durada"
                   required
                   value={customActivity.durada}
                   onChange={(event) =>
                     setCustomActivity((prevState) => {
-                      const newCustomActivity = Object.assign({}, prevState);
+                      const newCustomActivity = { ...prevState };
                       newCustomActivity.durada = event.target.value;
                       return newCustomActivity;
                     })
                   }
-                  autoComplete="family-name"
                   className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
                 />
               </div>
@@ -169,32 +249,31 @@ export default function Example() {
 
             <div className="sm:col-span-6">
               <label
-                htmlFor=""
+                htmlFor="Objectius"
                 className="block text-sm font-medium text-gray-700"
               >
                 Objectius
               </label>
               <div className="mt-1">
                 <input
-                  id="email"
-                  name="email"
-                  type="email"
+                  type="text"
+                  name="Objectius"
+                  id="Objectius"
                   value={customActivity.objectius}
                   onChange={(event) =>
                     setCustomActivity((prevState) => {
-                      const newCustomActivity = Object.assign({}, prevState);
+                      const newCustomActivity = { ...prevState };
                       newCustomActivity.objectius = event.target.value;
                       return newCustomActivity;
                     })
                   }
-                  autoComplete="email"
                   className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
                 />
               </div>
             </div>
             <div className="sm:col-span-1">
               <label
-                htmlFor="email"
+                htmlFor="edatmin"
                 className="block text-sm font-medium text-gray-700"
               >
                 Edat mínima{" "}
@@ -202,10 +281,10 @@ export default function Example() {
               </label>
               <div className="mt-1">
                 <input
-                  id="number"
+                  id="edatmin"
                   name="number"
                   type="number"
-                  placeholder="Entre 4-18"
+                  placeholder="Entre 4-18" 
                   required
                   aria-required={true}
                   min="4"
@@ -213,7 +292,7 @@ export default function Example() {
                   value={customActivity.edatmin}
                   onChange={(event) =>
                     setCustomActivity((prevState) => {
-                      const newCustomActivity = Object.assign({}, prevState);
+                      const newCustomActivity = { ...prevState };
                       newCustomActivity.edatmin = parseInt(event.target.value);
                       return newCustomActivity;
                     })
@@ -225,7 +304,7 @@ export default function Example() {
             </div>
             <div className="sm:col-span-1">
               <label
-                htmlFor="email"
+                htmlFor="edatmax"
                 className="block text-sm font-medium text-gray-700"
               >
                 Edat máxima{" "}
@@ -233,7 +312,7 @@ export default function Example() {
               </label>
               <div className="mt-1">
                 <input
-                  id="number"
+                  id="edatmax"
                   name="number"
                   type="number"
                   required
@@ -242,7 +321,7 @@ export default function Example() {
                   value={customActivity.edatmax}
                   onChange={(event) =>
                     setCustomActivity((prevState) => {
-                      const newCustomActivity = Object.assign({}, prevState);
+                      const newCustomActivity = { ...prevState };
                       newCustomActivity.edatmax = parseInt(event.target.value);
                       return newCustomActivity;
                     })
@@ -255,7 +334,7 @@ export default function Example() {
             </div>
             <div className="sm:col-span-1">
               <label
-                htmlFor="email"
+                htmlFor="partmin"
                 className="block text-sm font-medium text-gray-700"
               >
                 Participants mínims{" "}
@@ -263,7 +342,7 @@ export default function Example() {
               </label>
               <div className="mt-1">
                 <input
-                  id="number"
+                  id="partmin"
                   name="number"
                   type="number"
                   required
@@ -272,7 +351,7 @@ export default function Example() {
                   value={customActivity.participantsmin}
                   onChange={(event) =>
                     setCustomActivity((prevState) => {
-                      const newCustomActivity = Object.assign({}, prevState);
+                      const newCustomActivity = { ...prevState };
                       newCustomActivity.participantsmin = parseInt(
                         event.target.value
                       );
@@ -287,7 +366,7 @@ export default function Example() {
             </div>
             <div className="sm:col-span-1">
               <label
-                htmlFor="email"
+                htmlFor="partmax"
                 className="block text-sm font-medium text-gray-700"
               >
                 Participants máxims{" "}
@@ -295,7 +374,7 @@ export default function Example() {
               </label>
               <div className="mt-1">
                 <input
-                  id="number"
+                  id="partmax"
                   name="number"
                   type="number"
                   required
@@ -304,7 +383,7 @@ export default function Example() {
                   value={customActivity.participantsmax}
                   onChange={(event) =>
                     setCustomActivity((prevState) => {
-                      const newCustomActivity = Object.assign({}, prevState);
+                      const newCustomActivity = { ...prevState };
                       newCustomActivity.participantsmax = parseInt(
                         event.target.value
                       );
@@ -320,19 +399,20 @@ export default function Example() {
 
             <div className="sm:col-span-6">
               <label
-                htmlFor="descripció"
+                htmlFor="introducció"
                 className="block text-sm font-medium text-gray-700 my-2"
               >
                 Introducció
               </label>
               <div className="mt-1">
                 <textarea
-                  id="about"
+                  type="text"
+                  id="introducció"
                   name="about"
                   value={customActivity.introducció}
                   onChange={(event) =>
                     setCustomActivity((prevState) => {
-                      const newCustomActivity = Object.assign({}, prevState);
+                      const newCustomActivity = { ...prevState };
                       newCustomActivity.introducció = event.target.value;
                       return newCustomActivity;
                     })
@@ -345,7 +425,7 @@ export default function Example() {
 
             <div className="sm:col-span-6">
               <label
-                htmlFor="descripció"
+                htmlFor="desenvolupament"
                 className="block text-sm font-medium text-gray-700 my-2"
               >
                 Desenvolupament{" "}
@@ -353,14 +433,15 @@ export default function Example() {
               </label>
               <div className="mt-1">
                 <textarea
-                  id="about"
+                  type="text"
+                  id="desenvolupament"
                   name="about"
                   required
                   rows={3}
                   value={customActivity.desenvolupament}
                   onChange={(event) =>
                     setCustomActivity((prevState) => {
-                      const newCustomActivity = Object.assign({}, prevState);
+                      const newCustomActivity = { ...prevState };
                       newCustomActivity.desenvolupament = event.target.value;
                       return newCustomActivity;
                     })
@@ -371,20 +452,21 @@ export default function Example() {
 
               <div className="sm:col-span-6">
                 <label
-                  htmlFor="descripció"
+                  htmlFor="avaluació"
                   className="block text-sm font-medium text-gray-700 my-2"
                 >
                   Avaluació
                 </label>
                 <div className="mt-1">
                   <textarea
-                    id="about"
+                    type="text"
+                    id="avaluació"
                     name="about"
                     rows={1}
                     value={customActivity.avaluació}
                     onChange={(event) =>
                       setCustomActivity((prevState) => {
-                        const newCustomActivity = Object.assign({}, prevState);
+                        const newCustomActivity = { ...prevState };
                         newCustomActivity.avaluació = event.target.value;
                         return newCustomActivity;
                       })
@@ -539,59 +621,17 @@ export default function Example() {
                   <div className="relative flex items-start">
                     <div className="flex items-center h-5">
                       <input
-                        id="comments"
-                        defaultValue="Interior"
+                        id="Interior"
+                        value="Interior"
                         name="comments"
                         type="checkbox"
-                        onChange={(event) =>
-                          setCustomActivity((prevState) => {
-                            const myEtiqueta = toString(event.target.value)
-                            console.log("this is myetiqueta", myEtiqueta)
-                            const newCustomActivity = Object.assign({}, prevState);
-                            if (
-                              !newCustomActivity.etiquetes.includes(
-                                event.target.value
-                              )
-                            ) {
-                              console.log(
-                                "this is my comparison",
-                                event.target.value === "Interior"
-                              );
-                              console.log(
-                                "this is my pushed array",
-                                newCustomActivity.etiquetes.push(
-                                  event.target.value
-                                )
-                              );
-                              newCustomActivity.etiquetes.push(
-                                event.target.value
-                              );
-                              console.log(
-                                "this is my newCustomActivityarray after i push it",
-                                newCustomActivity
-                              );
-                              console.log("this is my event.target.value", event.target.value)
-                              return newCustomActivity;
-                            } else if (
-                              newCustomActivity.etiquetes.includes(
-                                event.target.value
-                              )
-                            ) {
-                              const index = newCustomActivity.etiquetes.indexOf(
-                                event.target.value
-                              )
-                              console.log("this is my index", index)
-                              newCustomActivity.etiquetes.splice(index, 1);
-                              return newCustomActivity;
-                            }
-                          })
-                        }
+                        onChange={onInputChange}
                         className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
                       />
                     </div>
                     <div className="ml-3 text-sm">
                       <label
-                        htmlFor="comments"
+                        htmlFor="Interior"
                         className="font-medium text-gray-700"
                       >
                         Interior
@@ -601,15 +641,17 @@ export default function Example() {
                   <div className="relative flex items-start">
                     <div className="flex items-center h-5">
                       <input
-                        id="candidates"
+                        value="Exterior"
+                        id="Exterior"
                         name="candidates"
                         type="checkbox"
                         className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                        onChange={onInputChange}
                       />
                     </div>
                     <div className="ml-3 text-sm">
                       <label
-                        htmlFor="candidates"
+                        htmlFor="Exterior"
                         className="font-medium text-gray-700"
                       >
                         Exterior
@@ -619,15 +661,17 @@ export default function Example() {
                   <div className="relative flex items-start">
                     <div className="flex items-center h-5">
                       <input
-                        id="offers"
+                        id="Competitiu"
                         name="offers"
+                        value="Competitiu"
                         type="checkbox"
+                        onChange={onInputChange}
                         className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
                       />
                     </div>
                     <div className="ml-3 text-sm">
                       <label
-                        htmlFor="offers"
+                        htmlFor="Competitiu"
                         className="font-medium text-gray-700"
                       >
                         Competitiu
@@ -637,15 +681,17 @@ export default function Example() {
                   <div className="relative flex items-start">
                     <div className="flex items-center h-5">
                       <input
-                        id="offers"
+                        id="Cooperatiu"
                         name="offers"
+                        value="Cooperatiu"
                         type="checkbox"
+                        onChange={onInputChange}
                         className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
                       />
                     </div>
                     <div className="ml-3 text-sm">
                       <label
-                        htmlFor="offers"
+                        htmlFor="Cooperatiu"
                         className="font-medium text-gray-700"
                       >
                         Cooperatiu
@@ -655,15 +701,17 @@ export default function Example() {
                   <div className="relative flex items-start">
                     <div className="flex items-center h-5">
                       <input
-                        id="offers"
+                        id="Coneixença"
                         name="offers"
                         type="checkbox"
+                        value="Coneixença"
+                        onChange={onInputChange}
                         className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
                       />
                     </div>
                     <div className="ml-3 text-sm">
                       <label
-                        htmlFor="offers"
+                        htmlFor="Coneixença"
                         className="font-medium text-gray-700"
                       >
                         Coneixença
@@ -673,15 +721,17 @@ export default function Example() {
                   <div className="relative flex items-start">
                     <div className="flex items-center h-5">
                       <input
-                        id="offers"
+                        id="Grans Jocs"
                         name="offers"
+                        value="Grans Jocs"
                         type="checkbox"
+                        onChange={onInputChange}
                         className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
                       />
                     </div>
                     <div className="ml-3 text-sm">
                       <label
-                        htmlFor="offers"
+                        htmlFor="Grans Jocs"
                         className="font-medium text-gray-700"
                       >
                         Grans Jocs
@@ -691,15 +741,17 @@ export default function Example() {
                   <div className="relative flex items-start">
                     <div className="flex items-center h-5">
                       <input
-                        id="offers"
+                        id="Jocs Curts"
                         name="offers"
                         type="checkbox"
+                        value="Jocs Curts"
+                        onChange={onInputChange}
                         className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
                       />
                     </div>
                     <div className="ml-3 text-sm">
                       <label
-                        htmlFor="offers"
+                        htmlFor="Jocs Curts"
                         className="font-medium text-gray-700"
                       >
                         Jocs Curts
@@ -709,15 +761,17 @@ export default function Example() {
                   <div className="relative flex items-start">
                     <div className="flex items-center h-5">
                       <input
-                        id="offers"
+                        id="Jocs de Nit"
                         name="offers"
+                        value="Jocs de Nit"
                         type="checkbox"
+                        onChange={onInputChange}
                         className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
                       />
                     </div>
                     <div className="ml-3 text-sm">
                       <label
-                        htmlFor="offers"
+                        htmlFor="Jocs de Nit"
                         className="font-medium text-gray-700"
                       >
                         Jocs de Nit
@@ -727,15 +781,17 @@ export default function Example() {
                   <div className="relative flex items-start">
                     <div className="flex items-center h-5">
                       <input
-                        id="offers"
+                        id="Esportiu"
                         name="offers"
                         type="checkbox"
+                        value="Esportiu"
+                        onChange={onInputChange}
                         className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
                       />
                     </div>
                     <div className="ml-3 text-sm">
                       <label
-                        htmlFor="offers"
+                        htmlFor="Esportiu"
                         className="font-medium text-gray-700"
                       >
                         Esportiu
@@ -745,15 +801,17 @@ export default function Example() {
                   <div className="relative flex items-start">
                     <div className="flex items-center h-5">
                       <input
-                        id="offers"
+                        id="Sense material"
                         name="offers"
                         type="checkbox"
+                        value="Sense material"
+                        onChange={onInputChange}
                         className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
                       />
                     </div>
                     <div className="ml-3 text-sm">
                       <label
-                        htmlFor="offers"
+                        htmlFor="Sense material"
                         className="font-medium text-gray-700"
                       >
                         Sense material
@@ -763,15 +821,17 @@ export default function Example() {
                   <div className="relative flex items-start">
                     <div className="flex items-center h-5">
                       <input
-                        id="offers"
+                        id="Narració i expressió"
                         name="offers"
                         type="checkbox"
+                        value="Narració i expressió"
+                        onChange={onInputChange}
                         className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
                       />
                     </div>
                     <div className="ml-3 text-sm">
                       <label
-                        htmlFor="offers"
+                        htmlFor="Narració i expressió"
                         className="font-medium text-gray-700"
                       >
                         Narració i expressió
@@ -828,17 +888,50 @@ export default function Example() {
 
         <div className="pt-5">
           <div className="flex justify-end">
+            <Link href={"/activity/list"}>
+              <button
+                type="button"
+                className="bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              >
+                Cancel·la
+              </button>
+            </Link>
+            {/* {console.log("this is my function value",  */}
+
+            {/* {console.log("this is my value lol", checkFilled)} */}
+
             <button
-              type="button"
-              className="bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 disabled:bg-slate-400 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              onClick={() =>
+                setLocalActivities((prevState) => {
+                  if (isEnabled === false) {
+                    if (customActivity.edatmin >= customActivity.edatmax){
+                      toast.error("L'edat mínima ha de ser menor a la màxima.")
+                      const newActivities = [...prevState];
+                      return newActivities;
+                  }
+                  else if (customActivity.participantsmin >= customActivity.participantsmax){
+                      toast.error("Els participants mínims han de ser menors als màxims.")
+                      const newActivities = [...prevState];
+                      return newActivities;
+                  }
+                  else{
+                    const newActivities = [...prevState];
+                    customActivity.id =
+                      activities.length + 1 + localActivities.length;
+                    newActivities.push(customActivity);
+                    router.push(`/activity/${customActivity.id}`);
+                    toast.success("Activitat guardada! 🔥");
+                    return newActivities;
+                    }
+                  } else {
+                    const newActivities = [...prevState];
+                    return newActivities;
+                  }
+                })
+              }
             >
-              Cancel
-            </button>
-            <button
-              type="submit"
-              className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-            >
-              Save
+              Guardar
             </button>
           </div>
         </div>

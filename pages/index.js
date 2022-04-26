@@ -1,12 +1,13 @@
 import Layout from "../components/Layout"
 import { useState } from "react"
 import List from "../components/List"
+import Sections from "../components/Sections"
+import Footer from "../components/Footer"
+
 
 export default function Index() {
-  const [query, setQuery] = useState('')
-
-  return <Layout onQueryChange={newQuery => setQuery(newQuery)} query={query}>
-    <List query={query} setQuerySearch={() => setQuery("")}/>
-  </Layout>
+  return <div><Sections/>
+  <Footer/>
+  </div>
 }
 

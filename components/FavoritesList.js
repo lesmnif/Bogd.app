@@ -7,57 +7,15 @@ import {
   import Link from "next/link";
   import activitiesData from "../data/activities";
   import { Searcher } from "fast-fuzzy";
-  import Toggle from "../components/Toggle";
-  import DiscreteSlider from "./Slider";
   import { useEffect, useState } from "react";
-  import Checkbox from "../components/Checkbox";
   import Star from "./Star";
-  import { render } from "react-dom";
-  import Layout from "./Layout";
   import NoFavorites from "../components/NoFavorites"
-  import CustomFilter from "../components/CustomFilter"
+  import CustomFilter from "./CustomFilterTop"
   import NoResults from "../components/NoResults";
   import { useRouter } from 'next/router'
-  
-  // Hook
-  function useLocalStorage(key, initialValue) {
-    // State to store our value
-    // Pass initial state function to useState so logic is only executed once
-    const [storedValue, setStoredValue] = useState(() => {
-      if (typeof window === "undefined") {
-        return initialValue;
-      }
-      try {
-        // Get from local storage by key
-        const item = window.localStorage.getItem(key);
-        // Parse stored json or if none return initialValue
-        return item ? JSON.parse(item) : initialValue;
-      } catch (error) {
-        // If error also return initialValue
-        console.log(error);
-        return initialValue;
-      }
-    });
-    // Return a wrapped version of useState's setter function that ...
-    // ... persists the new value to localStorage.
-    const setValue = (value) => {
-      try {
-        // Allow value to be a function so we have same API as useState
-        const valueToStore =
-          value instanceof Function ? value(storedValue) : value;
-        // Save state
-        setStoredValue(valueToStore);
-        // Save to local storage
-        if (typeof window !== "undefined") {
-          window.localStorage.setItem(key, JSON.stringify(valueToStore));
-        }
-      } catch (error) {
-        // A more advanced implementation would handle the error case
-        console.log(error);
-      }
-    };
-    return [storedValue, setValue];
-  }
+  import useLocalStorage from "./useLocalStorage";
+  // import topActivities from "../data/topActivities"
+
   const defaultSearcher = new Searcher(activitiesData, {
     keySelector: (activity) => {
       return [activity.title, activity.descripció, ...activity.etiquetes];
@@ -71,38 +29,64 @@ import {
     }, []);
     return hasMounted;
   }
+  function isValueInRange(range, value) {
+    return range[0] <= value && range[1] >= value;
+  }
+
+  export default function List({ query, setQuerySearch, onClickDelete }) {
   
-  export default function List({ query, setQuerySearch }) {
-    const [sliderage, setSliderage] = useState(4);
-    const [sliderpart, setSliderpart] = useState(0);
-    const [exterior, setExterior] = useState(false);
-    const [interior, setInterior] = useState(false);
     const [activities, setActivities] = useState([...activitiesData]);
     const [searcher, setSearcher] = useState(defaultSearcher);
-    const [etiquetesFilter, setEtiquetesFilter] = useState([])
-    const [maxAge, setMaxAge] = useState([])
-    const [maxPart, setMaxPart] = useState([])
+    const [etiquetesFilter, setEtiquetesFilter] = useState([]);
+    const [maxAge, setMaxAge] = useState([]);
+    const [maxPart, setMaxPart] = useState([]);
     const [favoritesIds, setFavoritesIds] = useLocalStorage("favorites", []);
-    
-    const router = useRouter()
-
+  
+    const router = useRouter();
+  
     useEffect(() => {
       const handleStart = (url) => {
-        console.log(`Loading: ${url}`)
-        setMaxAge([])
-        setMaxPart([])
-        setEtiquetesFilter([])
-        setQuerySearch()
-        console.log("this is my query", {query})
+        console.log(`Loading: ${url}`);
+        setMaxAge([]);
+        setMaxPart([]);
+        setEtiquetesFilter([]);
+        setQuerySearch();
+      };
   
-      }
-  
-      router.events.on('routeChangeStart', handleStart)
+      router.events.on("routeChangeStart", handleStart);
   
       return () => {
-        router.events.off('routeChangeStart', handleStart)
+        router.events.off("routeChangeStart", handleStart);
+      };
+    }, [router]);
+    
+    // useEffect(() => {
+    //   for (let i = 0; i < topActivities.length; i++) {
+    //   setActivities((prevState) =>{
+    //     const newActivities = [...prevState]
+    //     newActivities.push(topActivities[i])
+    //     return newActivities
+    //   })
+    // }
+    // }, [])
+
+    useEffect(() => {
+      const localActivities = JSON.parse(localStorage.getItem("localActivities"));
+
+      if (localActivities != null) {
+        for (let i = 0; i < localActivities.length; i++) {
+          if (!activities.id?.includes(localActivities[i].id)) {
+            setActivities((prevState) => {
+              const newActivities = [...prevState];
+              newActivities.push(localActivities[i]);
+              return newActivities;
+            });
+          }
+        }
       }
-    }, [router])
+    }, []);
+
+
 
     useEffect(() => {
       const searcher = new Searcher(activities, {
@@ -112,84 +96,115 @@ import {
       });
       setSearcher(searcher);
     }, [activities]);
-
-    
-    
-    const filtrao = query === "" ? activities : searcher.search(query);
-    const filtrito = favoritesIds === "" ? filtrao : filtrao.filter((activity) => favoritesIds.includes(activity.id))
-    const filteredAge = maxAge.length === 0 ? filtrito : filtrao.filter((activity) => activity.edatmin >= Math.min(...maxAge) - 4 || activity.edatmax <= Math.max(...maxAge))
-    console.log("this is my filteredAge array", filteredAge)
-    console.log("this is my maxPart", maxPart)
-    const filteredPart = maxPart.length === 0 ? filteredAge : filteredAge.filter((activity) => activity.participantsmin >= Math.min(...maxPart) - 10 || activity.participantsmax <= Math.max(...maxPart))
-    console.log("this is my filteredPart array", filteredPart)
-    const filteredFinal = etiquetesFilter.length === 0 ? filteredPart : filteredPart.filter((activity) => etiquetesFilter.every((etiqueta) => activity.etiquetes.includes(etiqueta))) 
-      
-      // var totalIds = activities.filter((activity) => activity.isFavorite === true)
-      // .map((activity) => activity.id)
-      // console.log("this is my totalIds", totalIds)
   
+    const filteredQuery = query === "" ? activities : searcher.search(query);
+    const filteredFavorites = favoritesIds === "" ? filteredQuery : filteredQuery.filter((activity) => favoritesIds.includes(activity.id))
+    const filteredAge =
+      maxAge.length === 0
+        ? filteredFavorites
+        : filteredFavorites.filter((activity) => {
+            return maxAge.some(
+              (ageInterval) =>
+                isValueInRange(ageInterval, activity.edatmin) ||
+                isValueInRange(ageInterval, activity.edatmax)
+            );
+          });
   
-  
-    console.log("this is my favoriteIds", favoritesIds)
+    const filteredPart =
+      maxPart.length === 0
+        ? filteredAge
+        : filteredAge.filter((activity) => {
+            return maxPart.some((partInterval) => {
+              return (
+                isValueInRange(partInterval, activity.participantsmin) ||
+                isValueInRange(partInterval, activity.participantsmax)
+              );
+            });
+          });
+    const filteredFinal =
+      etiquetesFilter.length === 0
+        ? filteredPart
+        : filteredPart.filter((activity) =>
+            etiquetesFilter.every((etiqueta) =>
+              activity.etiquetes.includes(etiqueta)
+            )
+          );
   
     const hasMounted = useHasMounted();
     if (!hasMounted) {
       return null;
     }
-    console.log("this is my filteredfinallength inside favorites", filteredFinal.length)
-    return (
-    favoritesIds.length === 0 ? <NoFavorites/> :
-    filteredFinal.length === 0 ? <NoResults/> :
-    <div className="bg-white shadow overflow-hidden sm:rounded-md">
-    <div className=" my-4">
-        <CustomFilter
-            etiquetesFilter={etiquetesFilter}
-            maxAge={maxAge}
-            maxPart={maxPart}
-            onQueryChangePart={(newQuery) => {
-              setMaxPart((prevState) =>{
-                const newPart = [...prevState]
-                if(!maxPart.includes(parseInt(newQuery))){
-                  newPart.push(parseInt(newQuery))
-                  return newPart
-                }
-                else if(maxPart.includes(parseInt(newQuery))){
-                    const index = newPart.indexOf(newQuery)
-                    newPart.splice(index, 1)
-                    return newPart
-                } 
-              })
-            }}
-            onQueryChangeEtiquetes={(newQuery) => {
-              setEtiquetesFilter((prevState) =>{
-                const newEtiquetes = [...prevState]
-                if(!etiquetesFilter.includes(newQuery)){
-                  newEtiquetes.push(newQuery)
-                  return newEtiquetes
-                }
-                else if(etiquetesFilter.includes(newQuery)){
-                    const index = newEtiquetes.indexOf(newQuery)
-                    newEtiquetes.splice(index, 1)
-                    return newEtiquetes 
-                } 
-              })
-            }}
-            onQueryChangeAge={(newQuery) => {
-              setMaxAge((prevState) =>{
-                const newAges = [...prevState]
-                if(!maxAge.includes(parseInt(newQuery))){
-                  newAges.push(parseInt(newQuery))
-                  return newAges
-                }
-                else if(maxAge.includes(parseInt(newQuery))){
-                  const index = newAges.indexOf(newQuery)
-                  newAges.splice(index, 1)
-                  return newAges
-                }
-              })
-            }}
-          />
-        </div>
+   
+    return <div>{favoritesIds.length === 0 ? <NoFavorites/> : (
+      <div className={filteredFinal.length === 0 ? "bg-gray-50 shadow overflow-hidden sm:rounded-md" : " bg-white shadow overflow-hidden sm:rounded-md" }>
+    <div className="my-4">
+      <CustomFilter
+    etiquetesFilter={etiquetesFilter}
+    maxAge={maxAge}
+    maxPart={maxPart}
+    onQueryChangePart={(newQuery) => {
+      setMaxPart((prevState) => {
+        const newPart = [...prevState];
+        const alreadyHasNewQuery = newQuery.every((element) => {
+          return maxPart.some((interval) => interval.includes(element));
+        });
+  
+        if (alreadyHasNewQuery) {
+          const index = newPart.indexOf(newQuery);
+          newPart.splice(index, 1);
+          return newPart;
+        } else {
+          newPart.push(newQuery);
+          return newPart;
+        }
+      });
+    }}
+    onQueryChangeEtiquetes={(newQuery) => {
+      setEtiquetesFilter((prevState) => {
+        const newEtiquetes = [...prevState];
+        if (!etiquetesFilter.includes(newQuery)) {
+          newEtiquetes.push(newQuery);
+          return newEtiquetes;
+        } else if (etiquetesFilter.includes(newQuery)) {
+          const index = newEtiquetes.indexOf(newQuery);
+          newEtiquetes.splice(index, 1);
+          return newEtiquetes;
+        }
+      });
+    }}
+    onQueryChangeAge={(newQuery) => {
+      setMaxAge((prevState) => {
+        const newAges = [...prevState];
+        if (
+          newQuery.every((element) => {
+            return (
+              maxAge[0]?.includes(element) ||
+              maxAge[1]?.includes(element) ||
+              maxAge[2]?.includes(element) ||
+              maxAge[3]?.includes(element)
+            );
+          }) === false
+        ) {
+          newAges.push(newQuery);
+          return newAges;
+        } else if (
+          newQuery.every((element) => {
+            return (
+              maxAge[0]?.includes(element) ||
+              maxAge[1]?.includes(element) ||
+              maxAge[2]?.includes(element) ||
+              maxAge[3]?.includes(element)
+            );
+          }) === true
+        ) {
+          const index = newAges.indexOf(newQuery);
+          newAges.splice(index, 1);
+          return newAges;
+        }
+      });
+    }}
+  /> 
+    {filteredFinal.length === 0 ? <NoResults/> :
         <ul role="list" className="divide-y divide-gray-200">
           {filteredFinal.map((activity) => (
             favoritesIds.includes(activity.id) &&
@@ -214,6 +229,23 @@ import {
                   })
                 }}
                 />
+                {activity.etiquetes.includes("Custom") && 
+              <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-6 ml-auto"
+              fill="none"
+              onClick={onClickDelete}
+              viewBox="0 0 24 24"
+              stroke="black"
+              strokeWidth={1.5}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
+              />
+            </svg>
+          }
               <Link
                 href={"/activity/" + activity.id}
                 className="block hover:bg-gray-50"
@@ -222,14 +254,14 @@ import {
                   <div className="px-4 py-4 sm:px-6">
                     <div className="flex items-center justify-between">
                       <div className="sm:flex">
-                        <p className="flex text-sm font-medium text-indigo-600 truncate mr-6">
-                          {activity.title}
+                      <p className={activity.isSong ? "flex text-sm font-medium text-purple-600 truncate mr-6" : activity.etiquetes.includes("Custom") ? "flex text-sm font-medium text-red-700 truncate mr-6" : activity.isHot ? "flex text-sm font-medium text-amber-600 truncate mr-6" : "flex text-sm font-medium text-indigo-600 truncate mr-6"}>
+                          {activity.isSong ? `${activity.title} 🎵`: activity.title}
                         </p>
                         <div className="flex-shrink-0 flex flex-wrap">
                           {activity.etiquetes.map((etiqueta) => (
                             <p
                               key={etiqueta}
-                              className="px-2 my-2 sm:my-0 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800"
+                              className={etiqueta != "Custom" ? "px-2 my-2 sm:my-0 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800" : "px-2 my-2 sm:my-0 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800"}
                             >
                               {etiqueta}
                             </p>
@@ -239,21 +271,22 @@ import {
                     </div>
                     <div className="mt-2 sm:flex sm:justify-between">
                       <div className="sm:flex">
-                        <p className="flex items-center text-sm text-gray-500">
+                      {activity.isSong && <p className="mx-2 font-normal text-sm">Edats: {activity.edatmin}-{activity.edatmax}</p>}
+                      <p className={activity.isSong ? "hidden" : "flex items-center text-sm text-gray-500"}>
                           <UsersIcon
                             className="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
                             aria-hidden="true"
                           />
-                          {activity.participants}
+                          {activity.participantsmin}-{activity.participantsmax}
                         </p>
                         <p className="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 sm:ml-6">
                           <LocationMarkerIcon
-                            className="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
+                            className={!activity.etiquetes.includes("Exterior") && !activity.etiquetes.includes("Interior") ? "hidden" : "flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"}
                             aria-hidden="true"
                           />
-                          {activity.espai}
+                         {activity.etiquetes.includes("Exterior") && activity.etiquetes.includes("Interior") ? "Exterior/Interior" : (activity.etiquetes.includes("Exterior") ? "Exterior" :(activity.etiquetes.includes("Interior") ? "Interior" : ""))}
                         </p>
-                        <p className="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 sm:ml-6">
+                        <p className={activity.isSong ? "hidden" : "mt-2 flex items-center text-sm text-gray-500 sm:mt-0 sm:ml-6"}>
                           <ClockIcon
                             className="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
                             aria-hidden="true"
@@ -273,7 +306,9 @@ import {
             </li>
           ))}
         </ul>
-      </div>
-    );
-  }
-  
+    }
+  </div>
+  </div>
+    )}
+    </div>
+    }

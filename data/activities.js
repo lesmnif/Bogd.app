@@ -77,7 +77,7 @@ const activities = [
         </ul>
       </div>
     ),
-    etiquetes: ["Competitiu", "Cooperatiu", "Grans Jocs", "Interior"],
+    etiquetes: ["Competitiu", "Cooperatiu", "Grans jocs", "Interior"],
     isFavorite: false,
   },
   {
@@ -116,7 +116,7 @@ const activities = [
     desenvolupament: `Delimitem la zona de joc marcant dos espais iguals i dividits per una línia marcada al terra. Un equip es posa en un dels espais i ha de passar a l'altre espai de joc per anar a recollir algun objecte concret: mocador, tresor, bandera... L'altre equip es col·loca a sobre de la línia marcada al terra amb els ulls tapats. Mentre el primer equip intenta passar de camp i agafar l'objecte, el segon equip, amb els ulls tapats, intenta atrapar els jugadors de l'equip contrari quan passen per allà. Els jugadors que siguin atrapats passen a formar part de l'equip que té els ulls tapats. Guanya l'equip que aconsegueix assolir el seu objectiu de joc.`,
     avaluació:
       "Un cop feta una partida, es pot fer un canvi de papers dels jugadors perquè cadascun d'ells expliqui com s'ha sentit i quin paper li ha agradat més. Si veiem que l'espai de joc és massa petit el podem fer més gran. En funció de l'edat dels infants, podem anar afegint normes per fer-lo més complicat o buscant un espai més petit i recollit per a fer-lo més fàcil. També es pot fer que els objectes a agafar siguin més d'un.",
-    etiquetes: ["Competitiu", "Coneixença", "Exterior", "Grans Jocs"],
+    etiquetes: ["Competitiu", "Coneixença", "Exterior", "Grans jocs"],
     isFavorite: false,
   },
   {
@@ -176,7 +176,7 @@ const activities = [
       </div>
     ),
     etiquetes: ["Competitiu", "Exterior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 4,
@@ -238,7 +238,7 @@ const activities = [
     avaluació:
       "Si desitgem fer aquesta activitat un dissabte d'esplai o amb un grup nombrós, sempre podem començar tots junts amb el taller de personalitzar les xapes i després organitzar diferents partides a mode de campionat amb rondes de classificació, però recordeu que si el que volem és passar una bona estona el que haurem de fer és evitar qualsevol rivalitat i donar unes pautes ben clares per tal d'impedir que la competitivitat sigui un objectiu per als participants.",
     etiquetes: ["Competitiu", "Exterior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 5,
@@ -308,7 +308,7 @@ const activities = [
     avaluació:
       "Opinar sobre l’ajuda, companyonia i confiança del grup. No hem d’oblidar que cal tenir una bona punteria i una bona coordinació dins l’equip.",
     etiquetes: ["Competitiu", "Esportiu", "Exterior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 6,
@@ -362,7 +362,7 @@ const activities = [
     avaluació:
       "Aquest pot ser un joc molt adequat per treballar temes com el bullying, la marginació o l'exclusió social. Com s'han sentit mentre jugaven? Com s'ha sentit el primer a perdre totes les vides? I quan ja era només un? Fem sentir així els altres, els amics o companys de l'esplai...?",
     etiquetes: ["Competitiu", "Interior", "Exterior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 7,
@@ -433,7 +433,7 @@ const activities = [
     avaluació:
       "Mitjançant aquesta activitat els nens podran gaudir i aprendre descobrint un esport poc conegut al nostre país. ",
     etiquetes: ["Competitiu", "Exterior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 8,
@@ -489,7 +489,7 @@ const activities = [
         
         En qualsevol moment del joc podem fer una anàlisi per a valorar el possible ús del material que llencem i com podem aprofitar materials de rebuig per jugar sense haver de comprar res, aprofitant els recursos del nostre dia a dia.`,
     etiquetes: ["Competitiu", "Exterior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 9,
@@ -525,8 +525,8 @@ const activities = [
     desenvolupament: `Diem el nom del primer fantasma i la resta comença a caminar en la mateixa direcció i en absolut silenci. L'objectiu del fantasma és agafar els peus d'algú i intentar endevinar-ne el nom. Quan hagi agafat uns peus ha de dir el nom d'aquella persona; en cas de no encertar-lo, continuarà fent de fantasma i ho provarà amb algú altre; si l'encerta, la persona que ha dit passarà a ser el fantasma coix i continuarem jugant. El joc acaba quan els monitors ho decideixin, o quan tothom hagi fet una vegada de fantasma.`,
     avaluació:
       "En acabar es fa una reflexió amb el grup sobre com s'han sentit i quines emocions han experimentat.",
-    etiquetes: ["Competitiu", "Interior", "Jocs Curts"],
-    isFavorite: false  
+    etiquetes: ["Competitiu", "Interior", "Jocs curts"],
+    isFavorite: false,
   },
   {
     id: 10,
@@ -576,7 +576,7 @@ const activities = [
     avaluació:
       "En aquest joc, sempre n'hi ha un que guanya, però es pot modificar la darrera norma fent que no hi hagi cap eliminat. S'atura quan ho decideix el monitor i es fa una reflexió final conjunta en la qual tots poden opinar sobre com ha anat el desenvolupament del joc i amb quins problemes/dificultats s'han trobat. Per a més informació, podeu visitar www.tamcat.org",
     etiquetes: ["Competitiu", "Esportiu", "Exterior", "Interior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 11,
@@ -612,7 +612,7 @@ const activities = [
     avaluació:
       "Quan finalitzi l’activitat, seurem tots i demanarem què els ha semblat. Podem fer que la puntuïn en un tauler amb gomets: el verd voldrà dir que ha agradat i el vermell que no ha agradat.",
     etiquetes: ["Competitiu", "Interior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 12,
@@ -643,7 +643,7 @@ const activities = [
     avaluació:
       "Al finalitzar l’activitat seurem tots i demanarem que els hi ha semblat l’activitat. Per equips hauran d’arribar a un consens i posar una nota del 1 al 10 i justificar per quin motiu li han posat aquesta nota.",
     etiquetes: ["Competitiu", "Exterior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 13,
@@ -692,7 +692,7 @@ const activities = [
     avaluació:
       "Mitjançant aquesta activitat els nens podran gaudir i apendre descobrint un esport poc conegut al nostre pais.",
     etiquetes: ["Competitiu", "Cooperatiu", "Esportiu", "Exterior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 14,
@@ -734,7 +734,7 @@ const activities = [
     avaluació:
       "Comentarem el desenvolupament del joc i quina ha estat la reacció de l'equip guanyador i també la del perdedor en cas de que n'hi hagin. ",
     etiquetes: ["Competitiu", "Exterior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 15,
@@ -770,7 +770,7 @@ const activities = [
     avaluació:
       "Aquesta activitat no només inclou la part lúdica del propi joc sinó que proposa una anàlisi posterior amb els participants, on tractar els diferents factors que s’hagin succeït durant la partida relatius als problemes de comunicació per l’ús de WhatsApp o Telegram.",
     etiquetes: ["Competitiu", "Interior", "Exterior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 16,
@@ -814,7 +814,7 @@ const activities = [
     avaluació:
       "Veurem com la població de senglars varia en funció del nombre de recursos que hi ha. Podem simular situacions com un incendi (només hi hauria refugi) per observar com afecta a la dinàmica. Una pissarra Vileda ens pot anar molt bé per fer una gràfica amb el nombre de senglars per torns.",
     etiquetes: ["Competitiu", "Sense material", "Exterior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 17,
@@ -846,7 +846,7 @@ const activities = [
     avaluació:
       "Un cop finalitzat el joc es pot reunir el grup per posar en comú l’experiència.",
     etiquetes: ["Competitiu", "Coneixença", "Narració i expressió", "Exterior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 18,
@@ -883,7 +883,7 @@ const activities = [
     avaluació:
       "Es valorarà l'ambient general de l'activitat i si els infants han respectat les normes del joc, tot incidint en la dificultat i la necessitat del silenci.",
     etiquetes: ["Competitiu", "Interior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 19,
@@ -938,11 +938,11 @@ const activities = [
       "Competitiu",
       "Cooperatiu",
       "Exterior",
-      "Grans Jocs",
+      "Grans jocs",
       "Interior",
-      "Jocs de Nit",
+      "Jocs de nit",
     ],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 20,
@@ -989,7 +989,7 @@ const activities = [
       "Interior",
       "Exterior",
     ],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 21,
@@ -1049,8 +1049,8 @@ const activities = [
         
         5. En tot moment, sigui quin sigui el nombre de jugadors s'ha de continuar el joc intentant capturar l'adversari.`,
     avaluació: `Quan els jugadors hagin fet la primera ronda, segur que voldran repetir per desenvolupar o millorar estratègies de captura. En un moment donat del joc -a criteri del monitor, per equilibrar forces, per donar més joc o per allargar el joc- pot introduir una variant. Es traça ràpidament una segona línia paral·lela a la principal a un metre de distància i es fa passar pel passadís format els jugadors que han perdut (primer els d'un equip i després els de l'altre). Han de fer- ho d'un en un evitant que els seus captadors els puguin tornar a capturar. Aquest cop el seu equip no els pot ajudar. Els jugadors que aconsegueixin passar sense ser capturats tornaran al seu equip. El joc recomençarà on s'havia quedat.`,
-    etiquetes: ["Competitiu", "Exterior", "Jocs Curts"],
-    isFavorite: false  
+    etiquetes: ["Competitiu", "Exterior", "Jocs curts"],
+    isFavorite: false,
   },
   {
     id: 22,
@@ -1082,8 +1082,8 @@ const activities = [
     introducció: `Primerament m'agradaria dir que el nom del joc no m'agrada imposar-lo, és a dir, prefereixo que siguin els propis infants els que bategin el joc, sempre i quan sigui un grup amb el que tenim una certa continuïtat. Dit això, per començar el joc els infants es distribuiran per l'espai, cadascun a dins del seu cercle excepte d'un (o dos o tres si tenim un grup nombrós) que es situarà al mig de tots ells sense cercle.`,
     desenvolupament: `A la nostra senyal els infants hauran de canviar ràpidament de cercle, d'aquesta manera el que no en tenia n'haurà d'ocupar el d'un altre, de manera que l'infant que es queda sense cercle anirà canviant constantment. També podem utilitzar la variant de jugar de la mateixa manera però per parelles (també pot ser mixta) i agafats de la mà, així treballarem la cooperació per poder arribar a l'objectiu.`,
     avaluació: `Finalitzarem l'activitat parlant amb els infants sobre si el joc ha anat com ells esperaven (així rebem feedback) i també com l'hem vist des de fora nosaltres, posant èmfasi en els objectius que ens havíem marcat inicialment. Si s'escau també serà el moment de posar nom a l'activitat.`,
-    etiquetes: ["Competitiu", "Exterior", "Interior", "Jocs Curts", "Esportiu"],
-    isFavorite: false  
+    etiquetes: ["Competitiu", "Exterior", "Interior", "Jocs curts", "Esportiu"],
+    isFavorite: false,
   },
   {
     id: 23,
@@ -1170,7 +1170,7 @@ const activities = [
       "Narració i expressió",
       "Cooperatiu",
     ],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 24,
@@ -1219,7 +1219,7 @@ const activities = [
       "Coneixença",
       "Sense material",
     ],
-    isFavorite: false
+    isFavorite: false,
   },
   {
     id: 25,
@@ -1275,8 +1275,8 @@ const activities = [
         Ens servirà per saber com reaccionen els infants davant del resultat de la partida.
         Si fem servir alguna de les variants proposades podem analitzar com s’ha treballat la confiança entre els membres de cada equip, quins són els infants més ràpids en desplaçar-se d’un espai a l’altre, quins companys s’ajuden entre ells...
         És un joc que ens pot donar informació sobre quins són els rols de cada infant dins d’un equip de joc.`,
-    etiquetes: ["Competitiu", "Jocs de Nit", "Exterior"],
-    isFavorite: false  
+    etiquetes: ["Competitiu", "Jocs de nit", "Exterior"],
+    isFavorite: false,
   },
   {
     id: 26,
@@ -1330,8 +1330,8 @@ const activities = [
     avaluació: `Durant el joc podem observar com els infants es relacionen entre ells.
         Al final del joc podem preguntar als infants: com s’han sentit i què els ha semblat més difícil i com ho modificarien.
         Podem observar quines facilitats o dificultats tenen els infants a l’hora de jugar a aquesta activitat.`,
-    etiquetes: ["Competitiu", "Exterior", "Jocs Curts"],
-    isFavorite: false  
+    etiquetes: ["Competitiu", "Exterior", "Jocs curts"],
+    isFavorite: false,
   },
   {
     id: 27,
@@ -1379,7 +1379,7 @@ const activities = [
         L’equip d’educadors en algunes de les dinàmiques anirà presentant emocions que no hagin aparegut al llistat inicial per tal d’anar ampliant el vocabulari emocional. Aquestes paraules s’aniran afegint al mural i l’aniran enriquint.`,
     avaluació: `Al finalitzar del curs es realitzarà una dinàmica per tal que els infants se n’adonin de la gran quantitat d’emocions que són capaços de sentir. Se’ls pot proposar realitzar petites dramatitzacions on es representin les emocions viscudes, escriure petites cites on expliquin la importància de ser conscient de tot allò que sentim.`,
     etiquetes: ["Coneixença"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 28,
@@ -1427,7 +1427,7 @@ const activities = [
         En la mesura que els infants vagin acabant de pintar les siluetes les anirem penjant a la paret i ambientarem la sala amb una música de fons que agradi a tot al grup i que afavoreixi un bon clima.`,
     avaluació: `Quan totes les siluetes estiguin penjades donarem retoladors als infants i aquests hauran d’escriure frases positives i afirmatives a les siluetes que representen cadascun dels membres del grup. L’activitat acaba quan tothom ha pogut expressar-se en les diferents siluetes.`,
     etiquetes: ["Coneixença", "Cooperatiu", "Interior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 29,
@@ -1464,7 +1464,7 @@ const activities = [
     avaluació:
       "Finalitzarem l’activitat parlant amb els infants sobre si el joc ha anat com ells esperaven (així rebem feedback) i també com l’hem vist des de fora nosaltres, posant èmfasi en els objectius que ens havíem marcat inicialment. Si s’escau també serà el moment de posar nom a l’activitat.",
     etiquetes: ["Coneixença", "Cooperatiu", "Interior", "Exterior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 30,
@@ -1498,9 +1498,9 @@ const activities = [
       "Cooperatiu",
       "Interior",
       "Exterior",
-      "Jocs Curts",
+      "Jocs curts",
     ],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 31,
@@ -1532,8 +1532,8 @@ const activities = [
         
         Això sí, les preguntes no poden fer esment a temes físics, de gènere o de nacionalitat.`,
     avaluació: `Al final de la dinàmica es fa una reflexió sobre el que ens ha unit. Ha estat el fet de ser noi o noia, el país de procedència o la condició física, intel·lectual o sensorial? Independentment de la nacionalitat, gènere o condició física, tenim més coses en comú del que podem arribar a pensar. Això ens ha de permetre viure i conviure.`,
-    etiquetes: ["Coneixença", "Interior", "Jocs Curts"],
-    isFavorite: false  
+    etiquetes: ["Coneixença", "Interior", "Jocs curts"],
+    isFavorite: false,
   },
   {
     id: 32,
@@ -1569,7 +1569,7 @@ const activities = [
     avaluació: `Quan tothom hagi acabat l’itinerari, pregunteu quants han vist i quins recorden. Podeu comparar la seva agudesa visual amb la d’alguns animals: si han vist entre 0 i 4 objectes tenen vista de talp, entre 5 i 8 vista de gos i si n’han vist 9 o 10 vista d’àliga. Farem la reflexió de que tot i que sabien que hi havia objectes amagats no els han pogut veure tots... a la natura hi ha moltes coses que no veiem!
         Desfarem el camí recollint els objectes i aprofitarem per parlar de quins colors han estat més fàcils de veure i quin significat tenen a la natura: camuflatge, alerta de perill, atracció d’insectes pol·linitzadors...`,
     etiquetes: ["Coneixença", "Exterior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 33,
@@ -1662,7 +1662,7 @@ const activities = [
         
         -Podem aprofitar per parlar d'animals. On viuen, què mengen, etc.`,
     etiquetes: ["Coneixença", "Exterior", "Interior", "Cooperatiu"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 34,
@@ -1708,7 +1708,7 @@ const activities = [
         Serà el moment d'agafar un smartphone perquè cadascú es presenti tot parlant de les qualitats apuntades.`,
     avaluació: `Després de fer totes les gravacions individuals, en una tauleta, smarpthone o televisor posarem en comú tots els vídeos. D'aquesta manera, ja tindrem tot el material per enviar a la productora. Amb aquesta dinàmica, els joves hauran treballat la seva autoestima tot posant en valor les seves qualitats i, a més, observant quins aspectes positius veuen els seus companys en ells.`,
     etiquetes: ["Coneixença", "Interior", "Cooperatiu"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 35,
@@ -1756,8 +1756,8 @@ const activities = [
     introducció: `Els dos membres de la parella s'han de situar donant-se l'esquena. Un d'ells romandrà amb els ulls tapats amb una bena o mocador i tindrà un objecte que no haurà vist prèviament. L'altre participant, que tampoc haurà vist l'objecte, l'haurà de dibuixar seguint la descripció del company.`,
     desenvolupament: `Quan els participants estiguin disposats correctament, es tapen els ulls d'un dels membres de la parella i posteriorment se li entrega un objecte. Mentre es familiaritza amb l'objecte l'ha d'anar descrivint de manera que l'altre membre de la parella pugui plasmar al paper allò que ell està tocant. Un cop acabat el dibuix, els dos participants poden veure l'objecte, de manera que podran comparar la realitat amb el que ells han percebut, descrit, entès i dibuixat.`,
     avaluació: `Quan els participants veuen el dibuix al costat de l'objecte, és important que valorin com s'ajusta a la realitat. Tot i saber dibuixar millor o pitjor, el que és important, és que siguin capaços de reconèixer aquelles parts que han sabut identificar mitjançant el tacte i de quina manera ho han comunicat, així com l'atenció que prenem al que ens expliquen els altres. Sovint les persones no ens entenem, ja sigui perquè no ens sabem explicar o perquè interpretem els missatges d'una altra manera. Conèixer aquesta realitat ens pot ajudar a millorar la nostra comunicació.`,
-    etiquetes: ["Coneixença", "Interior", "Jocs Curts"],
-    isFavorite: false  
+    etiquetes: ["Coneixença", "Interior", "Jocs curts"],
+    isFavorite: false,
   },
   {
     id: 36,
@@ -1796,8 +1796,8 @@ const activities = [
         
         Per integrar aquesta frase, se'ls pot demanar que, dintre de la mateixa visualització, identifiquin la frase dintre del seu cos i que li posin forma, olor, color i/o textura i que, poc a poc, imaginin que surt pel melic i que la deixen anar, amb suavitat i amor. Cal que li donin les gràcies i la deixin anar amb tranquil·litat i alliberament. Amb aquesta sensació, donarem per acabada la visualització i demanarem als participants que tornin a la sala.`,
     avaluació: `A continuació posarem en comú les sensacions i emocions viscudes per cadascun dels monitors i les monitores. Quines han estat aquestes frases? Quines han estat les conseqüències que heu pogut veure? També farem una reflexió conjunta de com aquests introjectes i limitacions els traslladem, cadascú, a la nostra tasca educativa. Recordem que l'actitud del dinamitzador/a ha de ser amorosa i respectuosa amb el que vagi sortint. És important no jutjar i donar espai perquè tothom qui ho vulgui pugui compartir allò que li succeeix.`,
-    etiquetes: ["Coneixença", "Narració i expresió", "Interior"],
-    isFavorite: false  
+    etiquetes: ["Coneixença", "Narració i expressió", "Interior"],
+    isFavorite: false,
   },
   {
     id: 37,
@@ -1851,12 +1851,12 @@ const activities = [
     avaluació: `Un cop acaba l'activitat, caldrà fer la reflexió conjunta i entre tots fer propostes que puguin ajudar a reduir aquest greu impacte en l'ecosistema marí.`,
     etiquetes: [
       "Coneixença",
-      "Narració i expresió",
+      "Narració i expressió",
       "Cooperatiu",
       "Exterior",
       "Interior",
     ],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 38,
@@ -1929,7 +1929,7 @@ const activities = [
         Quan acabem de pujar parets podem començar a cobrir espais fent teulades, sostres, portes, finestres, vidrieres, etc. a partir de les formes que ens suggereixin les parets de la nostra construcció. També podem decorar l'interior i els voltants de la casa. Si fem servir pastes o fang hi podem posar palets per a fer les bigues del sostre, palletes de beguda, palla... Si ho fem amb cartró o poliestirè expandit, hi podem afegir cartolines de colors, tela de sac.. Si ho hem fet amb fang o amb un cartró gruixut, un cop seca l'estructura podem pintar-la amb témperes de colors o acrílics, molt adients per a pintar a sobre del porexpà.`,
     avaluació: `Afavorim el treball creatiu i potenciem l'observació de l'entorn i la relació entre els membres del grup. Acabades les maquetes, podem exposar-les en conjunt formant una ciutat.`,
     etiquetes: ["Coneixença", "Cooperatiu", "Exterior", "Interior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 39,
@@ -1980,10 +1980,10 @@ const activities = [
       "Cooperatiu",
       "Exterior",
       "Interior",
-      "Jocs Curts",
-      "Sense Material",
+      "Jocs curts",
+      "Sense material",
     ],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 40,
@@ -2015,7 +2015,7 @@ const activities = [
 
         Finalment, conclourem amb els objectius aconseguits i analitzarem les conclusions a les quals hem arribat de l’esplai ideal que volem.`,
     etiquetes: ["Cooperatiu", "Exterior", "Interior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 41,
@@ -2073,7 +2073,7 @@ const activities = [
 
         De vegades, pot passar que el personatge s’hagi repetit més d’una vegada. És un bon joc per treballar la memòria i recordar com han definit els companys els personatges per usar estratègies pròpies`,
     etiquetes: ["Cooperatiu", "Exterior", "Interior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 42,
@@ -2110,7 +2110,7 @@ const activities = [
         Guanya qui més parelles ha aconseguit aparellar. Serà el que té l’oïda més fina!`,
     avaluació: `Es comprova, obrint els pots que les parelles es corresponen`,
     etiquetes: ["Cooperatiu", "Exterior", "Interior", "Narració i expressió"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 43,
@@ -2153,7 +2153,7 @@ const activities = [
         Per fer-ho fins i tot millor, un grupet es queda fora de la sala i van entrant d’un en un. Així desconeixen l’existència del mocador.`,
     avaluació: `Qualsevol detall serveix per discriminar. Cal fer notar el sentiment d’impotència, incomprensió i solitud de la persona discriminada i, per contra, com el grup no s’escandalitza, perquè ho troba normal. `,
     etiquetes: ["Cooperatiu", "Interior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 44,
@@ -2183,8 +2183,8 @@ const activities = [
     avaluació: `Es tracta d'una activitat on es trenca el rol de gènere: és la dona qui guanya l'home, i no se la representa com una persona submisa a ell. S'esborra la imatge de la princesa que només fa que esperar el seu príncep blau que vingui a rescatar-la. Es pot utilitzar com a breu activitat per introduir el tema del gènere amb l'equip de monitores i monitors o amb el grup de joves. A partir d'aquí es pot reflexionar sobre els rols que sempre s'associen a homes i dones. Un punt de partida són els contes clàssics.
  
         Amb infants no caldrà fer tota aquesta reflexió, però sí que caldrà apuntar com és que la dona pot guanyar el príncep, i si a la vida real és així.`,
-    etiquetes: ["Cooperatiu", "Jocs Curts", "Interior"],
-    isFavorite: false  
+    etiquetes: ["Cooperatiu", "Jocs curts", "Interior"],
+    isFavorite: false,
   },
   {
     id: 45,
@@ -2235,7 +2235,7 @@ const activities = [
         Guia per a conèixer els arbres. Francesc Masclans. Ed. Flor del vent.
         Guia dels arbres dels Països Catalans. Ramon Pascual. Ed Pòrtic.`,
     etiquetes: ["Cooperatiu", "Exterior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 46,
@@ -2284,7 +2284,7 @@ const activities = [
         • Els grups que acaben el seu quadrat què fan?`,
     avaluació: `És important crear un espai d’intercanvi comentant els aspectes destacats que s’han recollit i relacionar-ho amb les reaccions que tenen davant dels conflictes quotidians.`,
     etiquetes: ["Cooperatiu", "Exterior", "Interior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 47,
@@ -2343,7 +2343,7 @@ const activities = [
 
         El terreny de joc és un rectangle de 40 per 20 metres. Es divideix en dues parts iguals A i B que corren paral·leles a l’amplada del mateix. Els pals s’aixecaran a les divisions A i B, als eixos longitudinals del camp, a una distància dels extrems igual a un terç d’un quadrat. A cada pal es fixarà una cistella. Aquesta haurà d’estar situada a la divisió central i a la vora del mateix, a una alçada de 3,50 metres.`,
     etiquetes: ["Cooperatiu", "Exterior", "Interior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 48,
@@ -2376,7 +2376,7 @@ const activities = [
         La secretaria més exigent els demana 5 grocs i 5 vermells. Per aconseguir-los, s'adonaran que han d'unir tots els butlletins i anar tots els grups junts.`,
     avaluació: `Asseguts en rotllana han de compartir com s'han sentit havent d'anar a tantes secretaries diferents, si els ha posat molt nerviosos, si els ha portat mals de caps, etc. Finalment, transportarem la situació als immigrants per fer un exercici d'empatia i comprensió.`,
     etiquetes: ["Cooperatiu", "Exterior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 49,
@@ -2417,7 +2417,7 @@ const activities = [
         Un contacte constant amb l’exterior (monitors) que ens pugui ajudar en cas que ens quedem bloquejats en alguna pista (per exemple, via Whatsapp o telèfon).`,
     avaluació: `El joc té alguns components interessants per a treballar el grup, com són la necessitat del treball en equip per aconseguir avançar amb les pistes i assolir l’objectiu final (sortir de l’edifici).`,
     etiquetes: ["Cooperatiu", "Jocs de pistes i gimcanes", "Interior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 50,
@@ -2461,10 +2461,10 @@ const activities = [
       "Cooperatiu",
       "Exterior",
       "Interior",
-      "Jocs Curts",
+      "Jocs curts",
       "Sense material",
     ],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 51,
@@ -2500,7 +2500,7 @@ const activities = [
     desenvolupament: `Quan tots els grups tinguin la seva escena pensada i assajada, es començaran a representar davant de la resta de companys, els quals hauran d'endevinar de quins personatges es tracta i de quina relació de poder hi ha en l'acció. L'equip de monitors/es pot fer algun comentari sobre la manera de representar-la si és convenient. Un exemple pot ser un coronel que ordena a un soldat que dispari, un professor que dóna deures a una alumna o una cap donant instruccions a un empleat. Es poden introduir variacions, com per exemple repetir les escenes sense parlar, per tal d'insistir en la gestualitat, o fer-los repetir l'escena parlant amb emocions diferents, com la tristesa, l'alegria o la por.`,
     avaluació: `En acabar es fa una reflexió amb el grup sobre com s'han sentit i quin paper juguen les relacions de poder en la nostra vida quotidiana.`,
     etiquetes: ["Cooperatiu", "Interior", "Sense material"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 52,
@@ -2546,7 +2546,7 @@ const activities = [
         3. Quan ja tenim l'estructura del barret, casc o gorra, només hem d'afegir-hi els elements que cobreixen el cap, amb paper de pinotxo i cinta adhesiva i acabar-lo amb les decoracions que més ens agradin: paper de pinotxo o de seda de colors, cordill, etc.`,
     avaluació: `Aquest taller pot servir per fomentar l'originalitat en els processos creatius. Cal veure si la tècnica ha estat l'adient i si al final del procés el barret està ben construït. També pot ajudar a treballar aspectes quotidians com el respecte pels materials, els espais i l'organització entre el grup d'iguals.`,
     etiquetes: ["Cooperatiu", "Interior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 53,
@@ -2602,8 +2602,8 @@ const activities = [
         Al final del joc, podem preguntar als infants com s'han sentit i què els ha semblat més difícil.
         Podem analitzar amb els infants els pensaments i sentiments viscuts: cooperació, conflicte, acord, subordinació...
         Al final podem fer una anàlisi per a valorar els obstacles i la riquesa de la cooperació.`,
-    etiquetes: ["Cooperatiu", "Interior", "Jocs Curts"],
-    isFavorite: false  
+    etiquetes: ["Cooperatiu", "Interior", "Jocs curts"],
+    isFavorite: false,
   },
   {
     id: 54,
@@ -2649,8 +2649,8 @@ const activities = [
         Què us ha sorprès?
         Amb qui heu estat més vegades junts?
         Què heu trobat a faltar? (així també descobrirem més gustos dels joves)`,
-    etiquetes: ["Cooperatiu", "Interior", "Jocs Curts", "Narració i expressió"],
-    isFavorite: false  
+    etiquetes: ["Cooperatiu", "Interior", "Jocs curts", "Narració i expressió"],
+    isFavorite: false,
   },
   {
     id: 55,
@@ -2690,8 +2690,8 @@ const activities = [
         
         Haver barrejat al grup ens pot convenir de cara a una activitat de coneixença, de reflexió, per fer equips o grups de treball, etc.`,
     avaluació: `És important no fer-se pesat amb aquesta dinàmica, val més una bona pregunta que no allargar-ho com si fos un joc. La fila índia és una posició una mica incòmoda pel grup, no permet la interacció entre els diferents membres i abusar-ne pot portar a situacions en que els participants desconnectin pel fet de no entendre el que s'està fent.`,
-    etiquetes: ["Cooperatiu", "Interior", "Jocs Curts", "Sense material"],
-    isFavorite: false  
+    etiquetes: ["Cooperatiu", "Interior", "Jocs curts", "Sense material"],
+    isFavorite: false,
   },
   {
     id: 56,
@@ -2726,8 +2726,8 @@ const activities = [
     introducció: `Des d’un inici, a l’espai hi ha un seguit d’objectes del quotidià. Tant hi fa la quantitat, però com menys millor. `,
     desenvolupament: `Els participants es col·loquen per parelles o grupets i ordenadament s’acosten als objectes. Amb cinc minuts com a màxim han de pensar un joc breu per la resta de participants que inclogui els objectes que tenen. La gràcia és pensar jocs originals, adaptant jocs coneguts o inventant normes noves. Un cop el tenen, l’expliquen a la resta. Tot seguit l’apliquen tots. A continuació, una altra parella o grupet s’encarrega d’idear un altre joc diferent, que al seu temps explicaran als altres i el jugaran tots junts.`,
     avaluació: `Sempre que sigui possible, és interessant la figura d’un “secretari” que anoti els diferents jocs que van sorgint dels objectes, per recollir i fer tangible la gran quantitat d’opcions que entre tots som capaços de pensar. És una dinàmica útil per fer una mena de brainstorming (pluja d’idees), que ajuda a generar moltes idees i crea un ambient innovador i creatiu.`,
-    etiquetes: ["Cooperatiu", "Interior", "Exterior", "Jocs Curts"],
-    isFavorite: false  
+    etiquetes: ["Cooperatiu", "Interior", "Exterior", "Jocs curts"],
+    isFavorite: false,
   },
   {
     id: 57,
@@ -2756,7 +2756,7 @@ const activities = [
     desenvolupament: `Els participants es disposen per petits grups formant una rotllana. Cada grup té davant seu una fitxa de Preparació, Realització i Avaluació (PRA) en blanc. Per començar, cada grup ha de proposar un seguit d’objectius pedagògics a assolir en la seva respectiva fitxa. Aquests poden ser hipotètics o reals de cada esplai en concret. Un cop hi han escrit tots els membres d’un grup, la fitxa passa al grup de la dreta que, observant els objectius que hi ha a la fitxa que els acaba d’arribar, es plantegen una ambientació. Tot seguit, passen la fitxa altre cop cap a la dreta. Ara, els toca plantejar quin format d’activitat faran (joc de pistes, gimcana, reflexió…). I després la fitxa passa al següent grup, que idearà l’activitat en sí. Després, la fitxa arriba a l’últim grup, que s’encarrega de revisar-la i fer un recull de material i notes a tenir en compte. Finalment, cada fitxa retorna al grup inicial, que comprovarà que sigui una bona activitat per assolir els objectius plantejats.`,
     avaluació: `D’aquesta manera, es generen activitats de manera transversal i grupal, tenint en compte diferents requisits i acollint tots els punts de vista.`,
     etiquetes: ["Cooperatiu", "Interior", "Exterior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 58,
@@ -2800,8 +2800,8 @@ const activities = [
     avaluació: `Durant el joc podem observar com els infants es relacionen entre ells.
         Podem observar com gestionen el fet de ser descoberts.
         Si s’ha aconseguit un espai pla, llis i reconegut per facilitar la participació de discapacitats.`,
-    etiquetes: ["Cooperatiu", "Exterior", "Jocs de Nit"],
-    isFavorite: false  
+    etiquetes: ["Cooperatiu", "Exterior", "Jocs de nit"],
+    isFavorite: false,
   },
   {
     id: 59,
@@ -2847,7 +2847,7 @@ const activities = [
         
         Més informació a www.fcecs.cat`,
     etiquetes: ["Esportiu", "Exterior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 60,
@@ -2891,7 +2891,7 @@ const activities = [
         Es marca un gol quan un jugador de l’equip atacant rep el disc dins de la zona d’anotació de l’altre equip, mitjançant un passada d’un membre del seu equip. Guanya l’equip que més gols aconsegueix.`,
     avaluació: `Durant el joc podem observar com els participants s'autoregulen i adapten les normes del joc. Al final del joc podem preguntar als membres dels equips si coneixien aquest joc i si en sabem d'altres jocs que també utilitzen el disc volador.`,
     etiquetes: ["Esportiu", "Exterior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 61,
@@ -2939,7 +2939,7 @@ const activities = [
         “Quadern blanc”. Fundació Pere Tarrés. Departament d’educació ambiental.
         “Guía de campo de las aves de España y de Europa”. RT Peterson. Ediciones Omega.`,
     etiquetes: ["Esportiu", "Exterior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 62,
@@ -2982,8 +2982,8 @@ const activities = [
         És un bon element per començar a treballar la por.
         
         Referent a l'espai: un pati d’escola o un espai de 50 metres de llarg per 10 metres d’ample. També es pot jugar en un espai interior ampli i sense obstacles.`,
-    etiquetes: ["Exterior", "Jocs Curts"],
-    isFavorite: false  
+    etiquetes: ["Exterior", "Jocs curts"],
+    isFavorite: false,
   },
   {
     id: 63,
@@ -3028,10 +3028,10 @@ const activities = [
       "Cooperatiu",
       "Exterior",
       "Interior",
-      "Jocs Curts",
+      "Jocs curts",
       "Sense material",
     ],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 64,
@@ -3071,7 +3071,7 @@ const activities = [
         Seurem tots a terra i cada grup enganxarà a la cartolina la imatge que hagi guanyat. Així haurem descobert que, per tenir energia durant tot el matí, hem de prendre aquests tres grups d’aliments.`,
     avaluació: `Cada nen explicarà el que haurà dibuixat a l’inici, i haurà de dir si ha fet l’esmorzar correcte o no. A continuació, enganxarà el seu dibuix en una cartolina gran i entre tots haurem construït un mural.`,
     etiquetes: ["Exterior", "Interior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 65,
@@ -3104,8 +3104,8 @@ const activities = [
         En un moment donat el pare gegantàs es desperta i corre a atrapar els altres jugadors i quan atrapa algú se l'emporta a la seva cova i torna a dormir. El joc continua igual unes quantes vegades fins que el director de l'activitat veu que els infants es cansen. Mentre el pare gegantàs va a caçar nens i nens, els de la cova intentaran escapar-se.`,
     avaluació: `Per una banda, amb infants molt petits cal tenir present que no saben què vol dir perseguir. Al començament, és possible que alguns nens que haurien de fugir es deixin atrapar perquè volen canviar el rol. Això s'ha d'anar treballant i en la mesura que en prenguin consciència els infants aniran jugant cada vegada millor als jocs de persecució.
         D'altra banda, en la mesura que els infants entenen aquest tipus de joc són dels jocs que més els agraden. Penseu que els jocs motrius són els més atractius en infants de 5 anys cap endavant.`,
-    etiquetes: ["Exterior", "Jocs Curts"],
-    isFavorite: false  
+    etiquetes: ["Exterior", "Jocs curts"],
+    isFavorite: false,
   },
   {
     id: 66,
@@ -3148,7 +3148,7 @@ const activities = [
         Un nen de cada grup farà de botiguer i la resta, faran de compradors. Aquests estaran repartits en un gran espai, i hauran d’anar a comprar a les diverses botigues, però ho hauran de fer de varies maneres (p.e. passejar i comprar al mercat com si fossin nens petits, avis, animals, sense poder parlar, parlar molt i molt ràpid, parlar molt a poc a poc, cridant...). El monitor és l’encarregat de dinamitzar el joc i dir les modalitats.`,
     avaluació: `Al finalitzar el joc es juntaran per grups, i cadascú ensenyarà el que ha comprat. A continuació, s’haurà de confeccionar un dinar equilibrat. El monitor explicarà que un dinar correcte ha de tenir cereals (encarregats de donar-nos energia), proteïna (encarregat de fer-nos créixer), verdures (encarregats de donar-nos vitamines i minerals) i el postre, on es donarà una peça de fruita o un làctic.`,
     etiquetes: ["Exterior", "Interior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 67,
@@ -3203,7 +3203,7 @@ const activities = [
         Escollirem bolets típics d’on estem fent la descoberta (comestibles o no). El monitor dirà un número i el nom d’un bolet i els nens sortiran a buscar-ne la fotografia.`,
     avaluació: `Al final de la descoberta podem comprovar si els objectius que ens hem marcat els hem assolit.`,
     etiquetes: ["Exterior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 68,
@@ -3246,7 +3246,7 @@ const activities = [
         
         És important que tinguin clar que han d’anar sempre tots junts.`,
     etiquetes: ["Exterior", "Jocs de pistes i gimcanes"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 69,
@@ -3288,7 +3288,7 @@ const activities = [
         Si algun atacant entra en camp contrari i és tocat amb la pilota, és eliminat i en aquella tanda no pot sumar punts. 
         El joc es pot acabar quan els monitors vulguin, però cada equip ha d’haver fet el mateix nombre de tandes d’atacant i de defensor. Es fa la sumatòria de totes les tandes i l’equip amb més punts és el vencedor.`,
     etiquetes: ["Exterior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 70,
@@ -3324,7 +3324,7 @@ const activities = [
         Alerta: el líder de l'equip no pot escollir dues vegades el mateix jugador per encertar la pedreta i recordem que el jugador que l'ha encertat és qui haurà de saltar. Es pot anar canviant de líder cada tres torns.`,
     avaluació: `Cada equip haurà d'avaluar el joc i com s'ha sentit cada jugador en els diferents rols: com a líder, com a jugador participant, com a encertador o com a mentider si tenia la pedreta i no volia fer-ho notar. També l'estratègia del grup i la capacitat de perdre o guanyar.`,
     etiquetes: ["Exterior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 71,
@@ -3389,8 +3389,8 @@ const activities = [
         
         Tot seguit el joc tornarà a començar, tot canviant els rols dels infants.`,
     avaluació: `Finalitzarem l'activitat, tot reflexionant amb els infants sobre les seves sensacions i emocions durant el transcurs del joc. Seguidament deixarem un espai perquè els nens i nenes proposin aspectes a millorar del joc i parlin sobre les estratègies que han anat adoptant per tal d'aconseguir el seu objectiu. Tanmateix com a docents donarem el nostre punt de vista sobre com els infants han anat interactuant durant el transcurs del joc, tot emfatitzant els objectius establerts amb anterioritat. Per concloure, fomentarem l'intercanvi de coneixements entre els infants sobre els trets característics de la cultura africana, així com tractarem de desmuntar diferents mites envers la immigració.`,
-    etiquetes: ["Exterior", "Interior", "Jocs Curts"],
-    isFavorite: false  
+    etiquetes: ["Exterior", "Interior", "Jocs curts"],
+    isFavorite: false,
   },
   {
     id: 72,
@@ -3422,7 +3422,7 @@ const activities = [
         Tot i així, els jugadors que no han estat desqualificats poden anar a xutar l’ampolla i si ho fan es torna a començar el joc. Tots es poden tornar a amagar mentre qui para torna a buscar l’ampolla. El joc s'acaba quan qui para troba a tots els infants.`,
     avaluació: `Breu reflexió sobre l'ús de material reciclat en els jocs i com podem transformar objectes que ens semblaven que ja hauríem de llençar gràcies a la imaginació.`,
     etiquetes: ["Exterior"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 73,
@@ -3484,7 +3484,7 @@ const activities = [
         Com actuaràs a partir d'ara?
         Què passaria si la persona no vol canviar la seva emoció?`,
     etiquetes: ["Exterior", "Interior", "Sense material"],
-    isFavorite: false  
+    isFavorite: false,
   },
   {
     id: 74,
@@ -3519,8 +3519,8 @@ const activities = [
     introducció: `Farem una rotllana i escollirem diversos voluntaris perquè abandonin la sala. El dinamitzador explica als que es queden que cadascú, en el moment en què se li passa el llapis, ha de dibuixar una lluna “a l’aire”. Un cop dibuixada, la resta de participants hauran d’aplaudir o criticar-ho negativament. Aquest criteri es durà a terme segons el monitor/a o l’infant que rep el llapis doni les gràcies o bé decideixi no fer-ho.`,
     desenvolupament: `Cada participant entra d’un en un. D’aquesta manera la dinàmica dura més. Si algun participant no entén per què els membres de la rotllana actuen d’una forma a d’una altra, ho ha d’acabar descobrint per poder entrar a la rotllana i dir el motiu que porta a l’aplaudiment o bé al rebuig de la lluna dibuixada pels altres membres.`,
     avaluació: `Un cop han fet el joc tots els voluntaris i, tant si han descobert el per què de l’actitud de la resta de participants com si no ho han fet, hem de debatre i reflexionar sobre: la importància de dir gràcies, si normalment donem les gràcies, si dir gràcies implica major acceptació del nostre entorn, com ens sentim quan la gent ens aplaudeix o quan ens valoren negativament, com ens sentim quan ens donen les gràcies...`,
-    etiquetes: ["Exterior", "Interior", "Jocs Curts"],
-    isFavorite: false
+    etiquetes: ["Exterior", "Interior", "Jocs curts"],
+    isFavorite: false,
   },
   {
     id: 75,
@@ -3562,8 +3562,8 @@ const activities = [
     avaluació: `Durant el joc podem observar com els infants es relacionen entre ells.
         Podem observar quines facilitats o dificultats tenen els infants a l’hora de resoldre les incògnites.
         Crear pistes i trossos de fitxes molt visuals, clares i senzilles per a tots tipus de públics. El mapa ha de ser molt detallat i no es descartaria pistes en Braille per persones amb deficiència visual.`,
-    etiquetes: ["Exterior", "Jocs de Nit"],
-    isFavorite: false  
+    etiquetes: ["Exterior", "Jocs de nit"],
+    isFavorite: false,
   },
   {
     id: 76,
@@ -3633,8 +3633,8 @@ const activities = [
     avaluació: `Es suggereix fer l’avaluació tant pel grup d’infants com per l’equip de monitors i monitores. És important fer anàlisi dels coneixements previs, de la participació,de l'evolució, de l'assoliment d'objectius, de la dinamització de l'equip educatiu...
 
         D’aquesta manera s’aconseguirà tenir  una valoració global, amb els encerts i els errors, i amb propostes de millora.`,
-    etiquetes: ["Exterior", "Jocs de pista i gimcanes"],
-    isFavorite: false  
+    etiquetes: ["Exterior", "Jocs de pistes i gimcanes"],
+    isFavorite: false,
   },
   {
     id: 77,
@@ -3648,7 +3648,7 @@ const activities = [
     edatmax: 18,
     espai: "Interior/Exterior",
     durada: "Tot el curs de l'esplai",
-    objectiusMoni: (
+    objectius: (
       <div>
         <ul>
           <li>· Cuidar a un membre de l’equip de monitors.</li>
@@ -3676,10 +3676,3331 @@ const activities = [
         Pel seu aniversari, fer-li un regal especial al voltant de la figura del monitor o del seu paper important a l’esplai. 
         Són moltes les idees que el responsable pot suggerir per ajudar a cada monitor en aquesta tasca.`,
     avaluació: `Al final del curs, avaluarem amb l’equip de monitors com s’han sentit, si han vist interessant la iniciativa i si la repetirien el curs següent.`,
-    etiquetes: ["Grans Jocs"],
-    isFavorite: false  
+    etiquetes: ["Grans jocs", "Exterior", "Interior"],
+    isFavorite: false,
   },
- 
+  {
+    id: 78,
+    title: `“Piulades” per canviar el món! `,
+    descripció: `Dinàmica per crear un debat crític entre els joves sobre temes desconeguts que haurien de ser d’interès social i malauradament no ho són.`,
+    participantsmin: 1,
+    participantsmax: 50,
+    edatmin: 12,
+    edatmax: 18,
+    durada: "En funció dels participants",
+    objectiusMoni: (
+      <div>
+        <ul>
+          <li>
+            · Conduir la gestació de la reflexió sobre un tema en concret.
+          </li>
+          <li>· Gestionar situacions complicades en diferents àmbits. </li>
+          <li>· Observar i identificar el pensament del grup.</li>
+        </ul>
+      </div>
+    ),
+    objectiusInf: (
+      <div>
+        <ul>
+          <li>
+            ·Generar un espai de reflexió i de respecte entre els companys.
+          </li>
+          <li>
+            ·Expressar lliurement i de forma constructiva les seves opinions.{" "}
+          </li>
+        </ul>
+      </div>
+    ),
+    material: `Notícies sobre les quals reflexionar, bolígrafs i post-its per cada participants, núvol de cartolina on enganxar les "piulades" o reflexions `,
+    introducció: `Així com Internet és un espai on es comparteixen pensaments personals, nosaltres, des de les responsabilitats que tenim, hem de reflexionar i lluitar en la construcció d’un futur millor per a tothom. Totes les nostres idees, si són constructives, són igual d’importants, totes poden millorar la nostra societat.`,
+    desenvolupament: `Un cop reunit el grup es llegirà una notícia d’actualitat i de poca ressonància; una notícia que per diversos motius no ha tingut gaire espai als mitjans de comunicació.
+
+    Feta la lectura de la notícia s’obrirà un debat (dinamitzat pel monitor/a) comentant certs aspectes d’aquesta. La conclusió a la que voldríem arribar seria que som nosaltres els qui hem de canviar el món i que les nostres inquietuds i idees no ens les hem de quedar per nosaltres, sinó que les hem de compartir.
+    
+    Com es comparteixen les idees avui? A través d’Internet. El millor exemple és el Twitter. Per tant, la dinàmica consistirà en repartir a cada jove un bolígraf i un post-it on hi podrà reflectir la seva conclusió personal, en un màxim de 140 caràcters: amb el seu missatge, idea, compromís per canviar i millorar el nostre món, etc.  `,
+    avaluació: `Finalitzarem la dinàmica tot compartint les nostres reflexions finals i enganxant els post-its a un núvol. El núvol simbolitza Internet, el missatge una piulada.`,
+    etiquetes: ["Interior", "Vetllades"],
+  },
+  {
+    id: 79,
+    title: `Xicpoly`,
+    descripció: `Joc de taula formatiu`,
+    participantsmin: 2,
+    participantsmax: 8,
+    edatmin: 18,
+    edatmax: 18,
+    durada: "1 hora",
+    objectius: (
+      <div>
+        <ul>
+          <li>· Conscienciar-se de les tasques i/o comissions d’un esplai.</li>
+          <li>
+            · Conèixer les responsabilitats que comporten les comissions.{" "}
+          </li>
+          <li>· Avaluar el temps dedicat a les tasques de les comissions.</li>
+        </ul>
+      </div>
+    ),
+    material: `Taulell, 2 daus, bitllets temporals, targetes de joc del Xicpoly`,
+    introducció: `Les tirades, els torns, l’intercanvi de temps i els daus ballant la dansa de l’atzar ens duran a les entranyes del nostre esplai. Cada casella representa l’esforç d’algun dels jugadors que sent com la seva tasca es menysprea. Cada comissió representa un dels pilars organitzatius de l’esplai que es veu trontollar per la seva poca eficàcia. Val la pena mantenir-la? Cada hora, cada minut que heu dedicat a l’esplai prendrà forma i sentit. A partir d’ara, tot pot canviar, tot pot millorar... T’atreveixes a llançar els daus?`,
+    desenvolupament: `El "Xicpoly" és un joc de taula on es troben les principals comissions en què s'organitza un centre d'esplai i les tasques més importants que desenvolupen. L'objectiu lúdic del joc és ser el responsable del màxim nombre de comissions possible i veure, d'aquesta forma, el temps que ens va ocupant. Els monitors de l'esplai també hi juguen un paper molt important, ja que, sense ells, el rellotge del temps se'ns cruspirà inexorablement.
+
+    Tots els participants tiren un dau; aquell que tregui una major puntuació començarà el joc i se seguirà en sentit horari. A partir de la casella de sortida es mouen les fitxes al voltant del taulell d’acord amb la puntuació treta en una tirada de dos daus. Depenent de la casella on vagi a parar el jugador, aquest tindrà dret a adquirir una tasca de comissió, un monitor, a destinar temps a la tasca de la comissió que pertany a un altre jugador, assistir a trobades imprevistes o agafar una carta de “xic o no xic”.
+    
+    Al llarg de la partida els monitors avaluen l’estat de les comissions així com les tasques que han desenvolupat o que resten pendents. Durant el transcurs de les tirades de ben segur que surten comentaris sobre el rendiment personal dels monitors, directors, etc. És un bon moment per parlar de les necessitats que aquests tenen i com l’esplai, o la resta de companys, els poden ajudar. Per a aquells que siguin nouvinguts, a mesura que s’avança en el joc, convé anar explicant en què consisteixen les comissions, quines són les seves principals fites, consells per tirar-les endavant, incentivar-los perquè aportin noves idees...`,
+    avaluació: `La lectura que pot fer-se del joc dependrà molt del grau d’implicació dels seus participants, ja que el procés d’avaluació del Xicpoly és l’autoretrat de la situació de l’esplai en el moment de la partida, dibuixat per tothom amb les opinions de tots.`,
+    etiquetes: ["Interior"],
+  },
+  {
+    id: 80,
+    title: `Torre de Hanoi`,
+    descripció: `La Torre de Hanoi és un joc de concentració i estratègia inventat pel matemàtic francès Éduard Lucas l'any 1833, tot i que el joc està envoltat per una llegenda molt més màgica situada a l'Antic Orient.`,
+    participantsmin: 1,
+    participantsmax: 2,
+    edatmin: 12,
+    edatmax: 18,
+    durada: "Depén jugadors/discos",
+    objectius: (
+      <div>
+        <ul>
+          <li>· Millorar la concentració.</li>
+          <li>· Desenvolupar l'estratègia. </li>
+          <li>· Aprendre a partir de l'assaig i l'error.</li>
+        </ul>
+      </div>
+    ),
+    material: `El joc de la torre de Hanoi`,
+    introducció: `El tauler de joc consta d'una base rectangular amb tres columnes que hi surten perpendicularment. També necessitarem discos de diferents diàmetres amb un forat al centre. El joc es comença tenint tots els discos inserits en una de les dues columnes dels extrems, ordenant-los de dalt a baix de petit a gran. El nombre de discos amb els quals juguem serà el factor que augmentarà la dificultat del joc (a major nombre de discos la dificultat serà més gran).`,
+    desenvolupament: `L'objectiu final del joc és tenir col·locats tots els discos en la columna de l'altre extrem. Per fer-ho es poden utilitzar les tres columnes.
+    Per començar a jugar, el participant ha de moure els discos d'un en un, respectant sempre una regla bàsica: mai un disc de diàmetre superior podrà estar a sobre d'un de diàmetre inferior. És a dir, un disc més gran mai no podrà estar a sobre d'un de més petit, deixant de banda la columna on estiguin.
+    El joc s'acaba quan els discos estan en la columna oposada ordenats de dalt a baix de petit a gran, com en la situació inicial.`,
+    avaluació: `És aconsellable començar a jugar amb tres discos i anar augmentant-ne el nombre a mesura que anem superant el joc. La fórmula matemàtica per saber quin nombre de moviments es requereixen (si no ens equivoquem mai, és clar) és molt senzilla: 2^n-1 (n= nombre de discos). Així, si juguem amb 4 discos, el nombre de moviments és 15 (2^4-1= 15). `,
+    etiquetes: ["Interior"],
+  },
+  {
+    id: 81,
+    title: `La cursa del conte`,
+    descripció: `L’objectiu d’aquesta activitat és que els infants s’apropin i coneguin els personatges d’alguna història que vulguem treballar tot divertint-se, ja que s’hauran de moure i competir entre ells.`,
+    participantsmin: 4,
+    participantsmax: 50,
+    edatmin: 4,
+    edatmax: 11,
+    durada: "Depén participants/text",
+    objectius: (
+      <div>
+        <ul>
+          <li>· Treballar en equip.</li>
+          <li>· Conèixer els personatges d’una història. </li>
+          <li>·Interessar-se per una lectura en concret.</li>
+          <li>· Cohesionar el grup.</li>
+          <li>· Desenvolupar la capacitat d’atenció. </li>
+        </ul>
+      </div>
+    ),
+    material: `El text d’un conte on apareguin diferents personatges, el nom dels quals es repeteix de forma reiterativa.`,
+    introducció: `Aquest joc és una competició on guanyarà aquell qui aconsegueixi primer descartar-se de totes les cartes que li han estat assignades.`,
+    desenvolupament: `Els infants seuen en rotllana. Acte seguit, es reparteixen entre els participants quatre targetes on hi ha el dibuix o la foto d’algun dels protagonistes. Cal que es facin fitxes repetides, però a l’hora de repartir-les cap participant no pot tenir-ne dues d’iguals.
+
+    Es comença a llegir un text escrit especialment per a l’ocasió i quan un infant sent el nom del personatge que li ha estat assignat ha de córrer a deixar la targeta corresponent al centre de la rotllana. Com que hi ha participants que tenen la mateixa fitxa, el primer participant que la deixi serà el que podrà descartar-se d’aquella fitxa. Els altres hauran de tornar a seure amb la fitxa que no han pogut deixar al cercle.
+    
+    Es segueix llegint el text, i els participants aniran desfent-se de les seves targetes. El primer participant que aconsegueixi desprendre’s de totes guanya. Es pot acordar que hi hagi un segon jugador, o bé un tercer. O també, per tal d’incloure-hi a tothom, es pot acabar el joc quan tots els jugadors s’hagin quedat sense targetes.`,
+    avaluació: `Com que es tracta d’una activitat col·lectiva, és força recomanable que hi participi com més gent millor. És important que els participants tinguin respecte pels seus companys, ja que si no es poden acabar fent mal, i que desenvolupin l’activitat en silenci per tal de poder sentir la veu del narrador.
+
+    És interessant que en acabar l’activitat es repassi amb els infants quins personatges els han estat assignats i quin paper juguen dins la història narrada. Si la història es llegeix a posteriori, se’ls hi pot introduir explicant-los què representen els personatges dins la història que llegiran. 
+    
+    L'espai ha de ser suficientment ampli per tal que tots els participants hi càpiguen asseguts en rotllana.`,
+    etiquetes: ["Interior", "Narració i expressió"],
+  },
+  {
+    id: 82,
+    title: `El Passaparaula de les qualitats`,
+    descripció: `En aquest joc buscarem que els infants pensin aspectes positius d’un mateix i fomentarem la col•laboració entre ells.`,
+    participantsmin: 2,
+    participantsmax: 5,
+    edatmin: 12,
+    edatmax: 18,
+    durada: "15 mins",
+    objectius: (
+      <div>
+        <ul>
+          <li>· Afavorir l’autoconeixement dels infants.</li>
+          <li>· Incrementar l’autoestima personal. </li>
+          <li>
+            ·Centrar el pensament en aspectes positius de la pròpia persona i
+            els altres.
+          </li>
+          <li>· Generar relacions positives entre els infants.</li>
+          <li>· Divertir-se! </li>
+        </ul>
+      </div>
+    ),
+    material: `Papers i retoladors i/o bolígrafs.`,
+    introducció: `Repartirem els fulls i bolígrafs o retoladors als infants i els demanarem que agafin les lletres del seu nom i primer cognom i en facin un cercle, a mode del programa de televisió “Pasapalabra”.`,
+    desenvolupament: `Començarà un dels infants i haurà de pensar i apuntar una qualitat pròpia i real per a cadascuna de les lletres del seu cercle. Quan no n’hi vingui cap en ment podrà demanar “Passaparaula”, perquè continuï el següent company. Així es van fent rondes fins que cadascú acaba completant el seu cercle. No es poden repetir qualitats ni en un mateix ni entre infants. Els educadors haurem de fomentar que s’ajudin entre ells. Guanya el primer que acaba el cercle.`,
+    avaluació: `Tot i ser una activitat competitiva, el fet que cada infant tingui més o menys lletres en el seu nom i que es puguin ajudar entre ells, fa que puguem relativitzar aquest fet i convertir-la en un joc més aviat de foment de la col·laboració.
+
+    En acabar, preguntarem als nens i nenes si els ha agradat pensar aspectes positius sobre un mateix, si els ha estat fàcil pensar-ne o bé els ha costat i demanarem per què creuen que ha estat així. També podem preguntar si els ha estat més fàcil pensar en qualitats pròpies o dels demés, i si han descobert, amb l’ajuda dels seus companys, nous aspectes d’un mateix que desconeixien.`,
+    etiquetes: ["Interior"],
+  },
+  {
+    id: 83,
+    title: `I tu, com la imagines ?`,
+    descripció: `Es tracta d'expressar els sentiments que genera la pèrdua d'un ésser estimat de manera artística i generar un espai per poder-ne parlar.`,
+    participantsmin: 1,
+    participantsmax: 50,
+    edatmin: 4,
+    edatmax: 18,
+    durada: "1h-1h30",
+    objectius: (
+      <div>
+        <ul>
+          <li>· Reflexionar sobre la mort.</li>
+          <li>· Prendre consciència de la universalitat de la mort. </li>
+          <li>
+            · Ajudar a expressar el dol que sentim o hem sentit en alguna
+            ocasió.
+          </li>
+          <li>· Practicar l'escolta activa.</li>
+        </ul>
+      </div>
+    ),
+    material: `Paper d'embalar, colors, retoladors, pintures`,
+    introducció: `La mort és un tema difícil de treballar perquè ens genera un seguit d'emocions i pensaments que no són senzills de gestionar i requereixen el seu temps; no hi ha respostes segures i racionals sobre aquest tema i això ens genera por i incertesa.
+
+    Hem de tenir present que hi ha una gran varietat de creences sobre la mort (sovint associades a creences religioses) i que és important respectar el que l'entorn de l'infant o adolescent cregui. Això no treu que puguem treballar el tema de la mort, i que si ens fan preguntes puguem respondre, sempre amb honestedat, el que nosaltres creiem.`,
+    desenvolupament: `Col·locarem un tros llarg de paper d'embalar al terra i donarem material per a poder pintar. Hauran de dibuixar com s'imaginen què és la mort. Deixarem l'estona necessària en funció del grup. Cal cuidar aquest moment; podem posar música ambient per ajudar a crear un clima de reflexió ja que l'activitat requereix de certa introspecció.`,
+    avaluació: `Després farem una roda per explicar-los. Cal respectar els temps de cada persona. És important no donar opció a rèpliques per evitar debats. En aquesta explicació del dibuix la persona podrà expressar tot allò que tingui necessitat d'expressar: els sentiments, dubtes, o senzillament parlar d'una persona estimada que hagi perdut. Mentre un s'explica, els altres escolten atentament i acollim el que la persona ens explica.`,
+    etiquetes: ["Interior", "Narració i expressió"],
+  },
+  {
+    id: 84,
+    title: `El bully`,
+    descripció: `Joc grupal on es reparteixen personatges i d’on sortiran situacions extrapolables a un cas d’assetjament.`,
+    participantsmin: 8,
+    participantsmax: 20,
+    edatmin: 9,
+    edatmax: 18,
+    durada: "30 mins",
+    objectiusMoni: (
+      <div>
+        <ul>
+          <li>
+            · Conèixer les creences, tendències i actituds dels participants.
+          </li>
+          <li>
+            · Generar un espai d’anàlisi sobre les relacions interpersonals.{" "}
+          </li>
+          <li>· Sensibilitzar sobre l’assetjament entre iguals.</li>
+        </ul>
+      </div>
+    ),
+    objectiusInf: (
+      <div>
+        <ul>
+          <li>
+            · Entrenar les habilitats de resposta davant de possibles
+            agressions.
+          </li>
+          <li>· Comprendre tots els implicats en un tema d’assetjament.</li>
+          <li>· Qüestionar actituds i rols en les relacions entre iguals.</li>
+        </ul>
+      </div>
+    ),
+    material: `Un joc de cartes (2 cartes per participant). També es poden fer servir papers, o cigrons...`,
+    introducció: `Millor no canviar el nom als personatges ni dir la paraula “bullying” prèviament, per tal de no convertir l’assetjament en un joc. Ja farem la transferència acabat el joc.`,
+    desenvolupament: `Els jugadors s’asseuen en rotllana. Es reparteixen dues vides per cadascú (cartes o cigrons) i el monitor dirà a cau d’orella els personatges:
+
+    1 Vampir,
+    1 Àngel,
+    1 Detectiu,
+    La resta són poble en un inici.
+    L’objectiu del vampir és eliminar el màxim de participants sense ser descobert. Elimina (treu una vida) picant l’ullet. Cada cop que un membre del poble perd una vida ho ha de dir, si es perden les dues vides quedes eliminat. El joc s’acaba quan el detectiu (no perd vides mai) descobreix qui és el vampir.
+    
+    L’àngel fa recuperar una vida fent el gest del petó amb els llavis. El vampir també pot retornar una vida, convertint algú en vampir còmplice. Ho farà traient la llengua (si vol pot tornar a eliminar-los).
+    
+    Els còmplices també poden eliminar vides picant l’ullet, però no poden fer nous còmplices. Entre ells es poden treure vides (segurament no ho faran), però mai al vampir original. Si el detectiu encerta un còmplice, aquest ho ha de reconèixer, dir que no és l’original i deixar de fer aquest rol, encara que continua en el joc.`,
+    avaluació: `Seurem amb el grup per analitzar com ens hem sentit, què ha passat i l’estratègia de cadascú. Respecteu les normes d’aquesta adaptació, per tal de poder-ho extrapolar a situacions de bullying, i fer-ho donant un missatge adequat. Per un bon aprofitament de la dinàmica, podeu ampliar la informació amb els articles i els recursos del Centre d’Interès.`,
+    etiquetes: ["Interior"],
+  },
+  {
+    id: 85,
+    title: `El petit món`,
+    descripció: `Gràcies a les noves tecnologies podem afirmar que la globalització resulta un fenomen cada vegada més palpable. Ens permet viatjar a qualsevol part del món. Més enllà de les xarxes socials, resulta un recurs interminable per satisfer totes les nostres curiositats i l’hem d’aprendre a exprimir amb els nens i joves.`,
+    participantsmin: 8,
+    participantsmax: 12,
+    edatmin: 9,
+    edatmax: 15,
+    durada: "2 hores",
+    objectiusMoni: (
+      <div>
+        <ul>
+          <li>· Gestionar l’ús de les TIC en el lleure.</li>
+        </ul>
+      </div>
+    ),
+    objectiusInf: (
+      <div>
+        <ul>
+          <li>· Desenvolupar la curiositat per conèixer altres realitats.</li>
+          <li>· Treballar en equip amb un objectiu comú.</li>
+        </ul>
+      </div>
+    ),
+    material: `Mapa del món,
+    llana de colors,
+    cinta adhesiva,
+    fulls de colors,
+    retoladors,
+    targetes (temes i llocs),
+    telèfon,
+    ordinador,
+    tauleta amb connexió a Internet (tantes com grups)`,
+    introducció: `Per a la realització d’aquesta activitat, prèviament, hem d’escollir els temes que volem tractar (escola, menjar, roba, música...) i les regions que volem treballar. Així doncs, per a cada tema i regió crearem una targeta.`,
+    desenvolupament: `Per començar l’activitat, dividirem els participants en grups (tants com monitors, ja que cada grup serà guiat per un monitor). 
+
+    L’activitat es desenvoluparà en diferents rondes d’investigació (tantes com temes). Per iniciar cada ronda s’agafarà a l’atzar un dels temes, al mateix temps que s’assigna una regió a cada grup. 
+    
+    Cada grup ha de cercar la màxima informació possible (a la xarxa) sobre la regió i el tema que li ha tocat per tal de confeccionar una targeta informativa. 
+    
+    Una vegada acabada cada ronda, el grup explicarà a la resta què han descobert tot penjant la targeta informativa sobre la regió al mapa. I creant un teranyina de llana (un color per tema) que uneixi les diferents regions.`,
+    avaluació: `Posada en comú de les diferències i igualtats dels temes tractats a cada regió.`,
+    etiquetes: ["Interior"],
+  },
+  {
+    id: 86,
+    title: `Pintem emocions`,
+    descripció: `Els nens elaboraran el seu particular arc de Sant Martí de les emocions.`,
+    participantsmin: 1,
+    participantsmax: 50,
+    edatmin: 16,
+    edatmax: 18,
+    durada: "1h30",
+    objectiusMoni: (
+      <div>
+        <ul>
+          <li>
+            · Ajudar a desenvolupar la competència emocional dels infants.
+          </li>
+          <li>
+            · Acompanyar els infants al llarg del seu itinerari emocional.
+          </li>
+        </ul>
+      </div>
+    ),
+    objectiusInf: (
+      <div>
+        <ul>
+          <li>· Adquirir un bon coneixement de les pròpies emocions.</li>
+          <li>· Aprendre a identificar les emocions dels altres.</li>
+          <li>· Ampliar el seu vocabulari d’emocions.</li>
+        </ul>
+      </div>
+    ),
+    material: `Paper de mural, pintures i ceres de tots els colors`,
+    introducció: `Es demanarà a cada nen que triï els seus tres colors preferits. En un paper hauran d’explicar, utilitzant un d’aquests colors, perquè són els colors que més li agraden. De la figura en sortiran tantes fletxes com emocions hem relacionat amb aquest color i escriurem el nom d’aquestes emocions. 
+
+    Una vegada tinguem totes les emocions recollides es proposarà als nens realitzar un mural abstracte que representi el nostre propi arc de Sant Martí de les emocions.`,
+    desenvolupament: `Cada nen haurà d’explicar a la resta de companys i monitors quin són els colors que ha triat i amb quines emocions els relacionen. Seria molt interessant que els monitors també poguessin explicar quins colors han triat per tal de poder ampliar el llistat d’emocions que vagin apareixent. Així, es posarà de manifest el gran ventall d’emocions que existeixen i la importància de reconèixer tant les pròpies emocions com les de la resta de companys. També es dibuixaran diferents figures geomètriques al mural que pintarem. Entre tots es triarà un títol per posar a la composició artística. El mural quedarà exposat al centre.`,
+    avaluació: `Al finalitzar l’activitat es realitzarà una petita dinàmica per tal que els infants s’adonin de quines emocions es poden relacionar.`,
+    etiquetes: ["Interior"],
+  },
+  {
+    id: 87,
+    title: `Els rols i les tasques`,
+    descripció: `Dinàmica per a reflexionar sobre les diferents tasques i rols que podem desenvolupar a l’esplai.`,
+    participantsmin: 8,
+    participantsmax: 12,
+    edatmin: 16,
+    edatmax: 18,
+    durada: "30 mins/1h",
+    objectius: (
+      <div>
+        <ul>
+          <li>· Experimentar una activitat a partir d’un rol imposat.</li>
+          <li>
+            · Conèixer els diferents tipus de rol de tasques que es poden donar
+            dins del grup d’educadors.
+          </li>
+          <li>· Reflexionar sobre un mateix i la vivència viscuda.</li>
+          <li>
+            · Exterioritzar sentiments i expressar-los de manera assertiva.
+          </li>
+        </ul>
+      </div>
+    ),
+    material: `Una taula per grup, 2 fulards per cada grup de 4 persones, tantes cadires com monitors hi hagi, peces de construcció de diferents formes i colors de cada grup`,
+    introducció: `Dinàmica per treballar les diferents tasques que pot desenvolupar una persona dins d’un equip i com n’és d’important cada persona ja que totes les tasques són complementàries. Conèixer-les fa que puguem sentir empatia cap a les persones que desenvolupen aquestes feines.`,
+    desenvolupament: `Situem els monitors en grups de 4 en una taula de manera que tots ells es puguin veure. Al mig de la taula posem les peces de construcció de diferents formes i colors. 
+
+    Repartim els rols: 1 observador que mira i apunta, no pot intervenir ni parlar; 1 director que dirigeix la feina, només pot parlar, no pot ajudar ni intervenir; 2 constructors que porten els ulls tapats i només poden utilitzar una de les dues mans. 
+    
+    Un cop repartits els rols direm als membres dels diferents grups que tenen 2-5 minuts per a construir una torre. Guanya l’equip que aconsegueixi fer la torre més alta en el temps que haguem pactat. Acabat el temps mirem quin equip ha aconseguit fer la torre més alta i analitzem com ha estat la vivència.`,
+    avaluació: `Algunes preguntes per a l’avaluació de la dinàmica són: 
+
+    Com s’han sentit els membres de cada equip? 
+    És fàcil fer d’observador i prou?
+    Què passa quan hem d’adaptar la nostra manera de treballar, pel motiu que sigui? 
+    És fàcil donar indicacions de treball a més d’una persona al mateix temps? Què passa amb la comunicació? Com ho podem millorar? 
+    Què és més important, el resultat o com s’hi ha arribat? 
+    La dinàmica es pot utilitzar per a treballar diferents temes; depèn dels objectius que es vulguin treballar dins del grup. 
+    Finalment, cal tenir en compte que:
+    
+    Al final de la dinàmica podem pensar en quines són les destreses de cadascun dels membres de l’equip per a veure quines són les tasques que millor poden desenvolupar dins de l’entitat. 
+    Durant la dinàmica observarem com es relacionen els monitors entre ells i què els suposa més difícil de fer i això ens servirà per veure quina mena d’acompanyament hem de fer a cadascun d’ells. 
+    És molt important treballar l’empatia i el respecte en tot moment i no anar amb pressa.
+    Durant la reflexió que fem amb els monitors és molt important fer èmfasi en el treball en equip i recordar tot allò que faci referència a la planificació de la feina.`,
+    etiquetes: ["Interior"],
+  },
+  {
+    id: 88,
+    title: `La bústia de les consultes`,
+    descripció: `Aquesta dinàmica és una bona eina que pot utilitzar el responsable de l’esplai per a involucrar tot l’equip de monitors en la presa de decisions i per establir criteris d’actuació per a futures situacions en les quals ens podem trobar en el dia a dia de l’esplai.`,
+    participantsmin: 2,
+    participantsmax: 10,
+    edatmin: 18,
+    edatmax: 18,
+    durada: "1h",
+    objectius: (
+      <div>
+        <ul>
+          <li>· Treballar la presa de decisions en equip.</li>
+          <li>
+            · Gestionar situacions complicades en diferents àmbits de l’esplai.
+          </li>
+          <li>· Enfortir la relació dels membres de l’equip de monitors.</li>
+        </ul>
+      </div>
+    ),
+    material: `Smartphone o reproductor d'àudio, pissarra`,
+    introducció: `El responsable prepararà un seguit de missatges d’àudio emesos, suposadament, per monitors d’altres esplais. A cada àudio el monitor o monitora (fictici) exposarà una situació complicada amb què s’han trobat al seu esplai, i ens demanarà ajuda per resoldre-la o opinar sobre com caldria actuar.`,
+    desenvolupament: `Alguns exemples de situacions que poden contenir els missatges: 
+
+    Hi ha hagut una intoxicació a les colònies i cal decidir si es comunica de manera immediata als pares i mares, si es fa a la tornada i de quina manera.
+    Dos monitors han arribat a les mans durant una reunió i cal decidir com actuar amb ells.
+    Un monitor ha anat a una reunió de la parròquia i ha exposat una idea que no coincidia amb allò que s’havia acordat al consell de monitors. 
+    Durant la dinàmica, els monitors aniran escoltant els missatges, que poden haver arribat, per exemple, via WhatsApp al mòbil de l’esplai, i comentaran en grup cada situació per arribar a una decisió de grup que els sembli la més adequada. 
+    
+    El resposable anirà guiant l’activitat i observant la veu de tots els monitors, els rols que s’estableixen i les decisions finals a les quals s’arriba.`,
+    avaluació: `Al final de l’activitat, el responsable valorarà les decisions preses i relacionarà cada resposta amb aspectes relacionats amb el projecte educatiu de l’esplai, per donar coherència a tots els criteris i decisions que han resultat de les situacions exposades.`,
+    etiquetes: ["Interior"],
+  },
+  {
+    id: 89,
+    title: `Veritat o fals?`,
+    descripció: `Dinàmica de coneixement dels membres del grup.`,
+    participantsmin: 1,
+    participantsmax: 20,
+    edatmin: 9,
+    edatmax: 18,
+    durada: "1h",
+    objectiusMoni: (
+      <div>
+        <ul>
+          <li>· Conèixer millor als infants del grup.</li>
+          <li>· Potenciar l’autoconeixement dels infants.</li>
+          <li>· Estimular les relacions entre els membres del grup.</li>
+        </ul>
+      </div>
+    ),
+    objectiusInf: (
+      <div>
+        <ul>
+          <li>
+            · Motivar les relacions interpersonals entre els membres del grup.
+          </li>
+          <li>· Aprendre a mostrar interès per la resta de components.</li>
+          <li>· Potenciar l’autoconeixement.</li>
+        </ul>
+      </div>
+    ),
+    material: `Fulls i bolígrafs`,
+    introducció: `Cada infant, de manera individual, haurà d’escriure en un paper cinc aspectes que el poden definir. Aquests poden ser gustos, activitats que els agrada realitzar, manies, somnis... D’aquest llistat d’aspectes, tres hauran de ser verdaders i dos falsos.`,
+    desenvolupament: `En petits grups, els infants hauran de posar en comú el llistat de trets que han escrit sobre ells mateixos per tal que la resta d’infants els puguin conèixer millor. La resta hauran d’identificar quines són les dues coses que són falses i explicar el per què ho creuen. Per finalitzar la dinàmica, cada infant haurà d’explicar al gran grup dues coses que hagi descobert dels companys que abans desconeixia i li hagi agradat saber.`,
+    avaluació: `Per finalitzar la dinàmica, el grup d’educadors realitzaran una reflexió al voltant de la importància de mostrar interès per tots els infants del grup i mitjançat un mural es recolliran totes les qualitats positives que haguem descobert dels demés. Entre tots es decidirà el títol d’aquest mural.`,
+    etiquetes: ["Interior"],
+  },
+  {
+    id: 90,
+    title: `Tu també tens por ?`,
+    descripció: `Dinàmica de grup per fer front a les pors individuals.`,
+    participantsmin: 1,
+    participantsmax: 20,
+    edatmin: 9,
+    edatmax: 15,
+    durada: "1h30",
+    objectiusMoni: (
+      <div>
+        <ul>
+          <li>
+            · Identificar les principals pors que pateixen els infants del grup.
+          </li>
+          <li>· Ajudar els infants a identificar les seves pors.</li>
+          <li>· Afavorir l’empatia entre els membres del grup.</li>
+        </ul>
+      </div>
+    ),
+    objectiusInf: (
+      <div>
+        <ul>
+          <li>· Aprendre a identificar les pròpies pors.</li>
+          <li>· Potenciar l’autoconeixement.</li>
+          <li>· Desenvolupar estratègies per poder fer front a les pors.</li>
+        </ul>
+      </div>
+    ),
+    material: `Fulls blancs, bolígrafs, cartolines de colors i retoladors.`,
+    introducció: `Cada infant haurà d’escriure en un paper alguna situació o alguna cosa que li produeixi incertesa o por.`,
+    desenvolupament: `Després, els papers es posaran en una pila i s’aniran llegint d’un en un. Mai es dirà la persona que ha escrit el missatge (si no ho fa de forma voluntària) i entre tots es buscaran possibles solucions per poder superar aquesta por. Per realitzar el tancament de la sessió, cada infant haurà d’escriure en una cartolina una frase que expressi què és per a ell o ella la valentia. Aquestes frases quedaran enganxades en algun suro del centre.`,
+    avaluació: `Per finalitzar la dinàmica, el grup d’educadors realitzaran una reflexió al voltant de les pors. L’objectiu de la reflexió és que tots els infants entenguin que tothom té alguna por i que aquestes es poden superar sent conscients que es pot demanar ajuda.`,
+    etiquetes: ["Interior"],
+  },
+  {
+    id: 91,
+    title: `Què consumeixo ?`,
+    descripció: `Dinàmica per a la reflexió del consum responsable i/o l’ús dels telèfons mòbils en la societat actual.`,
+    participantsmin: 10,
+    participantsmax: 30,
+    edatmin: 16,
+    edatmax: 18,
+    durada: "45 mins",
+    objectiusMoni: (
+      <div>
+        <ul>
+          <li>· Generar un espai de reflexió sobre el consum responsable.</li>
+          <li>· Mostrar les noves tecnologies com eines d’aprenentatge.</li>
+          <li>· Promoure l’intercanvi d’opinions i la generació de debat. </li>
+        </ul>
+      </div>
+    ),
+    objectiusInf: (
+      <div>
+        <ul>
+          <li>· Qüestionar l’origen de les pròpies opinions i/o interessos.</li>
+          <li>
+            · Ser conscient de com ens influencien altres agents i els mitjans
+            de comunicació.
+          </li>
+          <li>· Conèixer alternatives per consumir de forma responsable.</li>
+        </ul>
+      </div>
+    ),
+    material: `Projector, telèfons mòbils (un per participants aprox.), connexió a internet`,
+    introducció: `Fins a quin punt estem influenciats a l’hora de comprar? Amb aquesta dinàmica volem que els i les joves reflexionin sobre el consum i la influència de l’entorn en les seves decisions. El mètode que utilitzarem és l’aplicació de mòbil o lloc web Kahoot, que permet crear enquestes multiresposta i observar els resultats amb un gràfic (els podem projectar). Els joves hi participaran amb el codi generat per a cadac enquesta.`,
+    desenvolupament: `Un personatge demanarà ajuda als/les joves perquè té molts diners i no sap què comprar, diu que necessita moltes coses (joies, roba, mòbil…). Es farà una enquesta de Kahoot per cada element que vulgui comprar el/la protagonista, on les opcions seran diversos models de cada objecte (Ex. Mòbil - Opcions: Iphone, Samsung…). El/la protagonista es comprarà aquells productes que hagin estat més votats pels participants.
+
+    La motivació cal que sigui molt atractiva perquè els/les joves ajudin al/la protagonista a comprar compulsivament.`,
+    avaluació: `El personatge no se sentirà bé amb tot allò adquirit, no ho necessita realment. Reflexionarem amb els/les joves sobre els productes que consumeixen habitualment, el seu origen (qui els fa, on els fa, quins materials utilitza...) i les conseqüències humanes, econòmiques i mediambientals que té la seva producció, així com quines alternatives podem utilitzar per a un consum responsable (Ex. Fairphone).`,
+    etiquetes: ["Interior"],
+  },
+  {
+    id: 92,
+    title: `El semàfor dels tweets`,
+    descripció: `En aquesta dinàmica analitzarem un conjunt de piulades sobre diferents notícies i haurem de valorar el seu grau informatiu i de credibilitat.`,
+    participantsmin: 1,
+    participantsmax: 50,
+    edatmin: 12,
+    edatmax: 18,
+    durada: "30-45 mins",
+    objectiusMoni: (
+      <div>
+        <ul>
+          <li>· Fomentar la participació i motivació entre els joves.</li>
+          <li>· Ser capaç de moderar el debat final de la dinàmica.</li>
+          <li>· Cohesionar el grup de joves.</li>
+        </ul>
+      </div>
+    ),
+    objectiusInf: (
+      <div>
+        <ul>
+          <li>· Potenciar l’esperit crític vers les xarxes socials.</li>
+          <li>
+            · Descobrir que la informació de les xarxes pot estar molt
+            manipulada.
+          </li>
+          <li>· Millorar la presa de decisions.</li>
+          <li>· Reflexionar sobre la pròpia conducta.</li>
+          <li>· Millorar l’expressió oral i escrita.</li>
+        </ul>
+      </div>
+    ),
+    material: `Cartolines vermelles, taronges i verdes, folis, llapis, cola.`,
+    introducció: `En aquesta dinàmica pretenem fomentar l’esperit crític vers les xarxes socials decidint el grau de credibilitat, informació i veracitat, de diferents tuits referents a diverses notícies. Primer, dividirem els joves en grups de tres. A cada grup li donarem una cartolina dinA4 vermella, una taronja i una verda. Un cop estigui tot repartit, el monitor llegirà dues notícies reals.`,
+    desenvolupament: `Un cop llegides, els diferents grups hauran d’inventar-se 6 tuits que enganxaran a les diferents cartolines depenent del grau de credibilitat, informació i veracitat que li donen. A cada cartolina hi han d’anar 2 tuits diferents, un de cada notícia llegida, entenent que la vermella representa els tuits “dolents”, la taronja els tuits “a la corda fluixa” i la verda, aquells tuits que considerem adequats dins del món de la comunicació i la informació.`,
+    avaluació: `Avaluar qué és allò que consideren "correcte" o "no correcte"`,
+    etiquetes: ["Interior"],
+  },
+  {
+    id: 93,
+    title: `Informació o desinformació?`,
+    descripció: `Reflexió sobre la informació que rebem cada dia a través de la xarxa i la seva credibilitat.`,
+    participantsmin: 1,
+    participantsmax: 30,
+    edatmin: 16,
+    edatmax: 18,
+    durada: "1 hora",
+    objectiusMoni: (
+      <div>
+        <ul>
+          <li>· Ajudar a desenvolupar l’esperit crític dels joves.</li>
+          <li>
+            · Mostrar la importància de conèixer les fonts d’una informació.
+          </li>
+          <li>
+            · Mostrar la capacitat d’influència dels mitjans de comunicació.{" "}
+          </li>
+        </ul>
+      </div>
+    ),
+    objectiusInf: (
+      <div>
+        <ul>
+          <li>· Desenvolupar l’esperit crític.</li>
+          <li>· Conèixer exemples de desinformació a la xarxa.</li>
+        </ul>
+      </div>
+    ),
+    material: `Notícies d'exemple, papers, bolígrafs, rotuladors`,
+    introducció: `Aquesta dinàmica vol mostrar als joves la importància d’analitzar i contrastar la informació que cada dia rebem a través dels mitjans de comunicació, internet o xarxes socials.`,
+    desenvolupament: `Els joves arribaran a una sala plena d’informació. A la taula central o en un mural podran veure titulars i notícies completes aparegudes en mitjans de comunicació i xarxes socials en els darrers anys. 
+
+    En primer lloc, el grup haurà de posar-se d’acord per separar les informacions que consideren reals i les que són falses. Un cop fet aquest primer anàlisi, disposaran d’uns 10-15 minuts més per poder consultar a la xarxa i contrastar les informacions mitjançant els seus dispositius mòbils o un ordinador/tablet facilitat per l’esplai/cau. 
+    
+    Amb la classificació final feta pels joves, els monitors acabaran de situar cada notícia a la banda de cert/fals. 
+    
+    Amb aquest primer exercici, els joves podran veure com la xarxa i els mitjans compten amb molta informació que, en molts casos, no és real, i que som nosaltres com a usuaris qui hem d’analitzar i comptar amb l’esperit crític necessari per saber com ens estem informant. 
+    
+    Com a segona dinàmica, tots els joves consensuaran un tema o notícia sobre la qual tinguin informació. Ara seran ells els redactors, i hauran de fer un petit text amb el contingut que coneixen d’aquell tema. Un cop finalitzat, llegirem totes les peces per observar que, malgrat ser una qüestió que tots coneixen, hi ha diferències i matisos en les seves redaccions.`,
+    avaluació: `El primer i el segon exercici ens mostren una realitat que vivim a diari. Els mitjans de comunicació i les xarxes socials compten amb un gran volum d’informació que, com a receptors, hem de saber escollir, filtrar i contrastar.`,
+    etiquetes: ["Interior"],
+  },
+  {
+    id: 94,
+    title: `La notícia en piulades`,
+    descripció: `En aquesta dinàmica descobrirem com el fet de publicar tweets pot transformar la percepció que es té d’una informació perquè s’ha explicat amb un caire molt subjectiu..`,
+    participantsmin: 1,
+    participantsmax: 30,
+    edatmin: 12,
+    edatmax: 18,
+    durada: "30mins",
+    objectiusMoni: (
+      <div>
+        <ul>
+          <li>· Fomentar la participació i motivació entre els joves.</li>
+          <li>· Ser capaç de moderar el debat final de la dinàmica.</li>
+          <li>· Cohesionar el grup de joves.</li>
+        </ul>
+      </div>
+    ),
+    objectiusInf: (
+      <div>
+        <ul>
+          <li>· Potenciar l’esperit crític vers les xarxes socials.</li>
+          <li>
+            · Descobrir que la informació a les xarxes pot estar manipulada.
+          </li>
+          <li>· Millorar la capacitat de síntesi. </li>
+          <li>· Reflexionar sobre la pròpia conducta.</li>
+        </ul>
+      </div>
+    ),
+    material: `Folis i llapis`,
+    introducció: `En aquesta dinàmica volem prendre consciència que les xarxes socials, concretament Twitter, tenen el perill de caure en una subjectivització i una excessiva síntesi de la informació. El primer que farem serà dividir els membres del grup per parelles o en grups de tres. Un cop estiguin tots separats per la sala (prou separats perquè cada parella o grup pugui treballar amb total independència), el monitor llegirà en veu alta una notícia real d’un cert grau de rellevància social i de qualsevol temàtica.`,
+    desenvolupament: `Un cop el monitor/a hagi llegit la notícia, els membres dels diferents grups tindran aproximadament 15 minuts per redactar un total de dos piulades. Com en els tweets reals, hauran d’escriure 140 caràcters com a màxim. En aquests, hauran d’introduir-hi la informació de la notícia llegida amb anterioritat que ells creguin més important. `,
+    avaluació: `Un cop tots els grups o parelles hagin elaborat els seus dos tweets, els passarem a llegir un per un, i el monitor anirà anotant en un full les diferents informacions que cada parella o grup ha decidit incloure en els seus tuits. Per acabar, haurem de reflexionar sobre els següents temes:
+
+    1. La informació de cada tuit és diferent o cada parella ha decidit incloure la mateixa informació?
+    
+    2. Valorar si nosaltres, com a consumidors d’Internet, ens creiem tot el que llegim i si som conscients de la càrrega subjectiva de la informació que ens arriba.
+    
+    3. Comprovar que nosaltres, persones anònimes i sense professionalitat en el camp de la comunicació i el periodisme, podem difondre qualsevol notícia i informació.
+    
+    4. Reconèixer que el fet d’haver de reduir tant una notícia, fa a que molta informació important acabi desapareixent. `,
+    etiquetes: ["Interior"],
+  },
+  {
+    id: 95,
+    title: `Les telenoticies del nostre esplai`,
+    descripció: `Dinàmica de grup que consisteix en preparar i realitzar un telenotícies sobre el centre d'esplai o cau.`,
+    participantsmin: 1,
+    participantsmax: 30,
+    edatmin: 9,
+    edatmax: 15,
+    durada: "1h30",
+    objectiusMoni: (
+      <div>
+        <ul>
+          <li>
+            · Potenciar la col·laboració de tots els infants dins del grup.
+          </li>
+          <li>· Ensenyar a elaborar notícies periodístiques. </li>
+          <li>· Cohesionar el grup de joves.</li>
+        </ul>
+      </div>
+    ),
+    objectiusInf: (
+      <div>
+        <ul>
+          <li>· Conèixer l’estructura que té un telenotícies.</li>
+          <li>· Millorar la comunicació oral.</li>
+          <li>· Crear notícies sobre el propi esplai o cau.</li>
+        </ul>
+      </div>
+    ),
+    material: `Fulls blancs, bolígrafs, cartolines de colors, ordinador, retoladors`,
+    introducció: `Es proposarà als infants elaborar un telenotícies del propi espai. Cada grup haurà d’elaborar una notícia d’un tema assignat seguint la mateixa estructura: títol-subtítol-text-imatge/fotografia.`,
+    desenvolupament: `Els monitors repartiran a cada grup la secció per a la qual serà la notícia que ha d’elaborar: nacional, internacional, esports, cultura, música i curiositats. Cada grup haurà de redactar una notícia de la secció que li hagi tocat amb algun tema/notícia que hagi passat al centre d’esplai.`,
+    avaluació: `Per finalitzar la dinàmica, cada grup explicarà a la resta de companys de secció la notícia que ha desenvolupat i procedirà a llegir-la com si fessin un Telenotícies real. També es pot proposar d’explicar les notícies a d’altres seccions del centre d’esplai o cau. `,
+    etiquetes: ["Interior"],
+  },
+  {
+    id: 96,
+    title: `El director de l'orquestra`,
+    descripció: `Joc tradicional de rotllana i d'imitació.`,
+    participantsmin: 12,
+    participantsmax: 20,
+    edatmin: 4,
+    edatmax: 11,
+    durada: "3 mins per ronda",
+    objectiusMoni: (
+      <div>
+        <ul>
+          <li>· Evitar que s’estableixin rols de lideratge molt marcat.</li>
+          <li>· Potenciar el treball en equip entre els participants.</li>
+        </ul>
+      </div>
+    ),
+    objectiusInf: (
+      <div>
+        <ul>
+          <li>· Qui la para haurà de descobrir qui dirigeix l’orquestra.</li>
+          <li>
+            · Tenir en compte les necessitats dels participants segons la
+            discapacitat.
+          </li>
+        </ul>
+      </div>
+    ),
+    material: `Sense material`,
+    introducció: `Aquest és un joc d’enginy que consisteix en descobrir qui ha iniciat la sèrie de ritmes.`,
+    desenvolupament: `Mentre un s’allunya de la rotllana (surt fora de la sala), els qui es queden a la rotllana han d’escollir, en secret, una persona del grup que serà el director o directora d’orquestra. Aquest comença a fer una acció repetidament que tots han d’imitar i que va canviant regularment (ex: picar de mans, treure la llengua, moure el cap,...). Entra qui està fora, es col·loca al mig i ha d’endevinar qui és el director o directora d’orquestra. Si ho endevina entra a formar part de la rotllana. Llavors, es tria una altra persona perquè descobreixi el nou director o directora.`,
+    avaluació: `En el cas de discapacitat física es pot fer asseguts al terra i/o en cadires.
+    Garantir que es facin moviments que tothom pugui fer i delimitar-los a 3-4 en el cas de discapacitat intel·lectual.`,
+    etiquetes: ["Interior", "Jocs curts", "Sense material"],
+  },
+  {
+    id: 97,
+    title: `Compartim vivències`,
+    descripció: `Els infants i/o els joves compartiran vivències i possibles actuacions a partir d'emocions.`,
+    participantsmin: 1,
+    participantsmax: 10,
+    edatmin: 4,
+    edatmax: 11,
+    durada: "50 mins",
+    objectiusMoni: (
+      <div>
+        <ul>
+          <li>
+            · Afavorir un clima que faciliti l’expressió iaprofundiment de les
+            converses de cadagrup.
+          </li>
+          <li>
+            · Ajudar i acompanyar els infants i/ojoves a plantejar actuacions
+            que ajudin a generar benestar.
+          </li>
+        </ul>
+      </div>
+    ),
+    objectiusInf: (
+      <div>
+        <ul>
+          <li>· Augmentar el vocabulari emocional.</li>
+          <li>· Desenvolupar consciència emocional.</li>
+          <li>
+            · Reflexionar per a plantejar possibles accions per ajudar- nos a
+            gestionar les emocions.
+          </li>
+        </ul>
+      </div>
+    ),
+    material: `Papers, llapis, cartolina i retoladors de colors`,
+    introducció: `Es pregunta als infants i/o joves de l'activitat: quines emocions coneixeu? I a partir del que expressin fem una llista on l’educador/a pot afegir-ne algunes que no hagin sortit. És recomanable que el monitor/a tingui preparat vocabulari emocional per poder ampliar i enriquir  el llistat.`,
+    desenvolupament: `Dividim el grup en petits grups i seguidament, cada grup apunta en paperets les emocions comentades amb anterioritat, a cada paperet una emoció. Un membre del grup agafa a l’atzar un paperet, llegeix l’emoció que hi ha escrita i explica a la resta dels membres del petit grup quan ha sentit aquella emoció i  què creu que li aniria bé a una persona quan sent aquella emoció. Un cop a acabat d’explicar-ho, ho realitza un al- tre company/a fins que surtin totes les emocions.`,
+    avaluació: `Cada grup ha de decidir quines coses podem fer quan sentim cadascuna  de les emocions per després explicar-ho a  la resta de grups. Finalment, cada grup expressa de forma lliure i creativa en una cartolina gran allò que ha viscut en petit grup, per tal de poder-ho compartir amb la resta de companys/es.`,
+    etiquetes: ["Interior", "Exterior"],
+  },
+  {
+    id: 98,
+    title: `Joc de les espècies exòtiques`,
+    descripció: `Joc de punteria amb anelles que tracta de capturar exemplars d'espècies invasores sense malmetre les autòctones. Les espècies exòtiques que resulten invasores són un problema greu per als nostres ecosistemes i està a les nostres mans solucionar-ho!`,
+    participantsmin: 5,
+    participantsmax: 25,
+    edatmin: 4,
+    edatmax: 11,
+    durada: "20-30 mins",
+    objectiusMoni: (
+      <div>
+        <ul>
+          <li>· Transmetre nou coneixement d'una forma lúdica.</li>
+        </ul>
+      </div>
+    ),
+    objectiusInf: (
+      <div>
+        <ul>
+          <li>
+            · Descobrir el concepte d'espècies exòtiques invasores i d'espècies
+            autòctones.
+          </li>
+          <li>· Practicar la protecció del medi ambient.</li>
+          <li>
+            · Practicar la punteria i cooperar per a solucionar un problema.
+          </li>
+        </ul>
+      </div>
+    ),
+    material: `Cartró, tubs de paper higiènic o de cuina, cola o cinta adhesiva`,
+    introducció: `Farem un taller amb tortugues de cartró. Algunes es poden pintar com tortugues de florida (amb les orelles vermelles i de la categoria exòtica invasora) i d’altres sense res (tortuga de rierol) o amb punts rodons grocs (tortuga d’estany), ambdues autòctones. A aquestes formes se’ls hi enganxa un tub de paper higiènic o paper de cuina en la part superior. Per últim, es retallen anelles que poden ser de diferents mides per complicar el joc.
+
+    Es pot fer amb altres espècies altament in- vasores com el cranc americà, el mosquit tigre, el musclo zebra, etc.`,
+    desenvolupament: `En un espai es disposen amb tubs de paper higiènic les figures escampades. La majoria de tortugues són exòtiques (tortuga  de  florida  i  tortuga  mossegadora)  i algunes poques tortugues autòctones (rierol, estany i mediterrània).
+
+    A l’inici es pot fer una mica d’introducció sobre la diferència entre una espècie exòtica (alòctona) i una espècie autòctona i del significat de que sigui invasora. Tot seguit, es divideixen els infants en equips. Des d’una distància s’han de tirar anelles per capturar les tortugues exòtiques, tot encertant-les sobre el tub. Cada tortuga exòtica capturada conta 3 punts. Però si per error es captura una tortuga autòcto- na, resta 5 punts!
+    
+    Al final es fa un recompte de les tortugues exòtiques i autòctones que queden   i es valora si la solució ha sigut adequada o no. També si hem ajudat a capturar les tortugues exòtiques o també hem afectat a les poques autòctones.
+    
+    Variants:
+    
+    - Es poden fer anelles de colors, i també tortugues de colors.  Cada  equip  ha d’atrapar les exòtiques del seu co- lor, o bé del color d’un altre equip. També es pot fer  que  si  un  equip  tira una anella a una tortuga  d’un  altre grup li anul·la el punt, etc.
+    
+    - Fer que la disposició inicial de les tortugues la posin elles i ells  per torns i per equips, complicant les posicions per a dificultar el tir.`,
+    avaluació: `Per saber si els objectius plantejats estan assolits analitzarem quin d'aquests aprenentatges han adquirit els nostres infants:
+
+    - Una tortuga exòtica arriba a un ecosistema de forma no natural.
+    
+    - Una tortuga exòtica invasora té unes capacitats molt bones per adaptar-se a aquell espai i no té enemics naturals, augmentant  ràpidament en nombres i perjudicant les espècies autòctones.
+    
+    - La causa de l’arribada de les espècies és humana, no és culpa de l’animal invasor.`,
+    etiquetes: ["Jocs curts", "Interior", "Exterior"],
+  },
+  {
+    id: 99,
+    title: `El salt de "l'avaluk"`,
+    descripció: `Joc d’habilitat inuit que treballa l’habilitat motriu en els participants`,
+    participantsmin: 5,
+    participantsmax: 50,
+    edatmin: 4,
+    edatmax: 11,
+    durada: "10-15 mins",
+    objectius: (
+      <div>
+        <ul>
+          <li>· Desenvolupar habilitats motrius.</li>
+          <li>· Conèixer jocs de cultures diferents a la nostra.</li>
+        </ul>
+      </div>
+    ),
+    material: `Una corda i una manta, una jaqueta o qualsevol element per fer saltar la resta dels companys`,
+    introducció: `El joc que presentem en aquest número de la revista el podríem englobar dins de la família de Jocs d’Arreu del Món. Saltar la pell de la foca és un joc d’origen inuit –o esquimal-, és a dir, de persones originàries de regions àrtiques d’Amèrica, Groenlàndia i Sibèria. És per això que rep aquest nom tan curiós.`,
+    desenvolupament: `El joc en qüestió no és massa complicat.
+
+    Hi ha dues persones que “paren” i s’encarreguen de moure la corda, que tindrà lligat un element (sac de patates, jaqueta, llençol, etc.). Les dues persones que paren hauran de moure la corda cap on vulguin, de manera que el moviment que realitzarà serà sempre aleatori.
+    
+    Mentrestant, els qui no paren hauran d’evitar ser tocats per la corda i l’element que hi tingui lligat. Podran esquivar, saltar, ajupir-se, etc. per tal de no ser tocats.
+    
+    El nivell de dificultat del joc serà escollit pels qui el dirigeixin, sempre tenint en compte l’edat dels participants.`,
+    avaluació: `Els objectius principals d’aquesta activitat són aprendre un joc nou d’arreu del món i desenvolupar habilitats motrius. Alhora, també es treballa la desinhibició i el sentiment de grup.
+
+    És important que els dirigents de l’activitat sàpiguen conduir bé el joc, és a dir, que mostrin més dificultat a aquells infants que tinguin més destresa motriu i que el facilitin a aquells que més els costa.
+    
+    A partir d’aquesta activitat, podem fer que els participants ofereixin i expliquin algun dels jocs similars que coneguin.`,
+    etiquetes: ["Jocs curts", "Exterior"],
+  },
+  {
+    id: 100,
+    title: `La portera`,
+    descripció: `Aquest joc es pot fer amb infants de totes les edats. Només cal que imitin tot el que els indiqui el monitor. Joc de repetició.`,
+    participantsmin: 3,
+    participantsmax: 20,
+    edatmin: 4,
+    edatmax: 11,
+    durada: "10 mins",
+    objectius: (
+      <div>
+        <ul>
+          <li>· Trencar el gel entre els participants.</li>
+          <li>· Saber seguir les indicacions de l’educador.</li>
+          <li>· Perdre la vergonya.</li>
+        </ul>
+      </div>
+    ),
+    material: `Sense material`,
+    introducció: `Per realitzar aquest joc cal que tinguem present que els infants faran tot allò que els indiquem perquè el nostre paper de model a seguir s’accentua.
+
+    Al començament, potser, hi haurà algun infant a qui li costarà començar a jugar, però a mesura que el joc avanci s’hi afegirà.`,
+    desenvolupament: `Es col·loquen tots els jugadors fent una rotllana a peu dret al costat de l’educador, que és qui donarà les indicacions corresponents.
+
+    Els nens i nenes hauran de fer i dir el mateix que faci i digui el monitor.
+    
+    Si el monitor diu: Pujo l’escala! , els infants seguidament diran: Pujo l’escala! I gesticularan els mateixos moviments que hagi fet l’educador.
+    
+    Després de cada pausa de l’educador és quan els infants han d’imitar-lo.
+    
+    El text que caracteritza el joc és el següent: 
+    
+    Monitor: Pujo l’escala! //
+    
+    Infants: Pujo l’escala!
+    
+    Monitor: Truco a la porta! //
+    
+    Infants: Truco a la porta!
+    
+    Monitor: I la portera em demana //
+    
+    Infants: I la portera em demana
+    
+    Monitor: I vostè, què vol? //
+    
+    Infants: I vostè, què vol?
+    
+    Monitor: Jo? //
+    
+    Infants: Jo?
+    
+    Monitor: Jo? //
+    
+    Infants: Jo?
+    
+    Monitor: Jo? //
+    
+    Infants: Jo?
+    
+    Monitor: Jo venc mitges //
+    
+    Infants: Jo venc mitges
+    
+    Monitor: i mitjons //
+    
+    Infants: i mitjons
+    
+    Monitor: i calçotets  //
+    
+    Infants: i calçotets
+    
+    Monitor: i pantalons //
+    
+    Infants: i pantalons
+    
+    Monitor: camises de llana  //
+    
+    Infants: camises de llana
+    
+    Monitor: i barrets de cotó  //
+    
+    Infants: i barrets de cotó
+    
+    Monitor: Jo?  //
+    
+    Infants: Jo?
+    
+    Monitor: Jo?  //
+    
+    Infants: Jo?
+    
+    Monitor: Jo?  //
+    
+    Infants: Jo?
+    
+    Monitor: Jo no vull res de tot això! //
+    
+    Infants: Jo no vull res de tot això!
+    
+    Monitor: Truqui a la porta del costat! //
+    
+    Infants: Truqui a la porta del costat!
+    
+    Al mateix temps que el monitor diu la frase o la paraula gesticula allò que fa.
+    
+    Els infants han de fer el mateix.
+    
+    El primer cop es fa normal, però la resta de vegades el monitor pot anar canviant el rol: pot fer-ho com un pinxo, com una persona trista, cantant, en una altra llengua, parlant cada cop més ràpid, etc.`,
+    avaluació: `Aquest joc serveix per tornar a la calma, en un moment determinat, i perquè els infants aprenguin a concentrar-se i seguir, correctament, les indicacions del monitor.
+
+    És un joc molt agraït de fer, sobretot, amb infants petits: de 3, 4 i 5 anys.
+    
+    Si el grup d’infants és d’edat més avançada, també pot ser un dels jugadors qui doni les indicacions; aleshores, poden treballar la seva iniciativa i imaginació.
+    
+    D’aquesta manera, s’allarga el joc i els infants poden mostrar-se tal i com són.`,
+    etiquetes: ["Jocs curts", "Exterior", "Interior", "Sense material"],
+  },
+  {
+    id: 101,
+    title: `El rellotge`,
+    descripció: `Joc de tornada a la calma. Adequat per fer després d’una bateria de jocs d’alta intensitat o quan necessitem relaxar el grup d’infants per començar una activitat que requereixi un clima grupal de concentració i tranquil·litat.`,
+    participantsmin: 2,
+    participantsmax: 50,
+    edatmin: 9,
+    edatmax: 18,
+    durada: "El que es vulgui",
+    objectius: (
+      <div>
+        <ul>
+          <li>· Saber tornar a la calma.</li>
+          <li>· Desenvolupar la capacitat de concentració.</li>
+          <li>· Aprendre a gestionar els estats d’ànim.</li>
+        </ul>
+      </div>
+    ),
+    material: `Un rellotge`,
+    introducció: `Hi ha moments en què els monitors hem de buscar en la nostra maleta invisible certs recursos per tal de captar l’atenció del grup d’infants i reconduir el seu estat d’ànim quan estan (excessivament) animats. “El rellotge” desenvolupa en els infants habilitats personals i permet aconseguir que el grup estigui en silenci absolut durant uns minuts.`,
+    desenvolupament: `Els participants es col·loquen asseguts o estirats còmodament al terra. Es proposa un repte al grup: qui serà capaç de comptar en silenci fins al número indicat pel monitor/a seguint el ritme exacte d’un rellotge? El número que s’indica ha de ser més o menys elevat, segons l’edat dels infants. És recomanable triar-lo entre el 20 i el 60 per tal de no fer que la ronda sigui massa curta o massa llarga.
+
+    Quan els infants arribin al número indicat han d’aixecar la mà sense fer soroll i, a continuació, podran obrir els ulls, observant en silenci la resta de companys com acaben de fer el seu recompte.
+    
+    El monitor/a ha de controlar el temps amb un rellotge i avisar el grup quan realment s’hagi arribat als segons indicats. A més a més, estarà pendent dels qui hagin fet el compte exactament com el rellotge.
+    
+    El nombre de rondes a fer depèn de la corba d’interès que mostrin els infants envers el joc. En el moment que sospitem una disminució de l’interès dels infants és recomanable finalitzar la partida. Així, en una altra ocasió que el tornem a proposar, hi haurà més probabilitats que tingui una acceptació positiva en els infants.`,
+    avaluació: `Un cop acabem cada ronda es pot crear un espai d’intercanvi que pot iniciar-se comentant quines persones del grup han anat massa ràpid, quines han anat massa a poc a poc, quins infants han comptat de forma exacta... amb l’objectiu d’afavorir un procés de regulació per a la següent ronda. El repte de fer-ho millor o de repetir el resultat la següent ronda pot afavorir que es mantingui la motivació dels infants per seguir jugant.
+
+    Si el dinamitzador del grup ho considera oportú també es pot reflexionar amb els infants sobre la importància de saber estar en silenci i de valorar la necessitat de crear un clima més tranquil per facilitar la realització de certes tasques. El que es viu durant el joc es pot utilitzar per reflexionar sobre allò que considerem necessari treballar amb el grup.
+    
+    Tenir a mà “El rellotge” ens facilita aconseguir de forma lúdica i divertida que els infants creïn un clima de grup relaxat i tranquil.`,
+    etiquetes: ["Jocs curts", "Exterior", "Interior"],
+  },
+  {
+    id: 102,
+    title: `Per començar... una cançó`,
+    descripció: `Cançons populars per triar, per unir-se al grup, perquè es quedi a fer de vigilant (parar) o per eliminar (segons el joc) persones o parts del cos.`,
+    participantsmin: 3,
+    participantsmax: 50,
+    edatmin: 4,
+    edatmax: 18,
+    durada: "2-5 mins",
+    objectius: (
+      <div>
+        <ul>
+          <li>· Interioritzar el ritme</li>
+          <li>· Afavorir la memòria, la retenció i l’atenció.</li>
+          <li>· Garantir la imparcialitat de l’elecció</li>
+          <li>· Acceptació i assimilació de les normes i regles del joc.</li>
+          <li>· Gaudir de les cançons populars catalanes i difondre-les.</li>
+        </ul>
+      </div>
+    ),
+    material: `Sense material`,
+    introducció: `Com decidim qui pertany al grup i qui no? I qui la “pararà”? Qui pagarà penyora? I la resposta és: Que ho decideixi la cançó!`,
+    desenvolupament: `Posant-nos en fila o en cercle, però tots en ordre, hi ha una persona que defineix l’objectiu: Qui paga “penyora”, qui la para, qui es salva... Després aquesta persona comença a cantar la cançó escollida, sempre assenyalant amb el dit i coincidint el cop de paraula de la cançó amb un salt que fa el dit d’un infant a l’altre. 
+
+    Seguint l’ordre establert (fila, rodona, etc.) es continua fins que s’arriba a la darrera síl·laba. En aquest moment, el participant a qui li ha tocat queda escollit o eliminat segons l’objectiu establert. I es torna a començar si és necessari.
+    
+    La resta de nens/es poden també acompanyar o cantar la cançó.`,
+    avaluació: `La millor avaluació que podem fer és observar el següent:
+
+    Que els grups (en el cas de fer-ne) han estat creats amb imparcialitat (no hi ha hagut discussions sobre l’elecció).
+    Que tots coneixen la cançó i, per tant, que poden cantar-la, seguir-la i fins i tot corregir el/la nen/a que la canta (aprenen la cançó, la memoritzen i n’interioritzen el ritme).
+    Que el/la nen/a que “paga” penyora no hi pot fer res perquè “li ha tocat” (acceptació i assimilació de les normes i regles del joc: joc net).
+    Que la cançó o les cançons, així com el mètode, passen dels uns als altres. 
+    Segons la finalitat dels jocs, és important no perdre gaire temps, així que abreviar cançons o escollir-ne de curtes també pot ser una bona elecció.
+    
+    Si volem ficar-nos en aquest món, podem descobrir que “sempre” ha existit aquesta mena de cançons i que n’hi ha de tot arreu.
+    
+    Recorda: Si no vols complicar-te triant, escull sempre una cançó bonica.`,
+    etiquetes: ["Jocs curts", "Exterior", "Interior", "Sense material"],
+  },
+  {
+    id: 103,
+    title: `La pila de sabates`,
+    descripció: `És un joc de rapidesa i habilitat visual i manual.`,
+    participantsmin: 3,
+    participantsmax: 50,
+    edatmin: 4,
+    edatmax: 15,
+    durada: "10 mins",
+    objectius: (
+      <div>
+        <ul>
+          <li>
+            · Ser el primer a trobar les pròpies sabates, posar-se-les bé i
+            seure al mateix punt de sortida.
+          </li>
+        </ul>
+      </div>
+    ),
+    material: `Les sabates de cada jugador.`,
+    introducció: `Per fer aquest joc ens aniria bé tenir un espai exterior com ara una pista de bàsquet o un camp de gespa per poder córrer descalços. És important que el lloc on juguem estigui net perquè els infants no es facin mal.
+
+    Recomanem que hi hagi dos monitors portant l’activitat; d’aquesta manera, ens assegurem que els infants la fan correctament i no miren en el moment d’apilar les sabates.
+    
+    Si el joc el fem amb infants de la mateixa edat, com ara entre 5 i 6 anys, podem aprofitar l’activitat perquè els nens i nenes aprenguin a cordar-se ells mateixos les sabates, sandàlies o botes.`,
+    desenvolupament: `Fem que tots els jugadors deixin les seves sabates a l’extrem oposat de la línia de sortida. Els participants seuen a l’altre extrem del camp d’esquena a les sabates. Entre les sabates i els jugadors és interessant que hi hagi un tram de 20-30 metres. Mentre un monitor distreu els jugadors que estan d’esquena a les sabates, un altre monitor les posa fent una pila ben desendreçada.
+
+    Quan els dos monitors estan junts davant dels jugadors se’ls explica el funcionament del joc i se’ls dóna la sortida. Tots els jugadors estan asseguts a terra i l’objectiu del joc és: aixecar-se, córrer fins a les sabates, calçar-se les pròpies de cadascú i tornar al lloc de sortida. Guanya el primer que arriba al punt de sortida amb les sabates ben posades i ben cordades.`,
+    avaluació: `Aquest joc és pràctic per omplir una estona de temps mort dels campaments, les colònies o els casals d’estiu. Si tenim infants de diferents edats veurem com s’ajuden els uns als altres. Normalment, els més grans ajuden els més menuts i els més petits s’espavilen a aprendre a calçar-se.
+
+    Recordeu: si algun infant no vol participar-hi no l’obligueu. Penseu que a l’estiu i amb la calor a molts nens els suen els peus i… La finalitat principal del joc és passar una bona estona.`,
+    etiquetes: ["Jocs curts", "Exterior", "Sense material"],
+  },
+  {
+    id: 104,
+    title: `Música i emocions`,
+    descripció: `L'activitat es presenta com element per reconèixer els diferents tipus d'emocions i alhora ofereix l'espai per poder parlar de les situacions en les que aquestes són viscudes pels adolescents.`,
+    participantsmin: 8,
+    participantsmax: 20,
+    edatmin: 9,
+    edatmax: 11,
+    durada: "1h",
+    objectiusMoni: (
+      <div>
+        <ul>
+          <li>
+            · Identificar estats d'ànim i sensibilitzar els joves a verbalitzar
+            les emocions i a reconèixer-les
+          </li>
+        </ul>
+      </div>
+    ),
+    objectiusInf: (
+      <div>
+        <ul>
+          <li>
+            · Oferir un espai que permeti parlar i compartir estats anímics,
+            alhora que donem a conèixer músiques que estan fora del circuit de
+            la música que acostumen a escoltar.
+          </li>
+        </ul>
+      </div>
+    ),
+    material: `Aparell reproductor de música, fulls de paper blanc, llapis`,
+    introducció: `Es pot iniciar l'activitat a partir d'una lectura significativa i que ens ajudi a introduir el tema que tractem. Una que acostuma a funcionar i que precisament tracta sobre la identificació emocional és "La tristeza y la ira" de Jorge Bucay.`,
+    desenvolupament: `Una vegada presentada l'activitat, intentem exposar les diferents maneres d'escoltar. Ho podem fer a partir d'una pluja d'idees en relació a les diferents situacions en què ells mateixos escolten música (mentre fan esport, quan llegeixen, en un bar, al carrer amb els amics, etc.) Oferim la possibilitat de tancar els ulls i els hi proposem una escolta activa. D'aquesta manera anem presentant les diferents audicions i els demanem que en finalitzar-les escriguin un número referit a la cançó i al costat identifiquin amb quina emoció relacionen la cançó que han escoltat.`,
+    avaluació: `En finalitzar les audicions, tornarem a escoltar les cançons i demanarem que els alumnes identifiquin la cançó amb l'emoció que han escrit. En acabar farem una valoració de com s'han sentit i d'allò que més els hi ha agradat i allò que menys. // Observacions:
+
+    La tria de les cançons és lliure. Cal tenir en compte, però, que a l'hora de triar-les s'ha de buscar música de contrastos, doncs això afavorirà el reconeixement i la diferenciació dels diferents estats anímics.
+    
+    Us proposem alguns temes que podeu fer servir: "In the Summer Time" (Mungo Jerry), "El cant del ocells" (tradicional catalana/Pau Casals), "Gonna Fly Now" (Bill Conti. Banda sonora de "Rocky"), "Jamming" (Bob Marley and The Wailers), "The Storm" (Anton Coppola. Banda sonora de "Dràcula"). `,
+    etiquetes: ["Jocs curts", "Interior", "Narració i expressió"],
+  },
+  {
+    id: 105,
+    title: `Els embruixats del bilboquet`,
+    descripció: `L’objectiu del joc és que els bruixots deixin paralitzats tots els jugadors mentre que els jugadors han d’intentar encertar el suro al pot per a poder continuar jugant.`,
+    participantsmin: 10,
+    participantsmax: 50,
+    edatmin: 4,
+    edatmax: 11,
+    durada: "Depén de grup",
+    objectiusMoni: (
+      <div>
+        <ul>
+          <li>· Introduir jocs fets amb material reciclat.</li>
+          <li>
+            · Dur a terme un taller per després utilitzar el que s’ha fabricat
+            de manera lúdica.
+          </li>
+        </ul>
+      </div>
+    ),
+    objectiusInf: (
+      <div>
+        <ul>
+          <li>· Cooperar amb els companys.</li>
+          <li>
+            · Mostrar habilitats en encertar o fer punteria en tot moment.
+          </li>
+          <li>· Guanyar destresa manual fent un taller.</li>
+        </ul>
+      </div>
+    ),
+    material: `Materials necessaris per fabricar un bilboquet: 1 pot de iogurt, fil elàstic fi, un punxó, un tap de suro, una agulla gran i unes tisores. // 
+    Per a jugar: un guix i un bilboquet per jugador.`,
+    introducció: `Com fabriquem el bilboquet: Netegem el pot del iogurt, fem un forat al fons del pot i retallem un tros de fil elàstic d’uns 50 cm. Passem aquest fil pel forat del pot de iogurt i li fem un nus a la part de dins. Amb el punxó fem un forat al tap de suro de dalt cap a baix i amb l’agulla hi passem el fil que ens ha quedat penjat del pot de iogurt. Traiem l’agulla i hi fem un nus.`,
+    desenvolupament: `Delimitem un espai de joc, demanem que tres participants facin de bruixots i la resta es distribueixen per l’espai amb un bilboquet cadascun. 
+
+    Els bruixots han de perseguir la resta de participants. Quan un jugador és tocat s’ha de quedar paralitzat i per tornar a jugar ha d’encertar el tap de suro dins del iogurt (jugar amb el bilboquet). 
+    
+    L’objectiu del joc és que els bruixots deixin paralitzats tots els jugadors mentre que els jugadors han d’intentar encertar el suro al pot per a poder continuar jugant.`,
+    avaluació: `Un cop s’ha fet una partida, se’n fa una segona canviant els papers dels participants. Això ho fem per a treballar l’empatia. 
+
+    També podem fer més partides ampliant l’espai de joc o afegint noves normes. 
+    
+    Aquest joc serveix per a veure que podem jugar a partir de material que ens hem fabricat nosaltres mateixos.`,
+    etiquetes: ["Jocs curts", "Exterior"],
+  },
+  {
+    id: 106,
+    title: `Un tresor ben fred`,
+    descripció: `Una activitat refrescant pensada per l’estiu. Quan anem de colònies, sovint fem alguna gimcana per trobar un tresor amagat. Normalment, trobar el tresor implica tenir el premi d’immediat. Però què pot passar quan el tresor està amagat en un bloc de gel que no podem trencar?`,
+    participantsmin: 2,
+    participantsmax: 50,
+    edatmin: 4,
+    edatmax: 15,
+    durada: "Indiferent",
+    objectiusMoni: (
+      <div>
+        <ul>
+          <li>
+            · Fer descobrir als infants una nova manera de trobar un tresor.
+          </li>
+          <li>· Refrescar i remullar els infants</li>
+        </ul>
+      </div>
+    ),
+    objectiusInf: (
+      <div>
+        <ul>
+          <li>· Tenir paciència quan el resultat no és immediat.</li>
+          <li>· Pensar maneres de desfer un bloc de gel.</li>
+          <li>· Treballar en equip per aconseguir un objectiu comú.</li>
+        </ul>
+      </div>
+    ),
+    material: `Aigua i objectes de colors`,
+    introducció: `Cal escollir quin serà el tresor, i vigilar que sigui quelcom que es pugi mullar, o bé que no es faci malbé amb el contacte amb l’aigua. Busquem un recipient on posar-ho i ho cobrim tot d’aigua.
+    Poseu-ho al congelador almenys durant un dia sencer. Procureu que el recipient sigui d’un plàstic fi, per tal de poder-lo tallar. Si poseu objectes a dins de colors variats i vius, serà molt més impactant quan descobreixin el tresor. També podeu afegir una mica de colorant a l’aigua, per tal que el bloc sigui de color.`,
+    desenvolupament: `Un cop els nens i nens han trobat el tresor s’adonaran que just en aquell moment no poden accedir-hi perquè està dins el bloc de gel. Aquí és on comença la gràcia del joc. Com reaccionaran? Tindran paciència fins que es desfaci? Pensaran estratègies per aconseguir que es desfaci més ràpid?
+
+    Serà bo que fem aquesta activitat en un moment en què faci calor o força sol, així es desfarà més ràpid el gel. La mateixa acció de desfer el gel pot ser un moment per jugar i refrescar-se. Es poden anar passant el gel de mà en mà, es poden refrescar posant el gel a l’esquena, al coll o al cap, etc.`,
+    avaluació: `Caldrà avaluar quines han estat les estratègies que han pensat els infants per a desfer el bloc de gel de la manera més ràpida. També cal veure i comentar amb ells com han reaccionat pel fet que el tresor no l’han pogut tenir just al moment de trobar-lo. Finalment, l’equip de monitors pot explicar quines poden ser les maneres de desfer més ràpid.`,
+    etiquetes: ["Jocs curts", "Exterior", "Interior"],
+  },
+  {
+    id: 107,
+    title: `Envàs on vas`,
+    descripció: `Joc per aprendre a classificar els residus segons el color del contenidor on van.`,
+    participantsmin: 2,
+    participantsmax: 50,
+    edatmin: 12,
+    edatmax: 18,
+    durada: "10 mins",
+    objectiusMoni: (
+      <div>
+        <ul>
+          <li>
+            · Conscienciar els infants sobre la importància de la recollida
+            selectiva.
+          </li>
+        </ul>
+      </div>
+    ),
+    objectiusInf: (
+      <div>
+        <ul>
+          <li>· Descobrir a quin contenidor va cada residu.</li>
+          <li>
+            · Prendre consciència de la importància de la recollida selectiva.
+          </li>
+        </ul>
+      </div>
+    ),
+    material: `50 globus gegants, 5 pancartes dels colors dels contenidors (marró, gris, blau, verd i groc), 50 imatges de residus (10x contenidor)`,
+    introducció: `Moltes vegades dubtem sobre el contenidor on aniran els diferents residus que generem. Aquesta és una ocasió per aprendre-ho de forma divertida.`,
+    desenvolupament: `Per jugar a aquest joc s’han de fer cinc equips, un per cadascun dels contenidors, que estaran repartits per l’espai de joc. L’objectiu d’aquests equips és que els residus que pertanyen al seu contenidor acabin al lloc que els correspon.
+
+    Cada imatge d’un residu anirà lligada o enganxada a un globus, i es seleccionaran imatges de deixalles que generen dubtes, com per exemple, el marro del cafè, un bric de llet, pols d’escombrar, una bombeta...
+    
+    Per fer arribar cada globus al seu contenidor corresponent, s’haurà de passar a través dels membres de l’equip, sense que toquin a terra. Es poden interceptar els globus dels altres equips per dificultar-los la tasca. Guanya l’equip que primer reuneix totes les seves deixalles.`,
+    avaluació: `En acabar el joc, es pot fer una petita reflexió amb els joves sobre quins residus s’han fet més difícils de classificar i els beneficis que pot tenir una bona recollida selectiva a les seves llars, a l’esplai, a colònies, etc.`,
+    etiquetes: ["Jocs curts", "Interior"],
+  },
+  {
+    id: 108,
+    title: `Les nostres pors`,
+    descripció: `Mitjançant una passejada nocturna pel bosc en busca d'un conte es convidarà els participants a reflexionar sobre les seves pors i els beneficis i els inconvenients de tenir-les.`,
+    participantsmin: 1,
+    participantsmax: 50,
+    edatmin: 9,
+    edatmax: 15,
+    durada: "1h/1h30",
+    objectiusMoni: (
+      <div>
+        <ul>
+          <li>
+            · Convidar els infants i els joves a reflexionar sobre la por.
+          </li>
+          <li>· Mostrar la part positiva de la por.</li>
+          <li>· Donar a conèixer activitats diferents per treballar la por.</li>
+          <li>
+            · Aprendre sobre els diferents tipus de por que existeixen (sempre
+            treballem la mateixa por).
+          </li>
+        </ul>
+      </div>
+    ),
+    objectiusInf: (
+      <div>
+        <ul>
+          <li>· Entendre que la por no sempre és dolenta.</li>
+          <li>· Detectar diferents tipus de pors.</li>
+        </ul>
+      </div>
+    ),
+    material: `Text sobre la por de carles Capdevila, conte "El monstre de colors", guitarra`,
+    introducció: `Apareixerà un personatge infantil que ha perdut el conte que li havien d’explicar aquesta nit per anar a dormir i que necessita anar-lo a buscar. Demanarà ajuda als participants perquè l’acompanyin ja que creu que l’ha perdut al bosc i té por d'anar-hi sol.`,
+    desenvolupament: `Els participants es dividiran  en  grups  de 6 o  8  integrants  i  aniran  caminant al bosc on trobaran fragments del text de “La por” escrit per Carles Capdevila. A cada fragment que trobin, convidaran a reflexionar, sigui interiorment o en debat grupal sobre allò que han llegit. Algunes de les preguntes que podem plantejar són:
+
+    Quines són les vostres pors?
+    On us neixen? Dins vostre o en elements externs?
+    Identifiqueu les vostres pors com quelcom positiu o negatiu?
+    Algun cop us heu sentit beneficiats o perjudicats per les vostres pors? Que en vau aprendre de les vostres experiències amb aquesta emoció?
+    Alguna vegada heu deixat de fer/ dir/experimentar alguna cosa per  por? Va valer la pena? 
+    Finalment els grups trobaran el conte, que pt estar en un lloc comú per a tots els grups o dividit en fragments i ajuntar-se posteriorment per llegir-lo. Un dels contes que podríem llegir seria "El monstre de colors" de Santi Balmes.
+    
+    Per a tancar l'activitat cantarem la cançó d'Els Pets "Por". Al final, explicarem que aquesta cançó ens parla de la por, però ho fa d'aquelles pors que sovint ens costa parlar, tot i ser les més comunes com: la por a parlar, la por a callar, la por a estimar...`,
+    avaluació: `Dies més tard en un espai més tranquil, es pot plantejar una conversa amb el grup per parlar de com es va viure la dinàmica i de si aquelles pors de les que van estar reflexionant s’han tornat a repetir o com han pogut canviar la seva actitud i/o conducta.`,
+    etiquetes: ["Jocs de nit", "Exterior"],
+  },
+  {
+    id: 109,
+    title: `El tresor i les pedres màgiques`,
+    descripció: `L’activitat està pensada per fer-la al vespre, abans d’anar a dormir. Mitjançant un joc de nit o d’un altre tipus, els infants trobaran una bosseta de roba a l’interior de la qual hi ha 3 pedretes de diferents colors.`,
+    participantsmin: 1,
+    participantsmax: 50,
+    edatmin: 4,
+    edatmax: 8,
+    durada: "Sense determinar",
+    material: `Bossetes de roba (tantes com infants hi hagi) amb 3 pedretes a dins de diferents colors.`,
+    introducció: `En aquesta dinàmica, els infants trobaran una bosseta de roba a l’interior de la qual hi ha 3 pedretes de diferents colors. Primer de tot, explicarem que aquestes pedres són màgiques.
+
+    La primera fa aparèixer caramels sota el coixí mentre estàs dormint.
+    La segona fa que, quan et lleves l’endemà al matí, t’apareguin unes taques blaves a la cara (que marxen si es renten).
+    La tercera fa aparèixer un tresor a sota del llit. Només pot fer aparèixer un tresor cada nit, així que no tots els que la facin servir aquell vespre tindran tresor.
+    Com que la tercera pedra màgica només pot fer aparèixer un tresor, hem de convèncer els infants que es posin d’acord per compartir-lo entre tots, li toqui a qui li toqui.`,
+    desenvolupament: `Cadascú decidirà quines pedres vol fer servir, si totes o només alguna d’elles. Els monitors haurem d’anar apuntant qui fa servir cada pedra, perquè ens tocarà a nosaltres amagar els caramels i pintar la cara dels infants (tot això sense que se n’adonin).
+
+    Manera de fer servir les pedres:
+    
+    S’ha de posar a sobre del cap sense que caigui i fer tres passes enrere tot dient: “S'alça la matina, carquinyoli, fa un xarel·lo amb allioli?”
+    S’ha de posar dins del mitjó, saltar a peu coix tres vegades i dir: “Les carxofes d’en Polop, quan bullen fan xop-xop”.
+    S’ha de posar al darrere de l’orella sense que caigui i aleshores amb la mà dreta ens hem de tocar el peu esquerre i amb el nas ens hem de tocar un genoll, mentre diem: “Elàstics blaus mullats fan fàstic". 
+    L’endemà al matí, a uns els apareixeran caramels en el llit, a d’altres la cara pintada, etc. Tots miraran sota el llit, per veure si ha aparegut el tresor. Sota un dels llits apareix una capsa plena de monedes d’or. Un cop comptades les monedes, resulta que n’hi ha una per a cada infant i, tal com vam acordar, les repartim entre tots.
+    
+    A continuació, expliquem que aquestes monedes també són màgiques i podem demanar desigs. Per fer-ho, només cal acostar-se fins a un pou, riu o bassa i llançar-les a dins perquè s’acompleixi el desig. Així que portarem els infants fins a un lloc on hi hagi aigua i tothom qui vulgui hi podrà llançar la seva moneda.`,
+    avaluació: `El desig no s’acomplirà si demanem una cosa per a nosaltres; només s’acompleix quan ho demanem per a una altra persona: pares, germans, persones que no coneixem però que sabem que s’ho passen malament, etc.`,
+    etiquetes: ["Jocs de nit", "Interior", "Exterior"],
+  },
+  {
+    id: 110,
+    title: `A la recerca dels vaixells extraviats`,
+    descripció: `Joc en equip per conèixer els diferents sorolls de la natura a la nit i gaudir de la foscor acompanyat, sense passar por`,
+    participantsmin: 4,
+    participantsmax: 50,
+    edatmin: 9,
+    edatmax: 18,
+    durada: "Indiferent",
+    objectius: (
+      <div>
+        <ul>
+          <li>· Confiar en els companys de grup en tot moment.</li>
+          <li>
+            · Distingir els diferents sorolls que acompanyen la nit a la
+            muntanya.
+          </li>
+          <li>
+            · Intentar fer el mínim de soroll possible per a no ser descobert.
+          </li>
+        </ul>
+      </div>
+    ),
+    material: `Una o dues llanternes per equip.`,
+    introducció: `Estem de colònies i ens fa una nit meravellosa on la lluna fa tanta llum que ho veiem tot sense llanternes. Fa fresca i estem pensant de dur a terme un joc de nit, però que no sigui massa mogut, que no faci por i que no requereixi gaire material.`,
+    desenvolupament: `Distribuïm els jugadors en dos equips iguals i a cadascun d’ells també ens distribuïm els monitors per igual.
+
+    Un equip es situa a l’era de la casa de colònies i es tapa els ulls tanta estona com diguin els monitors que estan dins del mateix grup.
+    
+    Mentrestant, l’altre equip se’n va per les rodalies de la casa: camins, boscos, prats... i quan ja creu que ha trobat un lloc prou interessant per amagar-se en la foscor, s’amaga i tots plegats criden: “TRES NAVÍOS EN EL MAR DISPUESTOS A NAUFRAGAR”.
+    
+    Quan els companys que estan a l’era de la casa senten el crit dels que s’han amagat – la qual cosa vol dir que estan lluny però no tant – criden en veu alta tots plegats: “ Y LOS TRES EN SU BUSCA VAN”. I comencen a buscar.
+    
+    Si ha passat una estona i els que s’han amagat veuen que l’altre equip no els troba perquè estan molt desorientats poden tornar a cridar: “TRES NAVÍOS EN EL MAR DISPUESTOS A NAUFRAGAR”.
+    
+    Quan l’altre equip – el que busca – sent el grup d’amagats ha de tornar a respondre: “ Y LOS TRES EN SU BUSCA VAN”.
+    
+    El joc s’acaba quan l’equip que buscava troba els que estan amagats. És recomanable repetir el joc canviant els papers per veure què ha sentit l’equip contrari.`,
+    avaluació: `Perquè aquest joc sigui divertit i productiu és molt important la implicació de l’equip de monitors, tant pel que fa a la motivació com a l’hora de guardar silenci, apagar les llanternes i anar controlant que cap infant no es despisti.
+
+    És molt divertit perquè quan acabes les colònies recordes: aquella nit que ens vam amagar tots junts a.....I, realment, tothom s’ho ha passat bé!!!`,
+    etiquetes: ["Jocs de nit", "Exterior"],
+  },
+
+  {
+    id: 111,
+    title: `El llaner i la seva troca`,
+    descripció: `Joc per a treballar l’observació dels infants en el bosc i la rapidesa en trobar brins de llana que estan penjats de les branques dels arbres i/o arbustos.`,
+    participantsmin: 7,
+    participantsmax: 30,
+    edatmin: 9,
+    edatmax: 15,
+    durada: "30 mins",
+    objectius: (
+      <div>
+        <ul>
+          <li>· Observar atentament l’entorn on es desenvolupa el joc.</li>
+          <li>
+            · Guanyar destresa en trobar elements que no formen part del bosc.
+          </li>
+          <li>· Saber guanyar i saber perdre.</li>
+          <li>· Estar atent al so del xiulet.</li>
+          <li>· Respectar l’espai de joc.</li>
+        </ul>
+      </div>
+    ),
+    material: `40 o 60 brins de llana d’uns 30 centímetres de llarg, un xiulet`,
+    introducció: `Un llaner –persona que porta una troca de llana i la custodia-, escollit a l’atzar, s’allunya de l’espai on es troben la resta de participants i s’endinsa al bosc per portar a terme la seva missió: lligar els brins de llana que porta a les mans a les branques del arbres i arbustos que vagi trobant pel camí. Passats 10 minuts, torna a l’espai on es troben la resta de participants.`,
+    desenvolupament: `Quan el llaner arriba al punt de sortida la resta de participants marxen cap al bosc a buscar els brins de llana. Passats 15 minuts, el llaner toca el xiulet i els caçadors de brins han de tornar al punt de sortida per fer el recompte de brins trobats. 
+
+    Cada bri de llana trobat equival a 1 punt. Les puntuacions s’apunten en un paper. Un cop fet el recompte cal tenir en compte que no pot quedar cap tros de llana penjat dels arbres. Si el recompte no quadra, cal sortir a recollir els brins de llana que s’han quedat penjats i tothom ha d’anar a buscar-los perquè no podem deixar res que perjudiqui l’entorn! 
+    
+    Tornem a comptar els brins que hem trobat i aquest cop cada bri de llana que hagi trobat un caçador val 5 punts. Els brins que trobi el llaner no compten. Es torna a fer el recompte de tots els brins i guanya el caçador que aconsegueix millor puntuació passant a ser el Gran Caçador de Llana del Bosc. 
+    
+    Si han quedat brins de llana penjats als arbres i/o arbustos els podem anar a buscar tots plegats, fent un passeig pel bosc, o podem fer que el llaner pagui penyora per cada bri que no hagi estat trobat.`,
+    avaluació: `Ens pot servir per a veure com s’orienten els infants en un espai poc conegut. Podem jugar amb infants més petits si l’adaptem i els fem anar per parelles o grups. 
+
+    És un joc que serveix per gaudir de l’entorn natural i el podem utilitzar per treballar el respecte per la natura i recordar que no hi hem de deixar mai res que el pugui perjudicar. Sempre que anem al bosc, hem de recollir totes les deixalles que haguem pogut produir.`,
+    etiquetes: ["Jocs de nit", "Jocs de pistes i gimcanes", "Exterior"],
+  },
+  {
+    id: 112,
+    title: `Compte que et menjaràn`,
+    descripció: `Treball de continguts de coneixement del medi natural.`,
+    participantsmin: 16,
+    participantsmax: 30,
+    edatmin: 9,
+    edatmax: 15,
+    durada: "45 mins",
+    objectiusMoni: (
+      <div>
+        <ul>
+          <li>· Posar en valor la rellevància de la cadena tròfica.</li>
+          <li>· Promoure el respecte al medi natural.</li>
+        </ul>
+      </div>
+    ),
+    objectiusInf: (
+      <div>
+        <ul>
+          <li>· Treballar en equip.</li>
+          <li>· Conèixer el funcionament de la cadena tròfica.</li>
+        </ul>
+      </div>
+    ),
+    material: `Ceres facials (3 colors), targetes blaves(aigua), targetes vermelles(menjar)`,
+    introducció: `Habitualment, fomentem als nostres infants i joves el respecte al medi natural anant d’excursió a la muntanya, fent campanyes de sensibilització, etcètera. Sovint, combinar continguts amb actituds  sembla  una  tasca  complicada. I si pensem en apropar aquests conei-xements a través d’un joc de rol, on els infants siguin els propis protagonistes de la història?`,
+    desenvolupament: `Per iniciar el joc de rol cal que, prèviament, escollim el nombre d’animals que volem que intervinguin en la cadena tròfica. Hem de tenir en compte que els infants es divideixen en grups i cadascun d’aquests representa un animal. En aquesta fitxa us proposem l’exemple de cadena tròfica amb tres animals (llops, gallines i cucs). 
+
+    El repte que ha d’aconseguir cada grup d’animals al finalitzar el joc és el de mantenir el nombre màxim de supervivents del seu grup tot eliminant a les seves preses, com en el regne animal. 
+    
+    Per  fer-ho cal tenir en compte  que:
+    
+    Cada animal s’identifica amb un color i símbol a la cara.
+    Cada infant disposa de tres vides. 
+    Durant el joc s’estableixen tres bases (espais controlats per un monitor):
+    
+    El cementiri: Lloc on aniran els ani- mals que han estat menjats pels seus depredadors.
+    La menjadora: Espai on els animals aniran a buscar menjar.
+    El bevedor: Zona on els animals aniran a buscar aigua. 
+    El sistema de caça pot ser escollit pels infants dins d’aquestes tres opcions:
+    
+    Lluita de galls.
+    Pedra, paper i tisora gegant.
+    Lluita de polzes. 
+    Els participants es col·loquen lliurement per l’espai de joc. Cada vegada que dos infants es trobin hauran de lluitar per la seva supervivència (amb el sistemes de caça proposats). 
+    
+    Durant la caça, si guanya el depredador, la presa perdrà una vida i ho haurà d’anar a notificar al monitor del cementiri.  Si, per contra, guanya la presa, aquesta podrà marxar sense poder ser atrapada de nou pel mateix depredador. 
+    
+    En el cas que un infant perdi les tres vides, haurà de quedar-se al cementiri esperant que un membre del seu grup li proporcioni aigua (targeta blava) i un altre que li doni menjar (targeta vermella) amb l’objectiu d’obtenir tres vides més. L’aigua i el menjar l’aconseguiran els infants quan vagin a buscar-ho a la base corresponent. 
+    
+    Al finalitzar el temps establert per l’equip de monitors, es farà recompte dels animals vius de cada grup i el més nombrós serà el guanyador.​
+    
+    Desprès cal aprofitar aquest espai per introduir conceptes i reflexions relacio- nades amb el medi natural.`,
+    avaluació: `Al finalitzar el joc de rol el grup d’infants  i monitors es reuniran per valorar com ha anat l’explicació.`,
+    etiquetes: ["Jocs de nit", "Exterior"],
+  },
+  {
+    id: 113,
+    title: `Gimcana de sensacions`,
+    descripció: `Gimcana per treballar els sentits. Jocs sensorials`,
+    participantsmin: 1,
+    participantsmax: 50,
+    edatmin: 4,
+    edatmax: 11,
+    durada: "1h",
+    objectius: (
+      <div>
+        <ul>
+          <li>· Desenvolupar les capacitats sensorials i motores.</li>
+          <li>· Organitzar-se en l’estructura espaciotemporal.</li>
+          <li>· Utilitzar el llenguatge corporal.</li>
+        </ul>
+      </div>
+    ),
+    material: `Taula, plats de plàstic, llimones, sucre,sal i cafè, tovalloletes higièniques, cacau, xocolata, gelat de vainilla, gelat de maduixa, ós de peluix, cartró, esponja de mar, cabells de nina, teles de diferents mides`,
+    introducció: `S’organitza tot el grup en diferents subgrups, d’entre 5 i 6 persones. Els infants han de seguir un recorregut organitzat, on es trobaran diferents jocs-activitats per realitzar.`,
+    desenvolupament: `Els diferents jocs proposats són els següents: 
+
+    1.- El fotògraf: de cada grup, un dels membres és el fotògraf i la resta, models. Cada model ha de fer una postura amb el cos (com si fos una sessió de fotos). El fotògraf ha d’observar amb detall els seus companys. Una vegada ha vist les postures dels companys, el fotògraf tanca els ulls i compta fins a 10, mentre la resta canvia de postura (els que volen). Quan el fotògraf torna a obrir els ulls, ha d’endevinar qui ha canviat la posició i recordar quina era la postura inicial d’aquest.
+    
+    Material: no hi ha material específic.
+    
+    Tipus de joc: joc de memòria visual. 
+    
+    2.- Quin sabor té?: Es demana als infants que seguin uns al costat dels altres, davant d’un mostrador o tauleta, i se’ls tapen els ulls. El monitor o monitora els fa tastar diferents aliments i ells han d’endevinar quin gust tenen.
+    
+    Material: tauleta, plats de plàstic; llimones, sucre, sal, cafè; tovalloletes; mocadors.
+    
+    Tipus de joc: joc de percepció del gust. 
+    
+    3.- De què fa olor?: Es demana als infants que seguin i se’ls tapen els ulls. El monitor o monitora els apropa els diferents aliments i ells han d’endevinar de quin es tracta a través de l’olor que desprenen.
+    
+    Material: tauleta, plat de plàstic; cacau, xocolata, gelat de vainilla, gelat de maduixa; tovalloletes; mocadors.
+    
+    Tipus de joc: jocs de percepció d’olfacte. 
+    
+    4.- Passa la mà: Es col·loquen tots els nens asseguts formant un cercle i se’ls tapen els ulls. Es deixen una sèrie d’objectes al mig de la rotllana i hauran d’anar palpant-los per endevinar què són. Cada vegada que un nen o nena agafi i endevini (o, no) quin objecte és, el tornarà a deixar al centre del cercle perquè estigui a disposició dels seus companys, i n’agafarà un altre.
+    
+    Material: ós de peluix, cartró, esponja de mar, cabells de nina; mocadors.
+    
+    Tipus de joc: jocs de percepció tàctil.`,
+    avaluació: `Les activitats han de permetre treballar “l’espai sensorial” i afectiu de l’infant. A través d’aquesta activitat es promou el treball en equip i la responsabilitat de cada membre del grup de participar i treballar per a un objectiu comú.
+
+    Els infants poden sentir-se incòmodes quan estan amb els ulls tapats; per això, el monitor o monitora ha d’aconseguir que el temps en les diferents activitats sigui breu i ha de transmetre confiança en els nens i nenes durant el desenvolupament de les proves.`,
+    etiquetes: ["Jocs de pistes i gimcanes", "Interior", "Exterior"],
+  },
+  {
+    id: 114,
+    title: `Gimcana de la biodiversitat`,
+    descripció: `Realitzarem diferents jocs perquè els nens puguin entendre el concepte de biodiversitat d’una forma divertida.`,
+    participantsmin: 15,
+    participantsmax: 50,
+    edatmin: 9,
+    edatmax: 15,
+    durada: "2h30/3h",
+    objectius: (
+      <div>
+        <ul>
+          <li>
+            · Aprendre el concepte de biodiversitat i la relació de diferents
+            animals amb el medi.
+          </li>
+          <li>
+            · Fomentar el respecte per allò que ens envolta i de què formem
+            part.
+          </li>
+        </ul>
+      </div>
+    ),
+    material: `Fitxes de trencaclosques fetes en paper i colors, podem portar un joc de fulles plastificades per fer el joc del mocador o podem utilitzar les que trobem al bosc`,
+    introducció: `Plantegem una sèrie de jocs de tota la vida adaptats per explicar d’una forma divertida el concepte de biodiversitat als nens i nenes que hi participen.
+
+    Per introduir la gimcana preguntarem si alguna vegada han sentit parlar de la biodiversitat; ens poden sorprendre... Per això, és important que en tinguem ben clar el concepte, la definició, i que l’expliquem de manera molt senzilla perquè permeti fer-se’n una idea a priori. Després, amb els jocs, segur que la idea queda assimilada.`,
+    desenvolupament: `Us proposem alguns jocs per realitzar aquesta gimcana, però n’hi ha molts més. 
+
+    Trencaclosques: A cadascun dels nens, els donarem una peça de trencaclosques en blanc i llapis de colors. Els direm que han de dibuixar allò que més els agradi del que estan veient. Al final, quan ajuntem totes les peces, tindrem un exemple clar de biodiversitat. (Per a aquesta prova, és important que cada nen dibuixi sense fixar-se amb el que fa el seu company). 
+    
+    Joc dels arbres: Amb els nens podem anar a buscar fulles de diferents arbres que tinguem a prop. Quan en tinguem unes 7 o 8 de diferents el monitor ha de dir el nom dels arbres als nens i pot explicar alguna característica de cadascun d’ells. Dividirem el grup en dues parts. Es tracta de jugar al mocador de tota la vida, però en lloc d’agafar un mocador, els nens han d’agafar la fulla que digui el monitor, per exemple: el número dos – pi! I els nens que tenen el número dos han d’identificar la fulla del pi d’entre les altres que estan en el centre del terreny de joc. Guanya qui l’agafa abans. 
+    
+    Camuflatge: Es tracta de jugar a fet i amagar, però els nens han de camuflar-se amb l’entorn que els rodeja, per exemple: es poden posar fulles per sobre, amagar-se darrere d’un arbust... 
+    
+    Pèl i ploma: Dividirem el grup en dues parts i farem dues fileres, una enfront de l’altra. Uns seran animals de pèl (p. ex.: gat) i els altres seran animals de plomes (p. ex.: gallina). Quan el monitor digui un animal amb pèl, p. ex.: esquirol, els animals amb plomes hauran de córrer fins el punt de salvament que hagin acordat al principi del joc, perquè els animals de pèl no els agafin. Si algun d’ells és atrapat s’haurà de canviar d’equip. Guanya l’equip que, en acabar el joc, té més individus.`,
+    avaluació: `Al final de la gimcana podem preguntar als nens què entenen per biodiversitat i que ens ho expliquin amb les seves paraules.`,
+    etiquetes: ["Jocs de pistes i gimcanes", "Exterior"],
+  },
+  {
+    id: 115,
+    title: `What's up`,
+    descripció: `Joc de pistes o gimcana amb el suport de l’aplicació WhatsApp.`,
+    participantsmin: 5,
+    participantsmax: 50,
+    edatmin: 9,
+    edatmax: 18,
+    durada: "1h30",
+    objectius: (
+      <div>
+        <ul>
+          <li>· Treballar en grup per aconseguir les pistes del joc.</li>
+          <li>· Conèixer noves possibilitats d’ús per a WhatsApp.</li>
+          <li>
+            · Conèixer el funcionament de l’eina o de la creació de grups.
+          </li>
+        </ul>
+      </div>
+    ),
+    material: `El propi joc de pistes, un smartphone per grup amb WhatsApp`,
+    introducció: `Us proposem un joc de pistes amb el suport de l’eina de comunicació per a missatges de mòbil més popular, WhatsApp. Pot ser un recurs molt interessant per fer gimcanes, tant pel barri com a les colònies. Necessitarem tenir cobertura a la xarxa del mòbil per tal de poder comunicar-nos adequadament. Haurem de crear diversos grups d’infants o joves, cadascun dels quals ha de tenir un mòbil amb WhatsApp.`,
+    desenvolupament: `Per a un bon funcionament, els monitors necessitarem:
+
+    1.- Tenir els números dels telèfons que utilitzaran els grups.
+    2.- Crear un grup de WahtsApp comú a tots els grups per comunicar-nos amb tots alhora.
+    3.- El monitor hauria d’anar donant les pistes per separat a cada grup un cop superin una prova o aconsegueixin una resposta;
+    
+    D’altra banda, ha de poder enviar missatges comuns a tothom amb indicacions o pistes. També els pot anar avisant del temps que queda, del moment de tornar a la ‘base central’ del joc, etc.
+    
+    Com a exemple de joc de pistes, pensem que estem en una casa de colònies amb l’esplai. Dividim els infants en cinc grups, cadascun dels quals rebrà per WhatsApp un mapa del punt on han de fer la primera prova (cuina, bosc, camp de futbol…). Aleshores, enviarem un missatge a tots els grups dient que comença el joc. Cada grup es dirigirà a la primera prova i, un cop superada, rebrà un missatge amb la pista que els portarà al següent lloc. Amb la superació de cada prova també els podem enviar, per exemple, una lletra, codi, etc. que al final els permeti construir una frase i guanyar el joc.`,
+    avaluació: `Amb aquesta organització podem crear tot tipus de jocs, per exemple, per al centre d’interès. A més, el fet d’utilitzar WhatsApp sense dubtes serà un punt molt innovador i atractiu per als infants.`,
+    etiquetes: ["Jocs de pistes i gimcanes", "Interior", "Exterior"],
+  },
+  {
+    id: 116,
+    title: `Teatret de minititelles`,
+    descripció: `Taller d’activitat plàstica amb finalitats d’expressió narrativa i joc.`,
+    participantsmin: 1,
+    participantsmax: 5,
+    edatmin: 4,
+    edatmax: 11,
+    durada: "1h30/2h",
+    objectius: (
+      <div>
+        <ul>
+          <li>· Expressió narrativa dels infants</li>
+        </ul>
+      </div>
+    ),
+    material: `Cartolines i folis de colors, 1 caixa de cartró per a sabates, retoladors, llapis de colors i de dibuix, goma d'esborrar, palets rodons de fusta per a cuina tipus "broquetes o pinxos", cinta adhesiva o pega`,
+    introducció: `Ens cal haver escollit un conte o narració o haver-ne creat un prèviament.`,
+    desenvolupament: `Fem l’escenari: Agafar la caixa de sabates i fer-hi dos forats rectangulars als dos costats més estrets (a fi de poder-hi fer passar els palets de fusta per moure les titelles).
+
+    Decorar el fons de la caixa directament a la mateixa caixa o fent un dibuix i enganxant-lo (per prendre la mida del fons es fa servir la mateixa caixa com a plantilla).
+    
+    Agafar la tapa de la caixa de sabates i dibuixar per fora un teatrí amb les cortines recollides (obertes). Decorar-lo. 
+    
+    Fem les titelles: Dibuixem els personatges sobre cartolina, pintem amb retoladors.
+    
+    Retallem els personatges i els enganxem en un palet rodó de fusta (“pinxo”), amb un tall de cinta adhesiva. Cal situar el palet pel costat del personatge, no per sota (són titelles d’ús lateral). 
+    
+    Interpretació: Ens aprenem la història i l’expliquem tot interpretant-la, fem entrar les titelles pel costat de la caixa (fent veus dels personatges, fent el narrador, etc.).`,
+    avaluació: `Ens permet observar el grau d’expressió i imaginació dels infants.
+
+    Si es fa en grup, valorar i avaluar la capacitat de treball i organització entre ells i elles.
+    
+    Ens aporta el treball d’atenció vers la interpretació que cadascú fa de la narració, ens permet valorar i posar en comú. Facilita el reconeixement de l’expressió de cadascú i el seu estil propi.`,
+    etiquetes: ["Narració i expressió", "Interior"],
+  },
+  {
+    id: 117,
+    title: `Ampe: un joc ghanès`,
+    descripció: `Joc rítmic molt jugat pels nens ghanesos.`,
+    participantsmin: 2,
+    participantsmax: 20,
+    edatmin: 9,
+    edatmax: 15,
+    durada: "Sense definir",
+    objectius: (
+      <div>
+        <ul>
+          <li>· Tenir coordinació rítmica</li>
+          <li>· Conèixer la cultura africana</li>
+          <li>· Saber-se concentrar</li>
+          <li>· Adquirir detecció de patrons</li>
+          <li>· Aleatorització de comportament</li>
+          <li>· Recompte mental</li>
+        </ul>
+      </div>
+    ),
+    material: `Sense material`,
+    introducció: `L'ampe és un joc molt popular entre els nens de Ghana (Àfrica occidental). S'hi juga en grup, tot i que els que realment s'enfronten són només dos jugadors. `,
+    desenvolupament: `La parella de jugadors es posa un de cara a l'altre i piquen, cada un d'ells, dues vegades de mans, alhora. Això serveix per sincronitzar els dos jugadors, els quals, després d'haver picat de mans, fan un salt enlaire. Quan els peus tornen a tocar el terra, cada jugador avança una de les seves cames, de forma que tots dos queden drets amb una cama més endavant que l'altra. Si els dos jugadors han avançat la mateixa cama guanya un jugador (que s'ha decidit prèviament), i si els jugadors han avançat cames diferents guanya l'altre jugador (s'ha d'acordar abans de començar la partida). S'hi pot jugar per equips. Per exemple, tenim dos equips de quatre jugadors. Els dos primers jugadors de cada equip fan el primer enfrontament. El jugador que perd el substitueix un altre jugador del seu equip, que s'enfrontarà amb el jugador que ha guanyat, i així successivament. També s'hi pot jugar a punts. Es tracta que la mateixa parella de jugadors faci uns quants enfrontaments seguits, i el primer que guanya deu vegades venç. En aquest cas, és espectacular veure l'habilitat i la pràctica que hi tenen els infants ghanesos. `,
+    avaluació: `Aquest joc pot servir per acostar una altra cultura, així com també per treballar la coordinació rítmica. Si juguem a la variant a punts pot servir per treballar la concentració mental i per intentar descobrir quins patrons de comportament segueix el contrincant i, així, poder endevinar quina cama mourà el següent cop. Inversament, servirà perquè intentem aleatorietzar al màxim la nostra seqüència i no seguir cap patró, cosa que és més difícil del que sembla.`,
+    etiquetes: [
+      "Narració i expressió",
+      "Interior",
+      "Exterior",
+      "Sense material",
+    ],
+  },
+  {
+    id: 118,
+    title: `Els colors de les emocions`,
+    descripció: `Farem barreges de productes químics amb les que treballarem les emocions bàsiques. L'experiment tracta d'observar l'efecte òptic que provoquen els productes quan reaccionen entre sí.`,
+    participantsmin: 2,
+    participantsmax: 50,
+    edatmin: 4,
+    edatmax: 15,
+    durada: "5 mins - 1h",
+    objectiusMoni: (
+      <div>
+        <ul>
+          <li>
+            · Conèixer experiments que esdevenen recursos per dinamitzar
+            activitats i/o vetllades.
+          </li>
+          <li>
+            · Conscienciar sobre l'aprofitament de les diferents experteses de
+            l'equip de monitors/es, en especial la científica.
+          </li>
+          <li>· Sorprendre els infants. </li>
+        </ul>
+      </div>
+    ),
+    objectiusInf: (
+      <div>
+        <ul>
+          <li>· Relacionar emocions i colors.</li>
+          <li>
+            · Reconèixer les pròpies emocions en el moment d'experimentar-les.
+          </li>
+          <li>
+            · Prendre consciència d'allò que les emocions ens poden ensenyar.
+          </li>
+        </ul>
+      </div>
+    ),
+    material: `Peixera i/o recipient de vidre transparent d'uns 10 litres de capacitat, sosa càustica, col llombarda, lleixiu o salfumant, vinagre`,
+    introducció: `L’aigua que s’obté de bullir la col llombarda és un indicador natural de PH. Amb aquesta propietat provocarem viratges de colors amb diferents productes que podem trobar percasa.`,
+    desenvolupament: `Posem a bullir la col llombarda durant uns 30 minuts. Passat aquest temps, l’aigua agafarà un  color  blavós.  Si  no es disposa de foc a l’hora de realitzar l’activitat podem utilitzar un microones. En aquest cas posarem ¼ de col submergida en aigua en un recipient de vidre durant 10 minuts a potència màxima. El líquid resultant, un cop fred, el diluirem en aigua a una proporció de tres gots d’aigua per un de col. Cal fer la barreja en un recipient de vidre transparent.
+
+    En aquest recipient de vidre hi afegirem vinagre que conté àcid acètic. Caldrà afegir-lo a poc a poc fins a obtenir un color lila i, més endavant, rosat si seguim afegint-n’hi. Per obtenir el color vermell afegirem a continuació lleixiu i/o salfumant. Tenint en compte que el lleixiu és més suau i n’haurem d’afegir més per aconseguir el vermell, si utilitzem salfumant amb menys quantitat serà suficient, tot i que sempre podem diluir-lo en aigua.
+    
+    Quan arribem al color vermell la solució és molt àcida. Així que, per seguir fent altres colors caldrà anar-hi afegint sosa càustica que prèviament haurem diluït en aigua. És recomanable fer una solució amb més sosa i una amb menys, per tal de poder fer canviar el color a poc a poc o més ràpidament segons ens interessi.
+    
+    A l’afegir-hi sosa, el color vermell començarà a canviar i es faran aigües fosques dins. El viratge de color serà més lent que no pas en els anteriors casos. Mica en mica començarà atornar-se més lila i, posteriorment verd fosc (depenent de la quantitat que n’hi posem acabarà sent d’un color verd més clar). Si seguim afegint-hi una mica més de sosa, als pocs minuts apareixerà el color groc, tot i que pot trigar una mica, ja que la sosa triga un pèl més en actuar.
+    
+    És molt recomanable fer alguna prova abans, ja que depenent de les concentracions de lleixiu, sosa i vinagre, els colors canviaran d’una forma o d’una altra.
+    
+    Un cop controlem la “màgia” d’aquests efectes podem realitzar l’actuació. L’idea és crear un ambient càlid on l'experiment tingui un lloc protagonista. Aquest espai ha de permetre que es vagin succeint diferents actuacions (un conte, una cançó, una petita representació, un dibuix en directe, etcètera.) on, utilitzant l’experiment com a transició entre representació i representació, els infants i els joves reconeguin i identifiquin cada emoció proposada amb un color.
+    
+    Comentaris: S’ha de  vetllar  perquè  els infants no manipulin cap dels productes que s’utilitzaran durant l’experiment ja que són irritants i tòxics. Només els/les dinamitzadors/es de la vetllada ho poden fer.`,
+    avaluació: `L’avaluació qualitativa la realitzarem un dia diferent a la realització de l’activitat. Aquesta tindrà  un  objectiu ben marcat: compartir les pròpies emocions. La idea és preparar un espai (preferiblement interior) amb 5 racons que representin cadascun dels colors de les emocions treballades durant la vetllada.
+
+    Un cop tot preparat, convidarem els participants a passar pels diferents racons d’un en un (aquest pas pels diferents espais sempre estarà dinamitzat pels/les monitors/es que condueixin l’activitat). A cada espai llençarem la següent doble pregunta: Algun cop heu sentit. ? Què us va passar mentre l’experimentàveu? I així fins passar per totes les emocions.
+    
+    Depenent l’edat i el treball emocional dels participants d’aquesta activitat, podem adaptar l’avaluació buscant al- tres elements de recollida d’informació (anònim, a través de paperets que després llegirem, amb imatges ja preparades que puguem enganxar, amb debats oberts, etcètera).  L’important  és fer un recull d’informació, oral i/o escrita, que ens permeti comprovarl’assoliment o no dels objectius plantejats.`,
+    etiquetes: ["Vetllades", "Interior"],
+  },
+  // `Those are my fire activities 🔥`,
+  {
+    id: 119,
+    title: `El país de pedra  🔥`,
+    descripció: `Joc de cooperació que servirà per treballar aspectes de la motricitat`,
+    participantsmin: 15,
+    participantsmax: 30,
+    edatmin: 4,
+    edatmax: 11,
+    durada: "10 mins",
+    objectius: (
+      <div>
+        <ul>
+          <li>
+            · Treballar l'agilitat, expressivitat, atenció, canvis de rols,
+            control tònic etc.
+          </li>
+        </ul>
+      </div>
+    ),
+
+    material: `Cintes vermelles i pilotes fluixes`,
+    desenvolupament: `Hi ha un país on hi ha uns dimoniets dolents que quan toquen a algú
+    amb unes pilotes i diuen alhora "pedra" el converteixen en pedra.
+    També hi ha uns angelets protectors que tocant amb la seva "vareta
+    màgica" els nens convertits en pedra els alliberen si diuen la paraula
+    "lliure" o "salvat". Quatre nens seran els dimoniets i només dos els
+    angelets. Aniran corrent en un espai delimitat fins que el monitor digui
+    canvi i es canviïn els papers. La vareta màgica serà un mocador
+    vermell (per exemple). Els dimoniets no poden tocar els angelets`,
+    isHot: true,
+    etiquetes: ["Cooperatiu", "Exterior", "Esportiu", "Jocs curts"],
+  },
+  {
+    id: 120,
+    title: `Llisca-xanca  🔥`,
+    descripció: `Joc competitiu i original que es pot jugar amb molt poc material`,
+    participantsmin: 4,
+    participantsmax: 20,
+    edatmin: 11,
+    edatmax: 15,
+    durada: "20 mins",
+    objectius: (
+      <div>
+        <ul>
+          <li>
+            · L'objectiu es treballar l'organització de l'espai, atenció,
+            agilitat i força
+          </li>
+        </ul>
+      </div>
+    ),
+
+    material: `Xanques de peu, cons i petos(opcional)`,
+    desenvolupament: `En un espai delimitat hi ha dos equips asseguts a terra amb una
+    xanca de peu petita per nen a cada mà. Es tracta de marcar gol amb
+    una pilota de tennis a la zona de gol de l’equip contrari tocant només
+    la pilota amb la xanca i lliscant per terra. Els nens es col·loquen a la
+    zona de gol i no poden sortir gaire. Si la pilota el toca qualsevol part
+    del cos es considera gol del contrari. Es conten els gols.`,
+    isHot: true,
+    etiquetes: [
+      "Cooperatiu",
+      "Competitiu",
+      "Exterior",
+      "Esportiu",
+      "Jocs curts",
+    ],
+  },
+  {
+    id: 121,
+    title: `El llop i les cabretes  🔥`,
+    descripció: `Joc entretingut per a que tothom corri una mica i s'ho pasi bé`,
+    participantsmin: 14,
+    participantsmax: 28,
+    edatmin: 4,
+    edatmax: 10,
+    durada: "15 mins",
+    objectius: (
+      <div>
+        <ul>
+          <li>
+            · L'objectiu es treballar l'agilitat, expressivitat, rapidesa,
+            canvis de rols etc
+          </li>
+        </ul>
+      </div>
+    ),
+    material: `Cercles`,
+    desenvolupament: `Tots els nens estan dins de cercles escampats per la pista menys dos
+    que no tenen cercle. Els cercles són les cases de les cabretes. Hi ha
+    una cabreta que no té casa i és empaitada pel llop. Quan la cabreta
+    sense casa entra a casa d’una altra cabreta, la cabreta que l’ocupava
+    surt corrent i ara és ella la que no té casa. Quan el llop toca la
+    cabreta es canvien els papers. Si el llop es cansa molt també el
+    canviarem. Hem de procurar que surtin a córrer totes les cabretes
+    almenys una vegada. Els eliminats tornen a la "vida" quan el seu
+    "assassí" és tocat.`,
+    isHot: true,
+    etiquetes: ["Exterior", "Esportiu", "Jocs curts"],
+  },
+  {
+    id: 122,
+    title: `Futbolí humà  🔥`,
+    descripció: `Joc competitiu per equips`,
+    participantsmin: 8,
+    participantsmax: 30,
+    edatmin: 8,
+    edatmax: 15,
+    durada: "30 mins",
+    objectius: (
+      <div>
+        <ul>
+          <li>
+            · L'objectiu es treballar la col·locació a l'espai, agilitat, força
+            i entesa de grup.
+          </li>
+        </ul>
+      </div>
+    ),
+    material: `Pilota fluixa i 4 cons`,
+    desenvolupament: `En espai on hi ha quatre línies gruixudes a terra hi ha dos equips. Els
+    equips estan partits ocupant dues línies no consecutives, hi ha la línia
+    d’atac i la defensiva, no hi ha porters. Al fons es fan dues porteries
+    força amples amb cons. Com en un futbolí els jugadors no poden
+    sortir de la línia però si moure’s lateralment per tocar la pilota. Es pot
+    fer amb els peus o amb les mans, si es fa amb les mans es fa que no
+    val agafar la pilota, només val colpejar-la. Si es fa amb els peus la
+    pilota hauria de ser de foam o molt fluixa. Els que cometin infraccions
+    estaran un minut penalitzats sense jugar. Es compten els gols.`,
+    isHot: true,
+    etiquetes: ["Exterior", "Esportiu", "Jocs curts", "Competitiu"],
+  },
+  {
+    id: 123,
+    title: `Les pilotes de foc  🔥`,
+    descripció: `Joc entretingut per a que tothom corri una mica i s'ho pasi bé`,
+    participantsmin: 10,
+    participantsmax: 30,
+    edatmin: 8,
+    edatmax: 12,
+    durada: "Depén del grup",
+    objectius: (
+      <div>
+        <ul>
+          <li>
+            · L'objectiu es treballar la coordinació, agilitat i control tònic
+          </li>
+        </ul>
+      </div>
+    ),
+    material: `Piques rodones petites, pilotes de tenis. Petos i cercles des d'on surten com a material opcional.`,
+    desenvolupament: `És un joc de relleus. Hi ha dos equips. Cada nen té un "plat fondo"
+    (pica rodona) a la mà. A uns quants metres hi ha diversos plats
+    fondos amb una pilota de tennis a dins. Resulta ser que les pilotes
+    cremen molt, són pilotes de foc i només es poden agafar amb els
+    plats, no es poden tocar amb les mans perquè ens cremaríem. Els
+    nens han de córrer on són els plats, agafar els plats, buidar la pilota
+    al seu plat, deixar el plat on hi havia la pilota al seu lloc i tornar a la
+    fila amb la pilota on deixaran la deixaran dins d’un cercle. Ho faran en
+    relleu fins que s’acabin les pilotes. Després es comptaran les pilotes
+    de foc per veure quin equip n’ha agafat més.`,
+    isHot: true,
+    etiquetes: ["Exterior", "Esportiu", "Competitiu"],
+  },
+
+  {
+    id: 124,
+    title: `La caixa 🔥`,
+    descripció: `Joc que es pot dur a terme amb pilota de bàsquet, fútbol o handol`,
+    participantsmin: 2,
+    participantsmax: 30,
+    edatmin: 12,
+    edatmax: 18,
+    durada: "Depén del grup",
+    objectius: (
+      <div>
+        <ul>
+          <li>
+            · L'objectiu es treballar la tècnica del llançament en bàsquet i
+            organitazció del grup
+          </li>
+        </ul>
+      </div>
+    ),
+    material: `Pilota de bàsquet i cistella`,
+    desenvolupament: `Es col·loquen tots els nens en fila índia davant de la cistella de
+    bàsquet. Tiraran tirs lliures per ordre. Si un nen encerta acumula dos
+    punts a la cistella, si el nen següent falla es queda aquests dos punts.
+    Si encerta el llançament acumula dos punts més que es sumaran als
+    que ja hi ha a la "caixa"(cistella). El primer en fallar es quedarà els
+    punts acumulats i després es tornarà a partir de zero. Si no hi ha
+    punts acumulats i es falla no passa res. Qui arribi primer a vint punts
+    (o més, segons s’estableixi abans) queda eliminat. En nens més
+    grans es pot fer rebot que dóna una segona opció de llançament i un
+    punt per acumular. Aquest joc pot ser jugat en futbol o handbol
+    també pel sistema de penals`,
+    isHot: true,
+    etiquetes: ["Exterior", "Competitiu"],
+  },
+  {
+    id: 125,
+    title: `Terra-bol 🔥`,
+    descripció: `Joc competitiu molt original i divertit`,
+    participantsmin: 8,
+    participantsmax: 30,
+    edatmin: 8,
+    edatmax: 18,
+    durada: "10 mins",
+    objectius: (
+      <div>
+        <ul>
+          <li>
+            · L'objectiu es treballar la força, resistència, flexibilitat,
+            orientació espacial i entesa de grup.
+          </li>
+        </ul>
+      </div>
+    ),
+    material: `Pilota i cons, petos(opcional)`,
+    desenvolupament: `Hi ha dos equips en un terreny de joc reduït que llisqui força, un
+    passadís ample o un gimnàs és perfecte. Uns cons fan les porteries.
+    Els dos equips es col·loquen panxa a terra i s’han de moure amb
+    l’impuls dels braços. Es tracta de fer gol colpejant la pilota sense
+    agafar-la. Agafar la pilota suposa 1 minut d’expulsió. El principi del
+    partit els dos equips es col·loquen a la seva porteria i el monitor tira la
+    pilota al mig del camp. Evidentment no val aixecar-se sota cap
+    concepte en ple joc. Hi ha una variant que és jugar amb quadrupèdia
+    amb els genolls i les mans a terra.`,
+    isHot: true,
+    etiquetes: ["Interior", "Competitiu", "Jocs curts", "Esportiu"],
+  },
+  {
+    id: 126,
+    title: `Els gegants del bàsquet 🔥`,
+    descripció: `Joc que competitiu de bàsquet`,
+    participantsmin: 12,
+    participantsmax: 25,
+    edatmin: 15,
+    edatmax: 18,
+    durada: "30 mins",
+    objectius: (
+      <div>
+        <ul>
+          <li>
+            · L'objectiu es treballar la força, resistència, agilitat,
+            estratègia, llançament de bàsquet i entesa de grup.
+          </li>
+        </ul>
+      </div>
+    ),
+    material: `Pilota de bàsquet i dues cistelles`,
+    desenvolupament: `Es tracta de jugar un partit de bàsquet amb la peculiaritat que per fer
+    cistella s´ha d’estar a sobre d’un nen del mateix equip (gegants). Els
+    nens que fan de gegants poden desfer-se quan vulguin i tornar-hi
+    quan vulguin i tothom pot fer de gegant del bàsquet en algun
+    moment del partit. Els rivals no podran tocar els gegants o seran
+    castigats amb tres tirs lliures. L'única forma de prendre’ls la pilota és
+    saltant i tocant-la. Els gegants no poden fer més de cinc passes amb
+    la pilota. La resta de nens jugaran un partit normal però no podran
+    fer cistella, es dedicaran a passar la pilota al gegant més ben situat.
+    Fer falta a un gegant suposa tres tirs lliures; si els nens es passessin
+    de llestos i poguessin veure que és més efectiu pel seu equip
+    provocar tres tirs lliures, després caldria tirar-ne cinc o més a criteri
+    del monitor.
+    `,
+    isHot: true,
+    etiquetes: ["Exterior", "Competitiu", "Esportiu"],
+  },
+  {
+    id: 127,
+    title: `Coast to Coast o Peixos a l'aigua 🔥`,
+    descripció: `Joc semblant a "l'aranya peluda", que ens servirà per fer correr i passar una bona estona als nens `,
+    participantsmin: 12,
+    participantsmax: 30,
+    edatmin: 12,
+    edatmax: 18,
+    durada: "15 mins",
+    objectius: (
+      <div>
+        <ul>
+          <li>· L'objectiu es treballar la velocitat i estratègia.</li>
+        </ul>
+      </div>
+    ),
+    material: `Sense material`,
+    desenvolupament: `A la pista poliesportiva els nens han d´anar d´una àrea de handbol a
+    l´altre sense ser tocats per un altre nen que pot moure’s per tot
+    arreu menys les àrees. Els que han d'aconseguir l'objectiu són els
+    peixos i el perseguidor és el pescador. Al crit de "Peixos a l'aigua!"
+    començaran a córrer. Els tocats seran pescadors. No val quedar-se
+    dins l´àrea molta estona, es contarà. Al final tots seran perseguidors
+    o guanya el darrer a ser atrapat. Per fer el joc més ràpid es pot dir
+    que l´últim a entrar a l´àrea perd i ha de fer de perseguidor.`,
+    isHot: true,
+    etiquetes: ["Interior", "Esportiu", "Jocs curts", "Sense material"],
+  },
+  {
+    id: 128,
+    title: `El ràpid 🔥`,
+    descripció: `Joc basat en penals que premia l'agilitat de l'infant `,
+    participantsmin: 4,
+    participantsmax: 20,
+    edatmin: 12,
+    edatmax: 18,
+    durada: "10 mins",
+    objectius: (
+      <div>
+        <ul>
+          <li>
+            · L'objectiu es treballar l'agilitat, estratègia, rapidesa i
+            tècnica.
+          </li>
+        </ul>
+      </div>
+    ),
+    material: `Pilota i porteria`,
+    desenvolupament: `En una porteria de futbol s´hi col·loca un porter i una fila índia de
+    nens a fora de l’àrea. Cada nen té cinc punts. Aniran xutant a gol per
+    ordre, qui marqui gol torna a la cua i el porter perd un punt. Quan un
+    nen falla ha d´anar ràpidament a la porteria a ficar-s´hi de porter. És
+    permès xutar molt ràpid encara que el porter no estigui a punt,
+    d´aquesta manera no es distreuen i el joc és més àgil. Quan s´arriba
+    a zero es queda eliminat. Guanya l´últim. Es pot fer amb el peu o
+    amb la mà simulant l´handbol. S’ha de xutar sempre des de fora de
+    l’àrea. No es pot fer amb grups molt nombrosos, caldrà partir la
+    classe en dos grups i fer-ho un a cada porteria`,
+    isHot: true,
+    etiquetes: ["Interior", "Exterior", "Esportiu", "Jocs curts"],
+  },
+  {
+    id: 129,
+    title: `Endevina, endevina ràpid 🔥`,
+    descripció: `Joc de mímica que es pot fer amb una variant competitiva`,
+    participantsmin: 4,
+    participantsmax: 20,
+    edatmin: 8,
+    edatmax: 14,
+    durada: "Depén de les rondes",
+    objectius: (
+      <div>
+        <ul>
+          <li>
+            · L'objectiu es treballar les habilitats de mim, memòria i agilitat
+            de paraula
+          </li>
+        </ul>
+      </div>
+    ),
+    material: `Paperets`,
+    desenvolupament: `El monitor dóna un paper a un nen amb títols de pel·lícules conegudes,
+    artistes coneguts, sèries de TV., objectes, animals,.... Aquest, amb
+    mim ha d´intentar que els companys coneguin el títol. Els altres
+    poden fer preguntes que només tinguin com a resposta SI o NO. Es
+    van canviant de papers a mesura que ho vagin encertant. També es
+    pot fer una competició per equips. Cal mantenir un ordre de
+    preguntes i respostes i sortirà un membre de cada equip en cada
+    tanda. Qui encerti la resposta es queda el paperet. Al final es
+    contaran els paperets guanyats.
+    `,
+    isHot: true,
+    etiquetes: ["Interior", "Exterior", "Narració i expressió"],
+  },
+  {
+    id: 130,
+    title: `Dansar del passadís 🔥`,
+    descripció: `Joc per a treballar la desinihibició i pèrdua de la vergonya del grup d'infants`,
+    participantsmin: 6,
+    participantsmax: 20,
+    edatmin: 4,
+    edatmax: 12,
+    durada: "Depén de les rondes",
+    objectius: (
+      <div>
+        <ul>
+          <li>
+            · L'objectiu es treballar la desinihibició personal, dansa i pèrdua
+            de la vergonya entre altres.
+          </li>
+        </ul>
+      </div>
+    ),
+    material: `Tot tipus de roba, cordes, indiaques etc.`,
+    desenvolupament: `Amb els bancs suecs o cordes si no en tenim suficients fem un
+    passadís. Ens imaginarem que estem en un "passe" de models i els
+    nens han de disfressar-se amb qualsevol cosa imitant les top models.
+    Pot haver-hi un munt de roba on s´agafen complements ràpidament.
+    A partir s'una música marxosa aniran sortint un a un mentre els
+    altres aplaudeixen. Es puntuarà l’originalitat, classe i elegància.
+    
+    `,
+    isHot: true,
+    etiquetes: ["Interior", "Narració i expressió"],
+  },
+  {
+    id: 131,
+    title: `Els caça-papallones 🔥`,
+    descripció: `Joc esportiu semblant al "pilla-pilla", però amb una variant més original`,
+    participantsmin: 8,
+    participantsmax: 25,
+    edatmin: 4,
+    edatmax: 10,
+    durada: "5/10 mins",
+    objectius: (
+      <div>
+        <ul>
+          <li>· L'objectiu es treballar l'agilitat, rapidesa i atenció.</li>
+        </ul>
+      </div>
+    ),
+    material: `Cercles, el més gran possible`,
+    desenvolupament: `Uns quants nens intentaran amb cercles caçar els altres nens. Els
+    caçadors són els caça-papallones i els altres papallones que intenten
+    escapar perquè no els cacin. Els nens caçats es converteixen en caçapapallones i els que acaben de caçar en papallones. S'aconsella
+    utilitzar cercles grans per evitar que es facin mal al coll o al cap.
+    `,
+    isHot: true,
+    etiquetes: ["Exterior", "Esportiu", "Jocs curts"],
+  },
+  {
+    id: 132,
+    title: `Els mec-mec 🔥`,
+    descripció: `Joc que ajudarà als nens a posar-se en acció i calentar una mica`,
+    participantsmin: 12,
+    participantsmax: 30,
+    edatmin: 4,
+    edatmax: 8,
+    durada: "Depén del grup",
+    objectius: (
+      <div>
+        <ul>
+          <li>
+            · L'objectiu es treballar el control tònic, estratègia i
+            l'orientació en l'espai
+          </li>
+        </ul>
+      </div>
+    ),
+    material: `Sense material`,
+    desenvolupament: `Aprofitant les línies de la pista poli-esportiva es fa el joc del "comecocos". Els cocos o víctimes van caminant, no corrent, sobre les línies
+    marcades al terra. Un nen o dos (els MEC-MEC) surten d´un extrem
+    de la pista caminant per sobre les mateixes línies amb les mans 
+    `,
+    isHot: true,
+    etiquetes: ["Exterior", "Esportiu", "Sense material"],
+  },
+  {
+    id: 133,
+    title: `El codi secret 🔥`,
+    descripció: `Joc a grups, per a treballar la confiança en altres companys i tambè la motricitat sense fer ús de la vista`,
+    participantsmin: 2,
+    participantsmax: 15,
+    edatmin: 10,
+    edatmax: 16,
+    durada: "10 mins",
+    objectius: (
+      <div>
+        <ul>
+          <li>
+            · L'objectiu es treballar l'utilització de sentits, entesa de grup i
+            estratègia.
+          </li>
+        </ul>
+      </div>
+    ),
+    material: `Paper`,
+    desenvolupament: `Dos grups. Cada grup tria un component que farà de titella amb els
+    ulls tapats. Sense utilitzar les paraules: endavant, endarrera,
+    esquerra, dreta o similars hauran d´inventar un codi secret perquè el
+    titella pugui agafar un tresor que el monitor col·locarà al terreny de joc.
+    La resta del grup estarà en una zona que no podran travessar. Cada
+    grup sortirà d´una punta. El que agafi abans el tresor guanya. El codi
+    pot ser donat pel monitor abans de començar. Per exemple: endavant -
+    cotxe; endarrera - camió; para - bicicleta; etc..
+    `,
+    isHot: true,
+    etiquetes: ["Exterior", "Interior", "Jocs Curts", "Cooperatiu"],
+  },
+  {
+    id: 134,
+    title: `El punt més proper 🔥`,
+    descripció: `Joc curt per a treballar l'orientació espacial`,
+    participantsmin: 2,
+    participantsmax: 20,
+    edatmin: 10,
+    edatmax: 16,
+    durada: "10 mins",
+    objectius: (
+      <div>
+        <ul>
+          <li>· L'objectiu es treballar l'orientació espacial</li>
+        </ul>
+      </div>
+    ),
+    material: `Cinta pels ulls`,
+    desenvolupament: `Amb els ulls tapats els nens hauran de posar un objecte el més a
+    prop possible d´una línia dibuixada a terra. Abans hauran contat les
+    passes i s´ho hauran mirat bé. El que es passa queda eliminat. Ho
+    faran un per un. Cadascú haurà de buscar el codi propi que més bé li
+    vagi per aconseguir l'objectiu: passes juntes, passes separades,
+    pams, etc..
+    `,
+    isHot: true,
+    etiquetes: ["Exterior", "Interior", "Jocs Curts"],
+  },
+  {
+    id: 135,
+    title: `Bombes fora! 🔥`,
+    descripció: `Joc esportiu molt interesant que consisteix en tenir el mínim de pilotes possible al teu propi camp`,
+    participantsmin: 12,
+    participantsmax: 30,
+    edatmin: 8,
+    edatmax: 16,
+    durada: "5/10 mins",
+    objectius: (
+      <div>
+        <ul>
+          <li>
+            · L'objectiu es treballar la resistència, força, agilitat i
+            rapidesa.
+          </li>
+        </ul>
+      </div>
+    ),
+    material: `Moltes pilotes, indiaques, etc.`,
+    desenvolupament: `Dos equips. Cada equip té un terreny de joc. A cada terreny hi ha el
+    mateix nº de pilotes de tot tipus que seran les bombes. En un temps
+    determinat han de treure totes les bombes que tinguin al seu camp i
+    tornar les que els arribin. Passat el temps guanya l´equip que tingui
+    menys bombes. No val xutar les pilotes. També poden haver-hi
+    indiaques o altres tipus de material.
+    `,
+    isHot: true,
+    etiquetes: ["Exterior", "Interior", "Jocs Curts", "Esportiu"],
+  },
+  {
+    id: 136,
+    title: `Duel a tres metres 🔥`,
+    descripció: `Joc competitiu per equips, variant del mocador amb pilotes`,
+    participantsmin: 8,
+    participantsmax: 20,
+    edatmin: 12,
+    edatmax: 18,
+    durada: "Depén del grup",
+    objectius: (
+      <div>
+        <ul>
+          <li>
+            · L'objectiu es treballar la rapidesa, força, agilitat, equilibri i
+            punteria.
+          </li>
+        </ul>
+      </div>
+    ),
+    material: `Pilotes fluixes i cercles`,
+    desenvolupament: `Dos equips. Es numeren i es col.loquen a uns vint metres cara a cara.
+    A la mateixa distància dels uns i dels altres hi haurà una pilota per
+    cada equip dins d´un cercle. Quan el monitor digui un nº qui tingui el nº
+    sortirà corrent (com en el mocador) fins a agafar la pilota del cercle i
+    llançar-la contra el rival del mateix nº que estarà a uns tres metres.
+    No val sortir del cercle per llançar la pilota ni per esquivar el "tret". Es
+    puntuen els encerts de cada equip.
+    `,
+    isHot: true,
+    etiquetes: ["Exterior", "Interior", "Competitiu", "Esportiu"],
+  },
+  {
+    id: 137,
+    title: `El joc dels noms 🔥`,
+    descripció: `Joc semblant al pistoler, per a que es infants es coneguin entre ells`,
+    participantsmin: 12,
+    participantsmax: 30,
+    edatmin: 4,
+    edatmax: 18,
+    durada: "5-15 mins",
+    objectius: (
+      <div>
+        <ul>
+          <li>
+            · L'objectiu es treballar la velocitat de reacció, rapidesa de
+            paraula i arribar a conèixer millor als teus companys
+          </li>
+        </ul>
+      </div>
+    ),
+    material: `Cercle`,
+    desenvolupament: `Cercle. Un nen està al centre i diu un nom d´un nen alhora que el
+    senyala, el nen al.ludit seurà a terra ràpidament, els del voltant es
+    senyalen i es diuen el nom el més ràpid possible. El que triga més a
+    reaccionar ha de seure a terra. Els eliminats resten asseguts a terra
+    per complicar més el joc en els que encara estan drets. Al final només
+    en queden dos. D'entre aquests dos s'escollirà mitjançant sorteig qui
+    anirà al mig la propera vegada que s'hi jugui.
+    `,
+    isHot: true,
+    etiquetes: ["Exterior", "Interior", "Coneixença"],
+  },
+  {
+    id: 138,
+    title: `Joc de la seducció 🔥`,
+    descripció: `Joc de "seducció" que servirà per desinhibirse una mica i perdre la vergonya`,
+    participantsmin: 12,
+    participantsmax: 30,
+    edatmin: 8,
+    edatmax: 18,
+    durada: "10 mins",
+    objectius: (
+      <div>
+        <ul>
+          <li>
+            · L'objectiu es treballar l'orientació espacial, entesa de grup,
+            observació i atenció.
+          </li>
+        </ul>
+      </div>
+    ),
+    material: `Sense material`,
+    desenvolupament: `En un cercle hi ha parelles; un davant i l´altre darrera a mig metre.
+    Dos nens no tenen parella. Per aconseguir parella hauran de picar
+    l´ullet a els nens que estiguin davant. Quan aquests rebin el missatge
+    aniran a formar parella amb els que els han cridat. Si el de darrera
+    veu la intenció pot retenir la seva parella sense moure´s del lloc. Si
+    queda sense parella haurà de picar l´ullet a algú per aconseguir-ne.
+    Per motivar se´ls dirà (vigilant molt!) que els de davant són les
+    dones de la parella i els de darrera els homes. Es canviaran els
+    papers de tant en tant.   
+    `,
+    isHot: true,
+    etiquetes: [
+      "Exterior",
+      "Interior",
+      "Coneixença",
+      "Narració i expressió",
+      "Sense material",
+    ],
+  },
+  {
+    id: 139,
+    title: `Espatlleres ocupades 🔥`,
+    descripció: `Joc molt interesant per treballar l'equilibri, amb diferents variant de dificultat.`,
+    participantsmin: 10,
+    participantsmax: 30,
+    edatmin: 8,
+    edatmax: 18,
+    durada: "Depén del grup",
+    objectius: (
+      <div>
+        <ul>
+          <li>· L'objectiu es treballar la força i l'equilibri.</li>
+        </ul>
+      </div>
+    ),
+    material: `Espatlleres, bancs suecs, etc.`,
+    desenvolupament: `A cada extrem de les espatlleres es situa un grup de nens. Al senyal
+    començaran a pujar per ordre intentant arribar fins al final contrari de
+    les espatlleres. Quan es creuin amb els altres no es podran tocar de
+    cap manera ni desestabilitzar-se. Se'ls dirà que a terra hi ha cocodrils
+    per motivar el fet de no ficar el peu a terra. Per baixar i fer-ho més
+    motivant es poden col·locar bancs suecs en forma de tubogan i
+    matalassos. Poden transportar alguna cosa per fer-ho més
+    interessant i difícil de fer, per exemple una pilota de tennis o un
+    cercle.  
+    `,
+    isHot: true,
+    etiquetes: ["Interior", "Esportiu"],
+  },
+  {
+    id: 140,
+    title: `Pausa-play 🔥`,
+    descripció: `Joc de teatre original`,
+    participantsmin: 8,
+    participantsmax: 20,
+    edatmin: 8,
+    edatmax: 18,
+    durada: "Depén del grup",
+    objectius: (
+      <div>
+        <ul>
+          <li>· L'objectiu es treballar l'expressivitat i el control tònic.</li>
+        </ul>
+      </div>
+    ),
+    material: `Com a material opcional elements per a disfressar-se.`,
+    desenvolupament: `Per grups de tres o quatre nens s´organitzen petites represenatcions
+    de teatre d´un o dos minuts com a molt. Les escenes poden ser de la
+    vida quotidiana o de qualsevol pel.lícula o sèrie de dibuixos animats.
+    Després per ordre cada grup representarà la seva escena davant dels
+    altres. Per ordre els nens que mirin l´escena aniran dient "Pausa" i
+    "Play" per parar i engegar "la imatge" del que estan veient en la tele
+    connectada al vídeo. Les pauses poden durar uns tres segons i les
+    escenes seran sempre amb càmara lenta per ajudar a les pauses i
+    perquè sigui més divertit. 
+    `,
+    isHot: true,
+    etiquetes: ["Interior", "Narració i expressió"],
+  },
+  {
+    id: 141,
+    title: `Les capsetes 🔥`,
+    descripció: `Joc d'expressió per a un grup d'infants d'una edat petita.`,
+    participantsmin: 8,
+    participantsmax: 30,
+    edatmin: 4,
+    edatmax: 8,
+    durada: "10 mins",
+    objectius: (
+      <div>
+        <ul>
+          <li>· L'objectiu es treballar l'expressivitat.</li>
+        </ul>
+      </div>
+    ),
+    material: `Sense material.`,
+    desenvolupament: `És per nens força petits. Estan escampats per l´espai. Quan el monitor
+    diu: -"Capsetes!"; tots s´ajupiran simulant unes capses. Després el
+    monitor dirà:- "dins de les capses hi ha ....(qualsevol cosa, per exemple
+    uns lleons). Tots els nens imitaran ser lleons fins a rebre noves
+    instruccions per a convertir-se en capsetes per després tornar-hi. Es
+    pot fer amb sons o callats, amb figures estàtiques o en moviment.
+    
+    `,
+    isHot: true,
+    etiquetes: [
+      "Interior",
+      "Narració i expressió",
+      "Jocs curts",
+      "Sense material",
+    ],
+  },
+  {
+    id: 142,
+    title: `Els vaixells ("hundir la flota") 🔥`,
+    descripció: `Variant del joc "hundir la flota" en la qual els infants mateixos faràn de torpedos, vaixells i capitans.`,
+    participantsmin: 20,
+    participantsmax: 30,
+    edatmin: 12,
+    edatmax: 18,
+    durada: "Depén del grup",
+    objectius: (
+      <div>
+        <ul>
+          <li>· L'objectiu es treballar l'estratègia i entesa de grup</li>
+        </ul>
+      </div>
+    ),
+    material: `Boli, papers ja fets, bancs suecs i matalassos.`,
+    desenvolupament: `Dos grups jugaran al joc dels vaixells però sent ells mateixos els
+    torpedos, vaixells i capitans. Per jugar amb més de vint nens. Cada
+    equip tindrà dos papers-requadres, en un hi apuntaran on es troben
+    els seus propis vaixells (triaran les coordenades de la "e" al nº 5) i en
+    l´altre anotaran els trets que tiren a l´enemic (caldrà un bolígraf) .
+    Segons el nombre de nens per equip es faran més o menys vaixells.
+    Cada membre (part) de cada vaixell tindrà un paperet on s´indicarà
+    en quina posició es troba. Aquest paper només l´haurà d´ensenyar
+    en el moment que és enfonsada la part de vaixell que ell representa
+    (p.ex: b4). Els capitans, per ordre, diran una coordenada, si és vàlida
+    per tocar una part de vaixell el nen de l´altre equip que la tingui
+    ensenyarà el paper i el torpedo xocarà contra ell i restarà assegut. Si
+    la coordenada és aigua també sortirà un torpedo però caurà a terra
+    (matalàs) prop dels vaixells contraris. No és necessari que els vaixells
+    es col·loquin com si estiguessin sobre un requadre, poden col·locar-se
+    com vulguin però sempre units entre les seves parts. Un llançament
+    que toca té dret a conservar el torn. Cada vegada sortirà un torpedo
+    diferent dels dos que té cada equip. Equivalències segons el nº de
+    nens: 1- 15 nens . grup = 1 vaixell de 5; 1 de 4; 1 de 3 + 2 torpedos
+    + 1 capità. 2- 14 nens . grup = 1 vaixell de 5; 1 de 4; 1 de 2 + 2
+    torpedos + 1 capità. 3- 13 nens . grup = 1 vaixell de 5; 1 de 3; 1 de
+    2 + 2 torpedos + 1 capità. 4- 12 nens . grup = 1 vaixell de 4; 1 de 3;
+    1 de 2 + 2 torpedos + 1 capità. 5- 11 nens . grup = 1 vaixell de 4; 2
+    de 2 + 2 torpedos + 1 capità. 6- 10 nens . grup = 1 vaixell de 3; 2
+    de 2 + 2 torpedos + 1 capità.
+    Novetat :Taulell de joc, baixa-te'l i imprimeix-lo amb Excel
+    També tens les etiquetes per jugar-hi! imprimeix-les i juga-hi més
+    fàcilment.
+    `,
+    isHot: true,
+    etiquetes: ["Interior", "Narració i expressió", "Competitiu"],
+  },
+  {
+    id: 143,
+    title: `Buscant a algú que... 🔥`,
+    descripció: `Joc semblant als veïns o la carta de l'emperador, més mogut. Bo per treballar la pèrdua de la vergonya i el coneixement de grup`,
+    participantsmin: 10,
+    participantsmax: 50,
+    edatmin: 8,
+    edatmax: 18,
+    durada: "Depén del grup",
+    objectius: (
+      <div>
+        <ul>
+          <li>
+            · L'objectiu es treballar el coneixement del grup i la pèrdua de
+            vergonya
+          </li>
+        </ul>
+      </div>
+    ),
+    material: `Papers i bolis`,
+    desenvolupament: `El monitor reparteix uns fulls que diuen BUSCA A ALGÚ QUE.. i diferents
+    frases com: -hagi nascut el mateix mes que tu; -li agradin els
+    dibuixos animats; -el seu nom (o algun cognom) comenci amb la
+    mateixa lletra que el teu nom o cognoms; -tingui els ulls blaus; -porti
+    ulleres; -tingui les sabates negres; -hagi anat en avió; -hagi dormit
+    en tenda d’acampar; - que tingui dos germans; que tingui el mateix
+    nº de peu que tu; etc.. . el difícil és que no val repetir ningú i s´ha
+    d´omplir el full el més ràpid possible. Al final es posen les dades en
+    comú. Caldrà fer diferents models de fulls per evitar que s´ho copïn.
+    `,
+    isHot: true,
+    etiquetes: ["Interior", "Exterior", "Coneixença"],
+  },
+  {
+    id: 144,
+    title: `L'ós dormilega 🔥`,
+    descripció: `Joc molt interesant que premia l'agilitat i la paciència combinant un punt esportiu.`,
+    participantsmin: 8,
+    participantsmax: 20,
+    edatmin: 4,
+    edatmax: 12,
+    durada: "15 mins",
+    objectius: (
+      <div>
+        <ul>
+          <li>
+            · L'objectiu es treballar la velocitat de reacció, la paciència i
+            l'expressivitat
+          </li>
+        </ul>
+      </div>
+    ),
+    material: `Matalàs`,
+    desenvolupament: `Un nen és un ós que està hivernant en una cova, està estirat en un
+    matalàs. Resulta ser que la resta dels animalons del bosc són molt
+    empipadors i volen despertar al pobre ós. Tots els nens s'acostaran a
+    l'ós i el molestaran. De cop i volta l'ós es despertarà i perseguirà els
+    animalons que l'empipin. Quan els animalons arribin a un punt
+    establert l'ós no els podrà atrapar. Els atrapats poden ser óssos o
+    restar eliminats a criteri del monitor.    
+    `,
+    isHot: true,
+    etiquetes: ["Interior", "Exterior", "Jocs curts"],
+  },
+  {
+    id: 145,
+    title: `Joc del revés 🔥`,
+    descripció: `Joc original semblant al "Simón dice"`,
+    participantsmin: 4,
+    participantsmax: 20,
+    edatmin: 4,
+    edatmax: 18,
+    durada: "Depén del grup",
+    objectius: (
+      <div>
+        <ul>
+          <li>· L'objectiu es treballar l'atenció i la velocitat de reacció</li>
+        </ul>
+      </div>
+    ),
+    material: `Sense material`,
+    desenvolupament: `El monitor diu ordres que els nens han d´interpretar al revés. S´eliminen
+    els nens que no canviin l´acció al revés. Guanyen els últims en
+    eliminar-se. Quan més grans siguin més complicat se'ls pot fer. És
+    ideal com a tornada a la calma i els agrada moltíssim.   
+    `,
+    isHot: true,
+    etiquetes: ["Interior", "Exterior", "Jocs curts", "Sense material"],
+  },
+  {
+    id: 146,
+    title: `Les pilotes amagades  🔥`,
+    descripció: `Joc per treballar la memòria visual i aspectes no relacionats amb motricitat de l'infant`,
+    participantsmin: 10,
+    participantsmax: 30,
+    edatmin: 4,
+    edatmax: 12,
+    durada: "Depén del grup",
+    objectius: (
+      <div>
+        <ul>
+          <li>
+            · L'objectiu es treballar la memòria visual, agilitat, orientació
+            espacial.
+          </li>
+        </ul>
+      </div>
+    ),
+    material: `Piques rodones petites, pilotes de tenis i cercles.`,
+    desenvolupament: `Hi ha dos grups que fan dues files al mig de la pista encarats a la
+    mateixa àrea de penal. Dins d'aquesta àrea hi ha escampats una
+    trentena de cons petits rodons (plats fondos) col·locats al revés de
+    manera que es pugui ficar una pilota a dins sense ser vista. El monitor
+    haurà col·locat quinze pilotes de tennis dins dels cons girats. A l'ordre
+    de començar sortiran en relleus corrent fins a l'àrea, una vegada
+    arribin a dins tenen cinc segons per obrir un plat, agafa la pilota si
+    n'hi ha i tornar. En cas de trobar pilota la deixa dins un cercle a prop
+    de la fila. Només poden obrir un plat per torn i hauran de vigilar que
+    no obrin cap plat ja obert amb anterioritat perquè no hi haurà cap
+    pilota. Si no hi ha cap pilota tornaran a fer el relleu tan ràpid com
+    puguin per no perdre temps. L'equip que trobi més pilotes guanya.
+    Una variant és que un equip col·loca les pilotes mentre l'altre està
+    d'esquena, pot col·locar dues pilotes en un mateix plat, serà la
+    sorpresa doble. En aquest cas es pot cronometrar quan triga l'equip
+    que obre els "plats". En nens molt petits no té sentit cronometrar
+    perquè encara no entenen el concepte de temps.
+    `,
+    isHot: true,
+    etiquetes: ["Exterior", "Esportiu", "Competitiu"],
+  },
+  {
+    id: 147,
+    title: `Caça de rebot 🔥`,
+    descripció: `Joc mogut molt semblant al mataconills`,
+    participantsmin: 12,
+    participantsmax: 30,
+    edatmin: 8,
+    edatmax: 18,
+    durada: "20/30 mins",
+    objectius: (
+      <div>
+        <ul>
+          <li>
+            · L'objectiu es treballar la velocitat, punteria, agilitat i
+            estratègia.
+          </li>
+        </ul>
+      </div>
+    ),
+    material: `Pilota que boti o pilota tova.`,
+    desenvolupament: `És un joc de persecució amb pilota tipus el popular mata-conills.
+    Tothom "para" quan té la pilota i guanya l´últim a quedar viu,
+    s´eliminen els tocats. Per tocar s´ha de fer rebotar la pilota al terra o
+    en una paret abans de tocar el perseguit. També es pot fer com a
+    variant del joc de matar conills o el joc de pilotes salvadores i
+    matadores. Quan no es disposa de pilotes toves va bé fer el rebot per
+    evitar que es facin mal. Els eliminats tornen a la vida quan és tocat
+    qui els havia matat abans. Hi ha molt moviment.    
+    `,
+    isHot: true,
+    etiquetes: ["Exterior", "Esportiu"],
+  },
+  {
+    id: 148,
+    title: "Alouette",
+    descripció:
+      "Rotllana de persones que van circulant en sentit horari i es van tocant les diferents parts del cos a mesura que la cançó les va enumerant.",
+    edatmin: 4,
+    edatmax: 8,
+    lletra: `La cançó es comença a cantar mentre tota la rotllana va girant en sentit horari, però quan diu “jo t’esquilaré el clatell...”
+    cal que tots toquin el clatell del company que tenen a la seva dreta. I quan la cançó repeteix “jo t’esquilaré el clatell...” tocaran
+    el clatell del company de l’esquerra. I el mateix amb la repetició d’ “el clatell”, “el clatell”. I quan la cançó diu “Alouette”, “alouette”
+    caldrà batre els braços com si fóssim ocells. La idea és que a cada ronda s’anomeni una part del cos diferent.
+
+    Una possible variant és, en lloc de fer una sola part del cos per ronda, afegir-n’hi una més. És a dir, a mesura que la cançó va avançant anem
+    sumant parts del cos i així els participants han d’anar de bòlit tocant ara a la dreta, ara a l’esquerra, ja que cada vegada la llista és més llarga.
+    
+    Com que es tracta d’una dansa és força recomanable que hi participi com més gent millor. És important que els participants tinguin respecte pels seus companys, ja que si no es poden acabar fent mal. Cal tocar, no colpejar.
+    Pot ser interessant explicar als participants que vol dir oreneta en francès. Així entendran per què baten les ales com ocells.
+    
+    Amb aquesta dansa es poden trobar valors com la confiança, el respecte, l’alegria, la participació, etc. Lletra:
+
+     “Alouette”, gentil “alouette”.
+     “Alouette”, jo t’esquilaré.
+     Jo t’esquilaré el clatell,
+     jo t’esquilaré el clatell.
+     El clatell, el clatell.
+     “Alouette”, “alouette”. (Se substitueix “el clatell” pel melic, el genoll, etc.)`,
+    desenvolupament: "",
+    avaluació: "",                            
+    url: "qNhIcfszeDQ",
+    isSong: true,
+    etiquetes: ["Animació infantil"],
+  },
+  // {
+  //   id: 149,
+  //   title: "El zoo de la disbauxa",
+  //   descripció:
+  //     "Rotllana de persones que es van aixecant i canviant de lloc quan senten el nom que els ha estat assignat.",
+  //   edatmin: 4,
+  //   edatmax: 8,
+  //   lletra: `El joc està basat en un text escrit especialment per a l’ocasió. En aquest cas, s’ha redactat a partir del llibre El zoo d’en Pitus. Els infants s’asseuran en rotllana i s’aniran aixecant i canviant de lloc quan sentin el nom que els ha estat assignat.`,
+  //   desenvolupament: `Els infants seuen en rotllana i s’assigna a cadascú el nom d’un animal / personatge. Es comença a llegir el text i quan cada infant sent el nom del personatge que li ha estat assignat ha de córrer a canviar-se de lloc amb els companys que tenen la mateixa assignació que ell.
+
+  // En cas que algú quedi sense lloc caldrà que s’esperi al mig de la rotllana per tal que quan algú altre s’aixequi pugui recuperar el lloc.
+  
+  // Si en algun moment s’anomena un mot de col·lectivitat, en aquest cas seria la paraula ZOO, tothom s’ha d’aixecar i canviar-se de lloc. 
+  
+  // A continuació us presentaré els animals del nostre zoo.
+  
+  // En primer lloc tenim les sargantanes. Són presumides i molt femenines. La veritat és que mai no es treuen el llacet que porten penjat a la cueta, i és que les sargantanes són els animals més fatxendes de tot el zoo.
+  
+  // A continuació tenim les rates de claveguera. Sempre van brutes. I no cregueu que els importa gaire la pudor que fan, perquè les rates de claveguera estan tan acostumades a viure entre la brutícia que els és ben igual el que pensin d’elles la resta d’animals.
+  
+  // No ens podem oblidar de les llagostes. Tot el dia amunt i avall, vinga saltar per allà i saltar per aquí com si fossin un saltamartí. Però si voleu saber un secret, les llagostes estan bojament enamorades de les sargantanes, i si salten és per impressionar-les.
+  
+  // Pel que fa a les papallones, viuen molt felices. Penseu que abans eren uns llefiscosos cucs de seda, però ara, amb la patxoca que fan, no deixen mai d’exhibir tots els colors que els ha regalat la mare naturalesa.
+  
+  // Continuem amb els pardals. Aquests sí que són trapelles. No fan altra cosa que volar d’una banda a l’altra del zoo empipant els altres animals. Segons ells, ho fan perquè si no s’avorririen sols volant pel cel. Aix, mare meva, no sé què en farem, d’aquests pardals.
+  
+  // Dels garrins, què voleu que us digui. Són bruts de cap a peus, això sí, no tant com les rates de claveguera, perquè ells són molt vergonyosos i intenten sempre rentar-se, però com que ho fan en el fang, els garrins mai no estan nets.
+  
+  // Per acabar tenim els més terribles del nostre zoo, els tigres, que cal tenir-los ben tancats en gàbies, ja que si no es menjarien la resta d’animals. I és que els tigres sempre tenen gana.
+  
+  // Però bé, potser seria interessant que us expliqués què va passar exactament en aquest zoo, ja que si no no sabreu mai per què us explico aquesta història.
+  
+  // Tot va començar quan les llagostes, que sempre estaven enamorades de les presumides sargantanes, van parlar amb les papallones, per tal que aquestes els expliquessin quin era el secret de la bellesa de les sargantanes, però és clar, com sempre, els pardals que volaven per tot el zoo van sentir la conversa entre les llagostes i les papallones i la van anar a explicar als garrins, que en aquell moment estaven discutint amb les rates de claveguera sobre qui era més net dels dos. Però és clar, aquí els qui més s’avorrien eren els tigres, que amb tanta xerrameca estaven morts de gana. I quan van veure passar per davant de la seva gàbia una sargantana, van decidir llançar-s’hi al damunt, i en sentir-ho, les llagostes van saltar damunt els tigres, que s’espolsaven de la cara les papallones i els pardals, que intentaven distreure’l, mentre els garrins i les rates de claveguera ajudaven les sargantanes a fugir de les urpes del gros animal, que les havia agafades. I va ser així com el tigre va tornar a la seva gàbia i les papallones, els pardals, els garrins i les rates de claveguera van tornar a les seves tasques habituals, mentre les llagostes i les sargantanes vivien per sempre més felices menjant anissos i perdius en aquell bonic i bucòlic zoo.`,
+  //   avaluació: `Atès que es tracta d’una activitat col·lectiva és força recomanable que hi participi com més gent millor. És important que els participants tinguin respecte pels seus companys, ja que si no es poden acabar fent mal. És molt interessant que els participants desenvolupin l’activitat en silenci per tal de poder sentir la veu del narrador.
+
+  // Pot ser interessant que en acabar l’activitat es repassi amb els infants quin personatge els ha estat assignat i quin paper juga dins la història que han llegit a classe prèviament, o si encara no ho han fet, se’ls pot introduir el paper dels diferents personatges dins la història que llegiran.
+  
+  // Caldrà que l’activitat sempre estigui referenciada en algun llibre.
+  
+  // Serà necessari un director de joc.`,
+  //   isSong: true,
+  //   etiquetes: ["Animació infantil"],
+  // },
+  // {
+  //   id: 150,
+  //   title: "Salta, salta, salta",
+  //   descripció:
+  //     "Un escampall de persones segueixen els passos del que indica la cançó.",
+  //   edatmin: 4,
+  //   edatmax: 8,
+  //   lletra: `Boing, Boing, boing, boing, boing, boing
+  // Salta, salta, salta, salta sense parar,                 Do, Sol
+  // salta, salta, salta i una volta has de donar.           Fa, Do
+  // Salta, salta, salta, salta sense parar,                 Do, Sol
+  // salta, salta, salta i un company has de trobar.         Fa, Do
+  // Salten les formigues, salten els gripaus.               Fa, Do
+  // Salten les granotes i també els elefants.               Sol, Do
+  // Salten les formigues, salten els gripaus.               Fa, Do
+  // Dóna una volta i torna a començar.                      Sol, Do`,
+  //   desenvolupament: `La cançó es comença a cantar mentre tots els participants van saltant i donant voltes sense cap direcció concreta per tot l’espai seguint les indicacions que els va donant la lletra de la cançó, fins que diu un company has de trobar. Llavors, agafant les mans de la parella que han trobat, es van ajupint o saltant en funció de si l’animal que apareix és petit o gran. Tot acaba quan tornen a donar una volta i es disposen a seguir saltant per l’espai.
+
+  // Una possible variant és acabar la cançó dient una rotllana entre tots hem de formar, cosa que ens pot ajudar a fer una rotllana o bé, si ho preferim, una fila.`,
+  //   avaluació: `Com que és una dansa, és força recomanable que hi participi com més gent millor. És important que els participants tinguin respecte pels seus companys, ja que, si no, es poden acabar fent mal. Cal saltar sol, no contra els altres.
+
+  // Pot ser interessant fer un concurs de voltes de parella per tal d’estimular la creativitat dels participants. Amb aquesta dansa es poden trobar valors com la confiança, el respecte, l’alegria, la participació, etc. `,
+  //   isSong: true,
+  //   etiquetes: ["Animació infantil"],
+  // },
+  {
+    id: 149,
+    title: "El patatuf",
+    descripció:
+      "És una dansa popular catalana que es ballava a la comarca del Baix Llobregat. Hi ha diferents variants o danses similars en comarques properes com el Penedès i el camp de Tarragona. Sembla ser que el seu nom deriva de les palmes que es feien a l’inici de la dansa.",
+    edatmin: 4,
+    edatmax: 11 ,
+    lletra:"",
+    desenvolupament: `A la primera frase musical (A) es fan tres palmes (equivalents a un temps cadascuna), una pausa (d’un temps de negra) i tres aplaudiments més. 
+    A la segona frase (B) es fa un punteig, primer amb el peu dret, al costat, al lloc, per davant i amb els peus junts, i després el mateix amb el peu esquerre. 
+    A la tercera frase (C) les parelles s’agafen de les mans i el nen fa un rístol per sota dels seus braços a la nena, primer en sentit contra horari i després en sentit horari, mantenint-se agafats de mans. 
+    A la quarta i última frase (C '), les parelles es donen la mà dreta i donen una volta sencera en sentit horari, desplaçant-se seguidament en sentit horari i canviant de parella per reprendre la dansa.`,
+    isSong: true,
+    avaluació: `És una dansa que afavoreix la cohesió del grup i la relació entre els nens. Aquesta dansa potencia la coordinació corporal amb el moviment marcat per la música.
+
+    S’ha de tenir en compte que aquesta dansa, com totes les danses, és per gaudir i passar un bon moment, per tant si hi ha cap infant que no vol participar de la dansa se l’ha de tenir en compte i no forçar-lo a ballar, es poden buscar altres alternatives per fer-lo participar en la dansa. Pot acompanyar amb les palmes marcant la pulsació de la música, també es pot ser espectador. No sempre hem d’estar tots ballant.`,
+    url:"6_NOROrheIs",
+    etiquetes: ["Danses"],
+  },
+  {
+    id: 150,
+    title: "Ball francès",
+    descripció:
+      "Ball de rotllana on els infants van canviant de parella. Per tant, afavoreix la cohesió de grup i la relació entre infants.",
+    edatmin: 4,
+    edatmax: 18,
+    desenvolupament: `Posició inicial: en cercle, amb les mans agafades i mirant al centre.
+
+    Blocs de moviment:
+    
+    A)Vuit temps saltant a pas de galop en sentit contra horari.
+    
+    B)Quan comença el segon temps melòdic, es marca amb la parella, que hi ha al costat, un petit punteig (dreta i esquerra) i seguidament es pica de mans tres cops seguits. Això es repeteix dues vegades consecutives. Finalment, es fan dos rístols seguits amb la parella per tal de canviar de posició. (Si no volem que canviïn de parella poden fer rístols amb aquesta).
+    
+    L’estructura d’A i B es repeteix consecutivament segons les tirades que tingui la música.`,
+    avaluació:`És una dansa que afavoreix la cohesió del grup i la relació entre els nens. Aquesta dansa potencia la coordinació corporal amb el moviment marcat per la música.
+
+    S’ha de tenir en compte que aquesta dansa, com totes les danses, és per gaudir i passar un bon moment, per tant si hi ha cap infant que no vol participar de la dansa se l’ha de tenir en compte i no forçar-lo a ballar, es poden buscar altres alternatives per fer-lo participar en la dansa. Pot acompanyar amb les palmes marcant la pulsació de la música, també es pot ser espectador. No sempre hem d’estar tots ballant.`,
+    isSong: true,
+    url:"AQltoIzlWsU",
+    etiquetes: ["Danses"],
+  },
+  {
+    id: 151,
+    title: "El petit vailet",
+    descripció:
+    "Nadala tradicional",
+    edatmin: 4,
+    edatmax: 18,
+    lletra:`Jo soc el petit vailet cansadet de molt camí,
+    vinc amb el meu gaiatet per veure jesús diví.
+    Xerram pim, xerram pim, xerria pia...
+    Xerram pim, xerram pim, xerria pó...
+    xerrampim que josep i maria tenen un petit minyó.
+    
+    He portat la carmanyola
+    tota plena de vi blanc
+    i una llarga llangonissa
+    per Jesús el bell infant.
+    Xerram plim, xerram plim, xerram pia,
+    xerram plim, xerram plim, xerram po,
+    xerram pim que Josep i Maria
+    tenen un petit Minyó.
+    
+    Aquí van aquestes calces
+    que me'n va donar l'hereu
+    serviran per abrigar-vos
+    que són de molt gros piteu.
+    Xerram ...
+    
+    Si portés jo més recapte
+    també seria per vös.
+    Heu's aquí el gaiat que porto
+    que és de cirerer d'arboç.
+    Xerram ...`,
+    isSong: true,
+    url:"OYmH4K7GWVA",
+    etiquetes: ["Nadales", "Tradicionals"],
+  },
+  {
+    id: 152,
+    title: "El rabadà",
+    descripció:
+    `Nadala titulada "El Rabadà"`,
+    edatmin: 4,
+    edatmax: 18,
+    lletra:`A Betlem me'n vull anar (2)
+    vols venir tu, rabadà? (2)
+    -Vull esmorzar!
+    
+    -A Betlem esmorzarem (2)
+    i a Jesús arribarem (2)
+    -I amb neu hi anirem?
+    
+    -Per la neu, que pel camí hi ha (2)
+    la calor ja la fondrà (2)
+    -Oh, i la que fa!
+    
+    -Apa, aixeca't, encén el foc (2)
+    i no anem massa a poc a poc (2)
+    -Massa que em moc!
+    
+    -Tu les teies portaràs (2)
+    i el camí il·luminaràs (2)
+    -No ho faré pas!
+    
+    -Que no saps que aquesta nit (2)
+    ha nascut Déu infinit (2)
+    -Qui t'ho ha dit?
+    
+    Doncs un angel que, volant, (2)
+    ens ho anava anunciant (2)
+    No serà tant
+    
+    La samarra portaràs (2)
+    i de neules l'ompliràs (2)
+    Jo no vull pas
+    
+    Mai no acabes les raons! (2)
+    Doncs, me l'omples torrons. (2)
+    No són pas bons
+    
+    En miquel, el teu cosí (2)
+    portarà un porró de vi. (2)
+    N'hi haurà per mi?
+    
+    Cantaràs una cançó (2)
+    davant Déu fet infantó. (2)
+    Tot sol? no, no
+    
+    Quins vailets, més espantats! (2)
+    Cantarem tots dos plegats (2)
+    L'orgue dels gats!
+    
+    Doncs avant i no badem, (2)
+    que ja és hora que marxem. (2)
+    Cap a Betlem`,
+    isSong: true,
+    url:"oZIY7eSLYIM",
+    etiquetes: ["Nadales","Tradicionals"],
+  },
+  {
+    id: 153,
+    title: "Bona nit",
+    descripció:
+    `Cançó Bona nit de "Els Pets"`,
+    edatmin: 4,
+    edatmax: 18,
+    lletra:`Vine aquí  sé que estàs cansada,
+    els ulls se’t fan petits, deixa'm abraçar-te
+    tendrament i calla
+    que és molt tard i arriba l'hora de dormir.
+    
+    Posa el cap  a la meva falda
+    i deix la meva mà espolsar els fantasmes
+    que t'amoïnen i t'espanten,    
+    tanca els ulls que jo et vigilo des d'aquí.
+    
+    Dorm tranquil·la i digue'm bona nit,
+    deix que et porti en braços fins al llit,
+    jeu ben a la vora,
+    saps que no estàs sola
+    mentre et dic a cau d'orella bona nit.
+    
+    Pel balcó  la lluna t'esguarda
+    i sé que et fa un petó, res no té importància
+    fins demà a trenc d'alba
+    quan de sobte t'acaroni la claror.
+
+    Dorm tranquil·la i digue'm bona nit,
+    deix que et porti en braços fins al llit,
+    jeu ben a la vora,    
+    saps que no estàs sola
+    mentre et dic a cau d'orella bona nit.
+    
+    Molt bona nit.`,
+    isSong: true,
+    url:"p6f-gS7XYEA",
+    etiquetes: ["Per anar a dormir","Pop rock català"],
+  },
+  {
+    id: 154,
+    title: "Bon dia",
+    descripció:
+    `Cançó Bon dia de "Els Pets"`,
+    edatmin: 4,
+    edatmax: 18,
+    lletra:`La vella Montserrat
+    desperta el barri a cops d'escombra tot cantant
+    les primeres persianes
+    s'obren feixugues badallant.
+    
+    Rere el vidre entelat 
+    el cafeter assegura que no era penal
+    i es desfà la conversa
+    igual que el sucre del tallat.
+    
+    Bon dia, ningú ho ha demanat però 
+    fa bon dia, damunt els caps un sol ben insolent
+    il·lumina descarat tot l'espectacle de la gent.
+    
+    Al bell mig de la plaça    
+    la peixatera pren paciència amb la Consol
+    que remuga i regala
+    grans bafarades d'alcohol.  
+    
+    I al pedrís reposant 
+    l'avi Josep no es deixa perdre cap detall 
+    i amb l'esguard es pregunta
+    quants dies més té de regal. 
+    
+    Bon dia, ningú ho ha demanat però 
+    fa bon dia, damunt els caps un sol ben insolent
+    il·lumina descarat tot l'espectacle de la gent.
+    
+    Nens xisclant, olor a pixum de gat,
+    veïnes que un cop has passat et critiquen.
+    
+    Gent llençant la brossa d'amagat
+    i un retardat que amb ulls burletes et mira
+    i diu: bon dia!
+    
+    Bon dia, ningú ho ha demanat però 
+    fa bon dia, damunt els caps un sol ben insolent
+    il·lumina descarat tot l'espectacle de la gent.`,
+    isSong: true,
+    url:"YnapaIyXSYE",
+    etiquetes: ["Pop rock català"],
+  },
+  {
+    id: 155,
+    title: "Pol petit",
+    descripció:
+    `Cançó del Pol petit`,
+    edatmin: 4,
+    edatmax: 18,
+    lletra:`Dies fets d'angoixa
+    carrers plens de por
+    gent sense esperança
+    ciutats sense cor
+    nens petits que creixen
+    amb el cor glaçat
+    son joguines
+    que els grans hem trencat
+    
+    Ei Pol petit agafa la guitarra cada nit
+    surt al carrer i canta una cançó
+    canta ben fort i digues la veritat sense cap por
+    Ei Pol petit també cantaré jo.
+
+    Et diran que les guitarres
+    et diran que les cançons
+    son només per diverir-te
+    i que no has de buscar raons
+
+    Però no deixis que t'enganyin    
+    qui diu això no et vol bé
+    cal que surtis
+    a cantar al carrer 
+    
+    Ei Pol petit ? Ei Pol petit ? Ei Pol petit també cantaré jo. Pol petit, Pol petit? Ei Pol petit també cantaré jo.`,
+    isSong: true,
+    url:"XPkwl3HXm3Y",
+    etiquetes: ["Tradicionals"],
+  },
+  {
+    id: 156,
+    title: "50 tombarelles",
+    descripció:
+    `Cançó 50 tombarelles en el temps, composada per celebrar el 50è aniversari de la fundació Pere Tarrés.`,
+    edatmin: 4,
+    edatmax: 18,
+    lletra:`Es van obrint els ulls        
+    amb els brillants filets de llum      
+    a les lliteres comença el neguit       
+    l'ànim es desperta    
+    amb el primer acudit    
+    un cop de coixí et vol dir "bon dia amic"    
+    
+    
+    Cinquanta tombarelles en el temps (3)     
+    
+    
+    Com una capseta
+    embolicada en un llençol
+    perseguint petjades d'un tresor
+    com aquella carta
+    descoberta en mig del bosc
+    formigues a la panxa i elefants al cor
+    
+    
+    Esquitxos d'aventures
+    i les forces per pujar
+    grans muntanyes o petits turons
+    l'olor de la ginesta
+    barrejada amb la suor
+    l'olor d'aquella tenda i de la pluja...
+    
+    
+    50 tombarelles en el temps...        
+    ...temps i esplai     
+    trobar-nos en un molinet de vent,
+    junts hem girat
+    junts hem crescut
+    junts donarem
+    voltetes en el temps
+    
+    
+    Empaitant històries
+    amagades pels racons
+    desenpolsegant velles cançons
+    misteris i encanteris
+    fan la guitza al campament
+    -algú ha tancat la porta del castell-
+    
+    
+    Hem plorat de riure
+    hem plorat per un amor
+    hem plorat topant amb un record
+    com aquell juliol
+    darrer aroma de la flor
+    i sempre amb un setembre de llavors
+    
+    
+    50 tombarelles en el temps...`,
+    isSong: true,
+    url:"liDToXBVYpo",
+    etiquetes: ["Tradicionals"],
+  },
+  {
+    id: 157,
+    title: "Himne de la mare de Déu de l'alegria",
+    descripció:
+    `Cançó de la Mare de Déu de l'Alegria`,
+    edatmin: 4,
+    edatmax: 18,
+    lletra:`"Déu te guard, plena de gràcia,      
+    el Senyor és amb tu",    
+    et digué l'àngel de Déu,    
+    qui s'ho pot imaginar?    
+    I et demana ser la Mare    
+    de l'esperança del món.
+    Sense dubtes, ni perquès,     
+    tu dius que sí...   
+    
+    Per això ets la Mestra de l'Amor,     
+    de tu aprenem a dir que "sí"
+    al Senyor,    
+    malgrat les nostres pors.
+    
+    
+    I ara et cantem:      
+    la nostra Mare ets, Santa Maria.    
+    Et demanem     
+    que sempre sigui Crist    
+    nostra alegria,    
+    que present en el nostre treball,    
+    per educar en l'esplai,     
+    forgem, homes i dones lliures.
+    
+    
+    Et cantem:     
+    la nostre Mare ets, Santa Maria,     
+    et demanem,     
+    que sempre sigui Crist     
+    nostra alegria,    
+    que aprenguem la confiança d'infant,
+    la resposta a l'amor,     
+    com tu, humil i sense por    
+    humil i sense por.
+    
+    Del més gran al més petit,
+    del nostre centre d'Esplai,
+    et demanem Mare Nostra,
+    que ens agafis de la mà.Que pregueu per tots nosaltres,
+    ara i en la nostra mort,
+    en la vida i en el joc,
+    en tot moment.
+    Per això ets la mestra de l'Esplai,
+    de tu aprenem a treballar amb sentit
+    pel Regne del teu Fill.`,
+    isSong: true,
+    url:"r7BpKmRX_6Q",
+    etiquetes: ["Tradicionals"],
+  },
+  {
+    id: 158,
+    title: "Aguanta la vela",
+    descripció:
+    `Cançó "Aguanta la vela"`,
+    edatmin: 4,
+    edatmax: 18,
+    lletra:`Aguanta la vela, hu, ha! Fantasma aguanta la vela, hu, ha!
+      Aguanta la veeeeela, hu, ha! Fantasma aguanta la veeeeeela, hu, ha!`,
+    isSong: true,
+    url:"",
+    etiquetes: ["Animació infantil", "12885 🌎"],
+  },
+  {
+    id: 159,
+    title: "Banana 🍌",
+    descripció:
+    `One banana, two banana, three banana, four banana...`,
+    edatmin: 4,
+    edatmax: 18,
+    lletra:`S'ha de fer un canon dividint en grups i que cada grup fagi un tipus de ritme o variant de la lletra:
+    One banana, two banana, three banana, four banana...
+    `,
+    isSong: true,
+    url:"",
+    etiquetes: ["Animació infantil", "12885 🌎"],
+  },
+  {
+    id: 160,
+    title: "La chivirita",
+    descripció:
+    `Cançó de la chivirita`,
+    edatmin: 4,
+    edatmax: 18,
+    lletra:`-Machumbà la chivirita, pimienta, pitonga, pitanga i pita (x2, augmentant velocitat)
+     -Que lo repita l@ "nom" (x2), si no s'ha aprés la lletra: -No se aprendió la letra (x4),
+     si s'ha aprés la lletra: -Si se aprendió la letra (x4).
+`, 
+    isSong: true,
+    url:"",
+    etiquetes: ["Animació infantil", "12885 🌎"],
+  },
+  {
+    id: 161,
+    title: "Chipi-chipi",
+    descripció:
+    `Cançó del Chipi-chipi`,
+    edatmin: 4,
+    edatmax: 18,
+    lletra:`-Ayer fui al pueblo, a ver a la Mari,
+    -La Mari me enseñó a bailar el Chipi-chipi,
+    -Baila el Chipi-chipi (x2)
+    -Baila el Chipi-chipi, pero bàilalo bien.`, 
+    isSong: true,
+    url:"",
+    etiquetes: ["Animació infantil", "12885 🌎"],
+  },
+  {
+    id: 162,
+    title: "Com esteu",
+    descripció:
+    `Cançó del "Com esteu ?"`,
+    edatmin: 4,
+    edatmax: 18,
+    lletra:`-Hola nois, que tal i com esteu ? (Monitor)
+    -Molt bé! (Nens)
+    -I les vostres amistats com van ? (Monitor)
+    -Molt bé! (Nens)
+    -Farem el posible per ser bons amics (Monitor)
+    -Hola nois, que tal i com esteu ? (Monitor)
+    -Molt bé! (Nens)`, 
+    isSong: true,
+    url:"",
+    etiquetes: ["Animació infantil", "12885 🌎"],
+  },
+  {
+    id: 163,
+    title: "Como lo llevas tronco",
+    descripció:
+    `Como lo llevas tronco ?`,
+    edatmin: 4,
+    edatmax: 18,
+    lletra:`-Como lo llevas tronco ?
+    -Yo muy bien, yo muy bien
+    -Como lo llevas tronco ?
+    -Yo muy bien, yo muy bien.`, 
+    desenvolupament:(<div className="bloc w-full ">
+      <img src="/Tronco1.jpeg"/>
+      <img src="/Tronco2.jpeg"/>
+    </div>),
+    isSong: true,
+    url:"",
+    etiquetes: ["Animació infantil", "12885 🌎"],
+  },
+  {
+    id: 164,
+    title: "Hola, hola digues hola",
+    descripció:
+    `Cançó del "hola, hola digues hola`,
+    edatmin: 4,
+    edatmax: 18,
+    lletra:`Hola, hola digues hola
+    -Hola, hola digues hola,
+    -Hola, hola digues hola,
+    -Digues hola fent un bon crit!     (x2)
+    (A la segona repetició cambiem "crit" per "salt")`, 
+    isSong: true,
+    url:"",
+    etiquetes: ["Animació infantil", "12885 🌎"],
+  },
+  {
+    id: 165,
+    title: "La danza del vampiro",
+    descripció:
+    `Cançó de "La danza del vampiro"`,
+    edatmin: 4,
+    edatmax: 18,
+    lletra:`-Esto es, la danza del vampiro, hu, ha, hu, ha
+    -I tu seràs, mi víctima mortal.`, 
+    isSong: true,
+    url:"",
+    etiquetes: ["Animació infantil", "12885 🌎"],
+  },
+  {
+    id: 166,
+    title: "Un limón i medio milón 🍋",
+    descripció:
+    `Joc interesant a partir de ritmes`,
+    edatmin: 4,
+    edatmax: 18,
+    lletra:`A tothom se li asignarà un número, i haurán de fer la següent lletra sense perdre el ritme amb les mans:
+    -(El teu número) limones i medio limón, (número de una altra persona) limones i medio limón (fins que tothom quedi eliminat.)
+    No es poden dir número adjacents. Qui es trabi o falli queda eliminat.` , 
+    isSong: true,
+    url:"",
+    etiquetes: ["Animació infantil", "12885 🌎"],
+  },
+  {
+    id: 167,
+    title: "La margarideta",
+    descripció:
+    `Cançó de "La margarideta"`,
+    edatmin: 4,
+    edatmax: 18,
+    lletra:`-Qué li tocarem a la margarideta ?
+    -Qué li tocarem a la margaridó ?
+    -Li tocarem el "part del cos" a la margarideta
+    -Li tocarem el "part del cos" a la margaridó.`,
+    isSong: true,
+    url:"",
+    etiquetes: ["Animació infantil", "12885 🌎"],
+  },
+  {
+    id: 168,
+    title: "Pujem al tren",
+    descripció:
+    `Cançó de "Pujem al tren"`,
+    edatmin: 4,
+    edatmax: 18,
+    lletra:`-Puuujem al tren, chuchua, chuchua 
+    - Que ens n'anirem, chuchua, chuchua 
+    -A veure el món, chuchua, chuchua 
+    -Qui sap a on, chuchua, chuchua (Repetim incrementant la velocitat)`,
+    isSong: true,
+    url:"",
+    etiquetes: ["Animació infantil", "12885 🌎"],
+  },
+  {
+    id: 169,
+    title: "Renta't les mans",
+    descripció:
+    `Cançó per ajudar a que els nens es rentin les mans`,
+    edatmin: 4,
+    edatmax: 18,
+    lletra:`-Renta't les mans
+    -Renta-les bé
+    -Amunt, avall i les ungles també. (x2)`,
+    isSong: true,
+    url:"",
+    etiquetes: ["Animació infantil", "12885 🌎"],
+  },
+  {
+    id: 170,
+    title: "Somos las nadadoras 🏊‍♀️",
+    descripció:
+    `Cançó de "Somos las nadadoras"`,
+    edatmin: 4,
+    edatmax: 18,
+    lletra:`-Somos las nadadoras, que venimos de ultramar
+    -I el agua està fresquibiris, fresquibiris, fresquibiris
+    -I el agua està fresquibiris, fresquibiris, for you!`,
+    isSong: true,
+    url:"",
+    etiquetes: ["Animació infantil", "12885 🌎"],
+  },
+  {
+    id: 171,
+    title: "Tren de l'alegria",
+    descripció:
+    `Cançó de "Somos las nadadoras"`,
+    edatmin: 4,
+    edatmax: 18,
+    lletra:`-Aquest es el tren de l'alegria, aquest es el tren de l'ilusió
+    -I ara fa triqui, i ara fa traca, i ara fa triqui triqui triqui triqui traca
+    -I ara fa traca, i ara fa triqui, i ara fa traca traca traca traca triqui`,
+    isSong: true,
+    url:"",
+    etiquetes: ["Animació infantil", "12885 🌎"],
+  },
+
 ];
 
 export default activities;

@@ -45,9 +45,9 @@ const filters = [
     id: "edats",
     name: "Edats",
     options: [
-      { value: [4, 8], label: "4-8 anys", checked: false },
-      { value: [8, 12], label: "8-12 anys", checked: false },
-      { value: [12, 16], label: "12-16 anys", checked: true },
+      { value: [4, 7], label: "4-7 anys", checked: false },
+      { value: [8, 11], label: "8-11 anys", checked: false },
+      { value: [12, 15], label: "12-15 anys", checked: false },
       { value: [16, 18], label: "16-18 anys", checked: false },
     ],
   },
@@ -66,12 +66,14 @@ const filters = [
     id: "etiquetes",
     name: "Etiquetes",
     options: [
+      { value: "Custom", label: "Custom", checked: false },
       { value: "Competitiu", label: "Competitiu", checked: false },
       { value: "Cooperatiu", label: "Cooperatiu", checked: false },
       { value: "Coneixença", label: "Coneixença", checked: true },
-      { value: "Grans Jocs", label: "Grans Jocs", checked: false },
-      { value: "Jocs Curts", label: "Jocs Curts", checked: false },
-      { value: "Jocs de Nit", label: "Jocs de Nit", checked: true },
+      { value: "Grans jocs", label: "Grans Jocs", checked: false },
+      { value: "Jocs curts", label: "Jocs Curts", checked: false },
+      { value: "Jocs de nit", label: "Jocs de Nit", checked: true },
+      { value: "Jocs de pistes i gimcanes", label: "Esportiu", checked: false },
       { value: "Esportiu", label: "Esportiu", checked: false },
       { value: "Sense material", label: "Sense material", checked: false },
       {
@@ -79,6 +81,7 @@ const filters = [
         label: "Narració i expressió",
         checked: true,
       },
+      { value: "Vetllades", label: "Vetllades", checked: false },
     ],
   },
 ];
@@ -96,7 +99,7 @@ export default function Example({
   onQueryChangePart,
 }) {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
-
+console.log("this is my maxAge lol", maxAge)
   return (
     <div>
       {/* Mobile filter dialog */}
@@ -129,7 +132,7 @@ export default function Example({
           >
             <div className="ml-auto relative max-w-xs w-full h-full bg-white shadow-xl py-4 pb-12 flex flex-col overflow-y-auto">
               <div className="px-4 flex items-center justify-between">
-                <h2 className="text-lg font-medium text-gray-900">Filters</h2>
+                <h2 className="text-lg font-medium text-gray-900">Filtres</h2>
                 <button
                   type="button"
                   className="-mr-2 w-10 h-10 bg-white p-2 rounded-md flex items-center justify-center text-gray-400"
@@ -185,7 +188,7 @@ export default function Example({
                                   onChange={(event) => {
                                     if (section.id === "participants") {
                                       onQueryChangePart(option.value);
-                                      console.log("this is my option.value im passing in", option.value)
+                                     
                                     } else if (
                                       section.id === "etiquetes" ||
                                       section.id === "ubicació"
@@ -260,10 +263,13 @@ export default function Example({
               </Menu.Items>
             </Transition>
           </Menu>
-          <label className="group inline-flex justify-center text-sm font-medium text-gray-700 ">
+          <label 
+          htmlFor="Filters"
+          className="hover:cursor-pointer group inline-flex justify-center text-sm font-medium text-gray-700 ">
             Filtres
           </label>
           <button
+            id="Filters"
             type="button"
             className="p-2 -m-2 mx-2 text-gray-500 hover:text-gray-700"
             onClick={() => setMobileFiltersOpen(true)}

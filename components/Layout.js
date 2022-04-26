@@ -4,24 +4,17 @@ import { SearchIcon } from "@heroicons/react/solid";
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 import Link from "next/link";
 import activities from "../data/activities"
+import Breadcrumbs from "../components/Breadcrumbs"
+import { Category } from "@mui/icons-material";
 
-const user = {
-  name: "Tom Cook",
-  email: "tom@example.com",
-  imageUrl:
-    "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-};
+
 const navigation = [
-  { name: "Bogd.app", href: "/activity/CustomActivity", current: true },
-  { name: "Team", href: "#", current: false },
-  { name: "Projects", href: "#", current: false },
-  { name: "Calendar", href: "#", current: false },
-  { name: "Reports", href: "#", current: false },
-];
-const userNavigation = [
-  { name: "Your Profile", href: "#" },
-  { name: "Settings", href: "#" },
-  { name: "Sign out", href: "#" },
+  { name: "Crear activitat", href: "/activity/CustomActivity", current: false },
+  { name: "Activitats preferides", href: "/activity/favorites", current: false },
+  { name: "Tendències", href: "/activity/topgames", current: false },
+  { name: "Cançoner", href: "/activity/songs", current: false },
+  { name: "Crear cançó", href: "/activity/CustomSong", current: false },
+  { name: "Desestressador", href: "/activity/desestressador", current: false },
 ];
 
 function classNames(...classes) {
@@ -29,7 +22,7 @@ function classNames(...classes) {
 }
 
 
-export default function Layout({ children, onQueryChange, query }) {
+export default function Layout({ children, onQueryChange, titol, query, breadcrumbs = [] }) {
 
   
   return ( 
@@ -42,13 +35,12 @@ export default function Layout({ children, onQueryChange, query }) {
                   <div className="relative h-16 flex items-center justify-between lg:border-b lg:border-indigo-400 lg:border-opacity-25">
                     <div className="px-2 flex items-center lg:px-0">
                       <div className="flex-shrink-0">
-                        <Link href="/activity/favorites">
+                        <Link href="/">
                           <a>
                             <img
                                 className="block h-10 w-10 "
-                                src="/descarga.png"
+                                src="/SimpleLog.png"
                                 alt="Workflow"
-                                color="#f9ac45"
                               />
                           </a>
                         </Link>
@@ -73,6 +65,7 @@ export default function Layout({ children, onQueryChange, query }) {
                         </div>
                       </div>
                     </div>
+                    
                     <div className="flex-1 px-2 flex justify-center lg:ml-6 lg:justify-end">
                       <div className="max-w-lg w-full lg:max-w-xs">
                         <label htmlFor="search" className="sr-only">
@@ -110,20 +103,11 @@ export default function Layout({ children, onQueryChange, query }) {
                     </div>
                     <div className="hidden lg:block lg:ml-4">
                       <div className="flex items-center">
-                        <button
-                          type="button"
-                          className="bg-indigo-600 flex-shrink-0 rounded-full p-1 text-indigo-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-600 focus:ring-white"
-                        >
-                          <span className="sr-only">View notifications</span>
-                          <BellIcon className="h-6 w-6" aria-hidden="true" />
-                        </button>
-
                         {/* Profile dropdown */}
                         <Menu as="div" className="ml-3 relative flex-shrink-0">
                           <div>
                             <Menu.Button className="bg-indigo-600 rounded-full flex text-sm text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-600 focus:ring-white">
                               <span className="sr-only">Open user menu</span>
-                              <img className="rounded-full h-8 w-8" src={user.imageUrl} alt="" />
                             </Menu.Button>
                           </div>
                           <Transition
@@ -136,21 +120,6 @@ export default function Layout({ children, onQueryChange, query }) {
                             leaveTo="transform opacity-0 scale-95"
                           >
                             <Menu.Items className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
-                              {userNavigation.map((item) => (
-                                <Menu.Item key={item.name}>
-                                  {({ active }) => (
-                                    <a
-                                      href={item.href}
-                                      className={classNames(
-                                        active ? 'bg-gray-100' : '',
-                                        'block py-2 px-4 text-sm text-gray-700'
-                                      )}
-                                    >
-                                      {item.name}
-                                    </a>
-                                  )}
-                                </Menu.Item>
-                              ))}
                             </Menu.Items>
                           </Transition>
                         </Menu>
@@ -181,31 +150,9 @@ export default function Layout({ children, onQueryChange, query }) {
                   <div className="pt-4 pb-3 border-t border-indigo-700">
                     <div className="px-5 flex items-center">
                       <div className="flex-shrink-0">
-                        <img className="rounded-full h-10 w-10" src={user.imageUrl} alt="" />
                       </div>
                       <div className="ml-3">
-                        <div className="text-base font-medium text-white">{user.name}</div>
-                        <div className="text-sm font-medium text-indigo-300">{user.email}</div>
                       </div>
-                      <button
-                        type="button"
-                        className="ml-auto bg-indigo-600 flex-shrink-0 rounded-full p-1 text-indigo-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-600 focus:ring-white"
-                      >
-                        <span className="sr-only">View notifications</span>
-                        <BellIcon className="h-6 w-6" aria-hidden="true" />
-                      </button>
-                    </div>
-                    <div className="mt-3 px-2 space-y-1">
-                      {userNavigation.map((item) => (
-                        <Disclosure.Button
-                          key={item.name}
-                          as="a"
-                          href={item.href}
-                          className="block rounded-md py-2 px-3 text-base font-medium text-white hover:bg-indigo-500 hover:bg-opacity-75"
-                        >
-                          {item.name}
-                        </Disclosure.Button>
-                      ))}
                     </div>
                   </div>
                 </Disclosure.Panel>
@@ -215,15 +162,17 @@ export default function Layout({ children, onQueryChange, query }) {
           <header className="py-10">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex-shrink-0 mx-auto">
-                <Link href="/">
+              <h3 className="text-2xl font-bold text-white sm:text-3xl mb-5"> {titol} </h3>
+                {breadcrumbs && <Breadcrumbs breadcrumbs={breadcrumbs}/>}
+                {/* <Link href="/">
                   <a>
                     <img
                       className="block h-36 w-36 mx-auto"
-                      src="/logo.png"
+                      src="/SimpleLog.png"
                       alt="Logo"
                     />
                   </a>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </header>
