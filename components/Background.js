@@ -1,39 +1,44 @@
-import PitchButton from "./PitchButton"
-import { useState } from "react";
+import PitchButton from "./PitchButton";
+import { useEffect, useState } from "react";
 import useSound from "use-sound";
-import CountDown from "./CountDown";
+import { TramRounded } from "@mui/icons-material";
 
-export default function Example({time}) {
-    const soundUrl = "/songs/Click.wav";
-        
-       console.log("this is my time", time)
-        const [isDead, setIsDead] = useState(false)
-        const [playbackRate, setPlaybackRate] = useState(0.75);
+export default function Background({ time, clicks, setClicks }) {
+  const soundUrl = "/songs/Click.wav";
 
-      
-        const [play] = useSound(soundUrl, {
-          playbackRate,
-          volume: 0.5,
-        });
-      
-        const handleClick = () => {
-          setPlaybackRate(playbackRate + 0.02);
-          play();
-          setIsDead(!isDead)
-    
-        };
-      
+  const [isDead, setIsDead] = useState(false);
+  const [isDisabled, setIsDisabled] = useState(false);
+  const [playbackRate, setPlaybackRate] = useState(0.75);
 
-    return (
-      <div className="relative block w-full rounded-lg p-12 text-center">
-         <p ><CountDown time={time}/></p>
-        <div className="max-w-7xl mx-auto pb-12 px-4 sm:px-6 lg:px-8">
-            </div>
-            <div className="relative lg:col-span-1">
-              <blockquote className="mt-6 text-white">
-                <PitchButton handleClick={handleClick} isDead={isDead}/>
-              </blockquote>
-            </div>
-          </div>
-    )
-  }
+  const [play] = useSound(soundUrl, {
+    playbackRate,
+    volume: 0.5,
+  });
+
+  const handleClick = () => {
+    setClicks((clicks) => clicks + 1);
+    setPlaybackRate(playbackRate + 0.02);
+    play();
+    setIsDead(!isDead);
+    setIsDisabled(TramRounded)
+    setTimeout(function () {
+      setIsDead(false);
+      setIsDisabled(false)
+    }, 200)
+  };
+
+  return (
+    <div className="block w-full rounded-lg text-center">
+      <div className="max-w-7xl mx-auto pb-12 px-4 sm:px-6 lg:px-8"></div>
+      <div className="lg:col-span-1">
+        <blockquote className="mt-6 text-white">
+          <PitchButton
+            handleClick={handleClick}
+            isDead={isDead}
+            isDisabled={isDisabled}
+          />
+        </blockquote>
+      </div>
+    </div>
+  );
+}

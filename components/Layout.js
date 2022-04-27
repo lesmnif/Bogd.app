@@ -1,11 +1,11 @@
 import { Fragment, useState } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { SearchIcon } from "@heroicons/react/solid";
-import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Link from "next/link";
 import activities from "../data/activities"
 import Breadcrumbs from "../components/Breadcrumbs"
-import { Category } from "@mui/icons-material";
+
 
 
 const navigation = [
@@ -22,7 +22,7 @@ function classNames(...classes) {
 }
 
 
-export default function Layout({ children, onQueryChange, titol, query, breadcrumbs = [] }) {
+export default function Layout({ children, onQueryChange, isHidden, titol, query, breadcrumbs = [] }) {
 
   
   return ( 
@@ -66,7 +66,7 @@ export default function Layout({ children, onQueryChange, titol, query, breadcru
                       </div>
                     </div>
                     
-                    <div className="flex-1 px-2 flex justify-center lg:ml-6 lg:justify-end">
+                    {!isHidden && <div className="flex-1 px-2 flex justify-center lg:ml-6 lg:justify-end">
                       <div className="max-w-lg w-full lg:max-w-xs">
                         <label htmlFor="search" className="sr-only">
                           Search
@@ -89,7 +89,7 @@ export default function Layout({ children, onQueryChange, titol, query, breadcru
                           
                         </div>
                       </div>
-                    </div>
+                    </div>}
                     <div className="flex lg:hidden">
                       {/* Mobile menu button */}
                       <Disclosure.Button className="bg-indigo-600 p-2 rounded-md inline-flex items-center justify-center text-indigo-200 hover:text-white hover:bg-indigo-500 hover:bg-opacity-75 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-600 focus:ring-white">
@@ -162,8 +162,8 @@ export default function Layout({ children, onQueryChange, titol, query, breadcru
           <header className="py-10">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex-shrink-0 mx-auto">
-              <h3 className="text-2xl font-bold text-white sm:text-3xl mb-5"> {titol} </h3>
-                {breadcrumbs && <Breadcrumbs breadcrumbs={breadcrumbs}/>}
+              <h3 className= "text-2xl font-bold text-white sm:text-3xl mb-5"> {titol} </h3>
+                {isHidden ? "" : breadcrumbs && <Breadcrumbs breadcrumbs={breadcrumbs}/>}
                 {/* <Link href="/">
                   <a>
                     <img

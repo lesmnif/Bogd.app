@@ -1,11 +1,17 @@
 import { CountdownCircleTimer } from 'react-countdown-circle-timer'
 import { useRef, useState } from 'react';
-import Background from "./Background"
 
 
+  
+
+
+
+export default function CountDown({time}) {
+  
+  const [isFinished, setIsFinished] = useState(false)
   const renderTime = ({ remainingTime }) => {
     if (remainingTime === 0) {
-      return <div className="timer">Too late!</div>;
+      return <div className="timer">0</div>;
     }
   
     return (
@@ -15,29 +21,23 @@ import Background from "./Background"
     );
   };
 
-
-
-export default function CountDown({time}) {
-
   return (
-    <div className=' mr-1'>
+    <div className=''>
     <div className="timer">
       <div className="timer-wrapper">
         <CountdownCircleTimer
           isPlaying
-          size={75}
-          duration={5}
-          colors={["#004777", "#F7B801", "#A30000", "#A30000"]}
+          size={50}
+          duration={time}
+          strokeWidth={5}
+          initialRemainingTime={3}
+          colors={["#A30000","#004777", "#F7B801","#A30000"]}
           colorsTime={[10, 6, 3, 0]}
-          onComplete={() => ({ shouldRepeat:false, delay: 1 })}
+          onComplete={() => ({ shouldRepeat:true, delay:0})}
         >
           {renderTime}
         </CountdownCircleTimer>
       </div>
-      <p className="info">
-        Change component properties in the code filed on the right to try
-        difference functionalities
-      </p>
     </div>
     </div>
   );

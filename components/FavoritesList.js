@@ -14,7 +14,7 @@ import {
   import NoResults from "../components/NoResults";
   import { useRouter } from 'next/router'
   import useLocalStorage from "./useLocalStorage";
-  // import topActivities from "../data/topActivities"
+
 
   const defaultSearcher = new Searcher(activitiesData, {
     keySelector: (activity) => {
@@ -60,16 +60,7 @@ import {
       };
     }, [router]);
     
-    // useEffect(() => {
-    //   for (let i = 0; i < topActivities.length; i++) {
-    //   setActivities((prevState) =>{
-    //     const newActivities = [...prevState]
-    //     newActivities.push(topActivities[i])
-    //     return newActivities
-    //   })
-    // }
-    // }, [])
-
+    
     useEffect(() => {
       const localActivities = JSON.parse(localStorage.getItem("localActivities"));
 

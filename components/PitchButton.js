@@ -1,34 +1,42 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import useSound from "use-sound";
 
-
-
 function random(min, max) {
-  return  Math.floor(Math.random() * (max - min)) + min;
+  return Math.floor(Math.random() * (max - min)) + min;
 }
 
+export default function PitchButton({ handleClick, isDead, isDisabled }) {
+  const [position, setPosition] = useState({top: 0, left: 0})
+  const elementRef = useRef(null);
 
-export default function Demo({ handleClick, isDead }) {
-  const topHeigth = random(0, window.innerHeight)
-  const leftWidth = random(0, window.innerWidth) // Math.floor(Math.random() * (-(window.innerHeight-208) - -30)) + -30;
-  // const leftWidth = Math.floor(Math.random() * ((window.innerWidth-674) - -254)) + -254;
+  useEffect(() => {
+    setPosition({
+      top:  random(0, window.innerHeight - elementRef.current.clientHeight),
+      left: random(0, window.innerWidth - elementRef.current.clientWidth)
+    })
+  }, []);
+
   const buttonStyles = {
-          position: "absolute",
-          top:topHeigth,
-          left:leftWidth,
-        }
+    position: "absolute",
+    top: `${position.top}px`,
+    left: `${position.left}px`,
+  }
+
+  const onClick = () => {
+    handleClick()
+    setPosition({
+      top:  random(0, window.innerHeight - elementRef.current.clientHeight),
+      left: random(0, window.innerWidth - elementRef.current.clientWidth)
+    })
+  }
+
   return (
-    <div style={{
-      // position: 'relative',
-    }}>
-      <button
-        onClick={handleClick}
-        style={buttonStyles}
-      >
+    <div>
+      <button ref={elementRef} onClick={onClick} style={buttonStyles} disabled={isDisabled}>
         <span role="img" aria-label="Heart">
           <img
             src={isDead ? "/Masoca2Muerto.png" : "/Masoca2.png"}
-            className=" h-52 w-52 mx-auto text-gray-400 my-5"
+            className=" h-20 w-20 mx-auto text-gray-400 my-5"
           ></img>
         </span>
       </button>

@@ -5,21 +5,11 @@ import Layout from "../../components/Layout";
 import { useEffect, useState } from "react";
 import useLocalStorage from "../../components/useLocalStorage";
 import toast, { Toaster } from "react-hot-toast";
-import topActivities from "../../data/topActivities"
 
 
 const Post = () => {
   const [activities, setActivities] = useState([...activitiesData]);
   
-  useEffect(() => {
-    for (let i = 0; i < topActivities.length; i++) {
-    setActivities((prevState) =>{
-      const newActivities = [...prevState]
-      newActivities.push(topActivities[i])
-      return newActivities
-    })
-  }
-  }, [])
 
   function getActivityById(id) {
     return activities[parseInt(id) - 1];
@@ -80,7 +70,7 @@ const Post = () => {
     ] : [
       { name: 'Activitats', href: '/activity/list', current: true},
       { name: activity?.title, href: '/activity/list', current: false},
-    ] }>
+    ] } isHidden={true}>
       <Activity activity={activity} onClickDelete={onClickDelete} />
     </Layout>
   );
