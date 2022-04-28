@@ -51,7 +51,7 @@ export default function Layout({ children, onQueryChange, isHidden, titol, query
                       <div className="hidden lg:block lg:ml-10">
                         <div className="flex space-x-4">
                           {navigation.map((item) => (
-                            <Link href={item.href} passHref>
+                            <Link key={item.name} href={item.href} passHref>
                             <a
                               key={item.name}
                               className={classNames(
