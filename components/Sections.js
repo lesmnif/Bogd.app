@@ -1,6 +1,8 @@
 /* This example requires Tailwind CSS v2.0+ */
 import {CursorClickIcon, EmojiHappyIcon, FireIcon, MusicNoteIcon} from '@heroicons/react/solid'
 import Link from "next/link";
+import Image from "next/image"
+
 
 const features = [
   {
@@ -20,7 +22,7 @@ const features = [
   {
     name: 'Cançoner',
     description:
-      'Troba la teva cançó ideal per al moment!',
+      `Troba la cançó ideal per al teu grup d'infants, per pasar-ho bé d'una manera original i animada!`,
     icon: MusicNoteIcon,
     value: "songs"
   },
@@ -38,24 +40,26 @@ export default function Example() {
     <div className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
-        <img
+        <Image 
+            width={48}
+            height={48}
             className="block h-12 w-12 mx-2 "
             src="/SimpleLog.png"
             alt="Workflow"
           />
           <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">Bogd.app</h2>
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            Troba l'activitat ideal!
+            Troba l&apos;activitat ideal!
           </p>
           <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-            Aquí podràs trobar l'activitat o cançó ideal per al teu grup d'infants segons les edats/participants/característiques. A més a més, si no et fan cas, també et podrás desfogar! 😉
+            Aquí podràs trobar l&apos;activitat o cançó ideal per al teu grup d&apos;infants segons les edats/participants/característiques. A més a més, si no et fan cas, també et podrás desfogar! 😉
           </p>
         </div>
 
         <div className="mt-10">
           <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
             {features.map((feature) => (
-              <Link href={`/activity/${feature.value}`}
+              <Link key={feature.name} href={`/activity/${feature.value}`} passHref
               >
               <div key={feature.name} className="relative hover: cursor-pointer">
                 <dt>

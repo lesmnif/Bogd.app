@@ -154,7 +154,7 @@ import {
             return newIds
           })}
         myActivities.splice(index, 1)
-        router.push("/activity/list")
+        router.push("/")
         toast.success("Activitat borrada! 🔥")
         setLocalActivities(myActivities)
       }
@@ -253,7 +253,7 @@ import {
                 }}
               />
               <p className="h-5 w-6 mx-10">
-               {activity.isSong && <PlayButton id={activity.title}
+               {(activity.isSong && !activity.isCustom) && <PlayButton id={activity.title}
                />} 
                </p>
                {activity.etiquetes.includes("Custom") && 

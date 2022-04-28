@@ -6,6 +6,7 @@ import Countdown from "./CountDown";
 import toast from "react-hot-toast";
 import Background from "./Background";
 import useLocalStorage from "./useLocalStorage";
+import { BrandingWatermarkOutlined } from "@mui/icons-material";
 
 export default function Example() {
   const [gameDuration, setGameDuration] = useState();
@@ -126,21 +127,27 @@ export default function Example() {
                   onClick={() => handleClick(10)}
                   className="relative inline-flex items-center px-4 py-2 rounded-l-md border border-gray-500 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
                 >
-                  10 segons
+                  <div>
+                  10 segons <br/> {records[10] != 0 && <div className=" font-extrabold text-xs">Rècord:{records[10]}</div>}
+                  </div>
                 </button>
                 <button
                   type="button"
                   onClick={() => handleClick(30)}
                   className="-ml-px relative inline-flex items-center px-4 py-2 border border-gray-500 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
                 >
-                  30 segons
+                  <div>
+                  30 segons <br/> {records[30] != 0 && <div className=" font-extrabold text-xs">Rècord:{records[30]}</div>}
+                  </div>
                 </button>
                 <button
                   onClick={() => handleClick(60)}
                   type="button"
                   className="-ml-px relative inline-flex items-center px-4 py-2 rounded-r-md border border-gray-500 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
                 >
-                  60 segons
+                  <div>
+                  60 segons <br/> {records[60] != 0 && <div className=" font-extrabold text-xs">Rècord:{records[60]}</div>}
+                  </div>
                 </button>
               </span>
             </div>

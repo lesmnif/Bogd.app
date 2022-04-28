@@ -155,7 +155,7 @@ export default function List({ query, setQuerySearch, breadcrumbs }) {
           return newIds
         })}
       myActivities.splice(index, 1)
-      router.push("/activity/list")
+      router.push("/")
       toast.success("Activitat borrada! 🔥")
       setLocalActivities(myActivities)
     }

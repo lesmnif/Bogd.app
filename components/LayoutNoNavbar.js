@@ -5,6 +5,7 @@ import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 import Link from "next/link";
 import activities from "../data/activities";
 import Breadcrumbs from "../components/Breadcrumbs";
+import Image from "next/image"
 
 const user = {
   name: "Tom Cook",
@@ -45,7 +46,9 @@ export default function Layout({
               <div className="flex-shrink-0">
                 <Link href="/">
                   <a>
-                    <img
+                    <Image
+                      width={40}
+                      height={40}
                       className="block h-10 w-10 "
                       src="/SimpleLog.png"
                       alt="Workflow"
@@ -61,15 +64,6 @@ export default function Layout({
               <div className="flex-shrink-0 mx-auto">
               <h3 className="text-2xl font-bold text-white sm:text-3xl mb-5"> {titol} </h3>
                 {breadcrumbs.length > 0 && <Breadcrumbs breadcrumbs={breadcrumbs}/>}
-                {/* <Link href="/">
-                  <a>
-                    <img
-                      className="block h-36 w-36 mx-auto"
-                      src="/SimpleLog.png"
-                      alt="Logo"
-                    />
-                  </a>
-                </Link> */}
               </div>
             </div>
           </header>

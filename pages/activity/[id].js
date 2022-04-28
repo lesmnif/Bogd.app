@@ -28,7 +28,7 @@ const Post = () => {
         }
       }
     }
-  }, []);
+  }, [activities.id]);
   
   const [localActivities, setLocalActivities] = useLocalStorage(
     "localActivities",
@@ -74,7 +74,6 @@ const Post = () => {
       <Activity activity={activity} onClickDelete={onClickDelete} />
     </Layout>
   );
-  // return <p>Post: {activity?.id}{id}</p>
 };
 
 export default Post;

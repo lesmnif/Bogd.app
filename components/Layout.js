@@ -5,6 +5,7 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Link from "next/link";
 import activities from "../data/activities"
 import Breadcrumbs from "../components/Breadcrumbs"
+import Image from "next/image";
 
 
 
@@ -37,10 +38,12 @@ export default function Layout({ children, onQueryChange, isHidden, titol, query
                       <div className="flex-shrink-0">
                         <Link href="/">
                           <a>
-                            <img
+                            <Image
+                                width={40}
+                                height={40}
                                 className="block h-10 w-10 "
                                 src="/SimpleLog.png"
-                                alt="Workflow"
+                                alt="LogoApp"
                               />
                           </a>
                         </Link>
@@ -163,16 +166,7 @@ export default function Layout({ children, onQueryChange, isHidden, titol, query
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex-shrink-0 mx-auto">
               <h3 className= "text-2xl font-bold text-white sm:text-3xl mb-5"> {titol} </h3>
-                {isHidden ? "" : breadcrumbs && <Breadcrumbs breadcrumbs={breadcrumbs}/>}
-                {/* <Link href="/">
-                  <a>
-                    <img
-                      className="block h-36 w-36 mx-auto"
-                      src="/SimpleLog.png"
-                      alt="Logo"
-                    />
-                  </a>
-                </Link> */}
+                {breadcrumbs && <Breadcrumbs breadcrumbs={breadcrumbs}/>}
               </div>
             </div>
           </header>

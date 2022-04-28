@@ -1,4 +1,4 @@
-export default ({ youtubeId }) => {
+export default function ResponsiveEmbed ({ youtubeId }){
     return (
       <div
         className="video"

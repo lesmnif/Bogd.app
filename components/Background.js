@@ -19,8 +19,8 @@ export default function Background({ time, clicks, setClicks }) {
     setClicks((clicks) => clicks + 1);
     setPlaybackRate(playbackRate + 0.02);
     play();
-    setIsDead(!isDead);
-    setIsDisabled(TramRounded)
+    setIsDead(true);
+    setIsDisabled(true)
     setTimeout(function () {
       setIsDead(false);
       setIsDisabled(false)

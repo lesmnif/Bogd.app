@@ -1,20 +1,3 @@
-/*
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
-
 import { useRouter } from "next/router";
 
 const CustomActivity = {
@@ -115,25 +98,14 @@ export default function Example() {
   console.log("this is my enabled", isEnabled);
   return (
     <Layout breadcrumbs={[
-      { name: 'Jocs', href: '/activity/list', current: true},
-      { name: "Crear activitat", href: 'activity/list', current: false},
+      { name: "Jocs", href: "/activity/list", current: true},
+      { name: "Crear activitat", href: "activity/list", current: false},
     ]} titol="Crear activitat">
       <form 
         onSubmit={(event) => event.preventDefault()}
         id="my-form"
-        aria-required
         className="space-y-8 divide-y divide-gray-200"
       >
-        {/* <div className="space-y-8 divide-y divide-gray-200">
-          <div>
-            <div>
-              <h3 className="text-lg leading-6 font-medium text-gray-900">Profile</h3>
-              <p className="mt-1 text-sm text-gray-500">
-                This information will be displayed publicly so be careful what you share.
-              </p>
-            </div>
-   */}
-
         <div>
           <div className="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
             <div className="sm:col-span-4 ">
@@ -188,7 +160,7 @@ export default function Example() {
               />
             </div>
             <p className="mt-2 text-sm text-gray-500">
-              Petita descripció de l'actitivitat
+              Petita descripció de l&apos;actitivitat
             </p>
           </div>
         </div>
@@ -476,142 +448,6 @@ export default function Example() {
                 </div>
               </div>
             </div>
-
-            {/* <div className="sm:col-span-1.5">
-                <label htmlFor="country" className="block text-sm font-medium text-gray-700">
-                  Edat mínima
-                </label>
-                <div className="mt-1">
-                  <select
-                    id="country"
-                    name="country"
-                    className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                  >
-                    <option>United States</option>
-                    <option>Canada</option>
-                    <option>Mexico</option>
-                  </select>
-                </div>
-              </div>
-              <div className="sm:col-span-1">
-                <label htmlFor="country" className="block text-sm font-medium text-gray-700">
-                  Edat máxima
-                </label>
-                <div className="mt-1">
-                  <select
-                    id="country"
-                    name="country"
-                    className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                  >
-                    <option>United States</option>
-                    <option>Canada</option>
-                    <option>Mexico</option>
-                  </select>
-                </div>
-              </div>
-              <div className="sm:col-span-1.8">
-                <label htmlFor="country" className="block text-sm font-medium text-gray-700">
-                  Participants mínims
-                </label>
-                <div className="mt-1">
-                  <select
-                    id="country"
-                    name="country"
-                    className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                  >
-                    <option>United States</option>
-                    <option>Canada</option>
-                    <option>Mexico</option>
-                  </select>
-                </div>
-              </div>
-              <div className="sm:col-span-1">
-                <label htmlFor="country" className="block text-sm font-medium text-gray-700">
-                  Country
-                </label>
-                <div className="mt-1">
-                  <select
-                    id="country"
-                    name="country"
-                    className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                  >
-                    <option>United States</option>
-                    <option>Canada</option>
-                    <option>Mexico</option>
-                  </select>
-                </div>
-              </div> */}
-
-            {/* <div className="sm:col-span-6">
-                <label htmlFor="street-address" className="block text-sm font-medium text-gray-700">
-                  Street address
-                </label>
-                <div className="mt-1">
-                  <input
-                    type="text"
-                    name="street-address"
-                    id="street-address"
-                    autoComplete="street-address"
-                    className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                  />
-                </div>
-              </div> */}
-
-            {/* <div className="sm:col-span-2">
-                <label htmlFor="city" className="block text-sm font-medium text-gray-700">
-                  City
-                </label>
-                <div className="mt-1">
-                  <input
-                    type="text"
-                    name="city"
-                    id="city"
-                    autoComplete="address-level2"
-                    className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                  />
-                </div>
-              </div>
-  
-              <div className="sm:col-span-2">
-                <label htmlFor="region" className="block text-sm font-medium text-gray-700">
-                  State / Province
-                </label>
-                <div className="mt-1">
-                  <input
-                    type="text"
-                    name="region"
-                    id="region"
-                    autoComplete="address-level1"
-                    className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                  />
-                </div>
-              </div>
-  
-              <div className="sm:col-span-2">
-                <label htmlFor="postal-code" className="block text-sm font-medium text-gray-700">
-                  ZIP / Postal code
-                </label>
-                <div className="mt-1">
-                  <input
-                    type="text"
-                    name="postal-code"
-                    id="postal-code"
-                    autoComplete="postal-code"
-                    className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <div className="pt-8">
-            <div>
-              <h3 className="text-lg leading-6 font-medium text-gray-900">Notifications</h3>
-              <p className="mt-1 text-sm text-gray-500">
-                We'll always let you know about important changes, but you pick what else you want to hear about.
-              </p>
-            </div> */}
-
             <div className="mt-6 ">
               <fieldset className="">
                 <legend className="text-base font-medium text-gray-900">
@@ -888,7 +724,7 @@ export default function Example() {
 
         <div className="pt-5">
           <div className="flex justify-end">
-            <Link href={"/activity/list"}>
+            <Link href={"/activity/list"} passHref>
               <button
                 type="button"
                 className="bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
@@ -906,7 +742,7 @@ export default function Example() {
                 setLocalActivities((prevState) => {
                   if (isEnabled === false) {
                     if (customActivity.edatmin >= customActivity.edatmax){
-                      toast.error("L'edat mínima ha de ser menor a la màxima.")
+                      toast.error(`L'edat mínima ha de ser menor a la màxima.`)
                       const newActivities = [...prevState];
                       return newActivities;
                   }

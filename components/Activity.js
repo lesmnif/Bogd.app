@@ -40,7 +40,7 @@ export default function Example({ activity, onClickDelete }) {
             });
           }}
         />
-        {activity.isSong && <ReactAudioPlayer className="h-5 ml-auto"src={`/songs/${activity.title}.mp3`} controls />}
+        {(activity.isSong && !activity.isCustom) && <ReactAudioPlayer className="h-5 ml-auto"src={`/songs/${activity.title}.mp3`} controls />}
         {activity.etiquetes.includes("Custom") && (
           <svg
             xmlns="http://www.w3.org/2000/svg"
