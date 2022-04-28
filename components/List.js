@@ -16,7 +16,8 @@ import toast, { Toaster } from 'react-hot-toast'
 import { useRouter } from 'next/router'
 import Code from 'react-content-loader'
 import Countdown from "../components/CountDown";
-// Hook
+import { createGlobalState } from 'react-hooks-global-state';
+
 
 
 const defaultSearcher = new Searcher(activitiesData, {
@@ -36,6 +37,26 @@ function useHasMounted() {
 function isValueInRange(range, value) {
   return range[0] <= value && range[1] >= value;
 }
+
+
+const initialState = { count: 0 };
+const { useGlobalState } = createGlobalState(initialState);
+
+const Counter = () => {
+  const [count, setCount] = useGlobalState('count');
+  return (
+    <div>
+      <span>Counter: {count}</span>
+      {/* update state by passing callback function */}
+      <button onClick={() => setCount(v => v + 1)}>+1</button>
+      {/* update state by passing new value */}
+      <button onClick={() => setCount(count - 1)}>-1</button>
+    </div>
+  );
+};
+
+
+
 export default function List({ query, setQuerySearch, breadcrumbs }) {
   const [activities, setActivities] = useState([...activitiesData]);
   const [searcher, setSearcher] = useState(defaultSearcher);

@@ -10,12 +10,12 @@ import Image from "next/image";
 
 
 const navigation = [
-  { name: "Crear activitat", href: "/activity/CustomActivity", current: false },
-  { name: "Activitats preferides", href: "/activity/favorites", current: false },
-  { name: "Tendències", href: "/activity/topgames", current: false },
-  { name: "Cançoner", href: "/activity/songs", current: false },
-  { name: "Crear cançó", href: "/activity/CustomSong", current: false },
-  { name: "Desestressador", href: "/activity/desestressador", current: false },
+  { name: "Crear activitat 📝🙂", href: "/activity/CustomActivity", current: false },
+  { name: "Activitats preferides ⭐​", href: "/activity/favorites", current: false },
+  { name: "Tendències ​🔥​", href: "/activity/topgames", current: false },
+  { name: "Cançoner 🎵", href: "/activity/songs", current: false },
+  { name: "Crear cançó 📝🎵", href: "/activity/CustomSong", current: false },
+  { name: "Desestressador 😤", href: "/activity/desestressador", current: false },
 ];
 
 function classNames(...classes) {
@@ -51,9 +51,9 @@ export default function Layout({ children, onQueryChange, isHidden, titol, query
                       <div className="hidden lg:block lg:ml-10">
                         <div className="flex space-x-4">
                           {navigation.map((item) => (
+                            <Link href={item.href} passHref>
                             <a
                               key={item.name}
-                              href={item.href}
                               className={classNames(
                                 item.current
                                   ? 'bg-indigo-700 text-white'
@@ -64,6 +64,7 @@ export default function Layout({ children, onQueryChange, isHidden, titol, query
                             >
                               {item.name}
                             </a>
+                            </Link>
                           ))}
                         </div>
                       </div>
