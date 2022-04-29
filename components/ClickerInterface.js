@@ -7,7 +7,9 @@ import toast from "react-hot-toast";
 import Background from "./Background";
 import useLocalStorage from "./useLocalStorage";
 import { BrandingWatermarkOutlined } from "@mui/icons-material";
-
+import useGlobalState from "./ListState";
+import useGlobalStateHot from "./topState";
+import useGlobalStateSongs from "./songsState";
 export default function Example() {
   const [gameDuration, setGameDuration] = useState();
   const [isChoosingDuration, setIsChoosingDuration] = useState(true);
@@ -19,6 +21,30 @@ export default function Example() {
     60: 0,
   });
 
+  const [maxAge, setMaxAge] = useGlobalState('maxAge')
+  const [etiquetesFilter, setEtiquetesFilter] = useGlobalState('etiquetesFilter');
+  const [maxPart, setMaxPart] = useGlobalState('maxPart');
+  const [maxAgeHot, setMaxAgeHot] = useGlobalStateHot('maxAgeHot')
+  const [etiquetesFilterHot, setEtiquetesFilterHot] = useGlobalStateHot('etiquetesFilterHot');
+  const [maxPartHot, setMaxPartHot] = useGlobalStateHot('maxPartHot');
+  const [maxAgeSongs, setMaxAgeSongs] = useGlobalStateSongs('maxAgeSong')
+  const [etiquetesFilterSongs, setEtiquetesFilterSongs] = useGlobalStateSongs('etiquetesFilterSong');
+  const [maxPartSongs, setMaxPartSongs] = useGlobalStateSongs('maxPartSong');
+  
+  
+  useEffect(()=>{
+    setMaxAge([])
+    setEtiquetesFilter([])
+    setMaxPart([])
+    setMaxAgeHot([])
+    setEtiquetesFilterHot([])
+    setMaxPartHot([])
+    setMaxAgeSongs([])
+    setEtiquetesFilterSongs([])
+    setMaxPartSongs([])
+  },[])
+
+  
   const router = useRouter();
 
  

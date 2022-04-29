@@ -29,6 +29,7 @@ import Link from "next/link";
 import toast from "react-hot-toast";
 import { Toaster } from "react-hot-toast";
 import { PausePresentation, Router } from "@mui/icons-material";
+import useGlobalState from '../../components/ListState';
 
 
 export default function Example() {
@@ -38,7 +39,17 @@ export default function Example() {
     []
   );
   const [isEnabled, setIsEnabled] = useState(true);
+  
 
+  const [maxAge, setMaxAge] = useGlobalState('maxAge')
+  const [etiquetesFilter, setEtiquetesFilter] = useGlobalState('etiquetesFilter');
+  const [maxPart, setMaxPart] = useGlobalState('maxPart');
+  
+  useEffect(()=>{
+    setMaxAge([])
+    setEtiquetesFilter([])
+    setMaxPart([])
+  },[])
   const router = useRouter();
 
   console.log("this ismy localACtivity", localActivities);

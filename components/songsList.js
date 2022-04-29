@@ -18,6 +18,8 @@ import {
   import useSound from "use-sound";
   import PitchButton from "./PitchButton"
   import PlayButton from "./PlayButton"
+  import { createGlobalState } from 'react-hooks-global-state';
+  import useGlobalStateSongs from "./songsState";
 
   
   // Hook
@@ -40,42 +42,40 @@ import {
     return range[0] <= value && range[1] >= value;
   }
   
-  
+ 
+
   export default function List({ query, setQuerySearch, breadcrumbs }) {
     const [activities, setActivities] = useState([...activitiesData]);
     const [searcher, setSearcher] = useState(defaultSearcher);
-    const [etiquetesFilter, setEtiquetesFilter] = useState([]);
-    const [maxAge, setMaxAge] = useState([]);
-    const [maxPart, setMaxPart] = useState([]);
+    const [prevId, setPrevId] = useState("")
+    const [etiquetesFilter, setEtiquetesFilter] = useGlobalStateSongs('etiquetesFilterSong');
+    const [maxAge, setMaxAge] = useGlobalStateSongs('maxAgeSong');
+    const [maxPart, setMaxPart] = useGlobalStateSongs('maxPartSong');
     const [favoritesIds, setFavoritesIds] = useLocalStorage("favorites", []);
     const [localActivities, setLocalActivities] = useLocalStorage(
       "localActivities",
       []
     );
-    
+    const [stopCurrentSong, setStopCurrentSong] = useState(() => () => {})
+
     const router = useRouter();
-  
-      console.log("this is my etiquetes filter", etiquetesFilter)
 
     useEffect(() => {
       const handleStart = (url) => {
-        console.log(`Loading: ${url}`);
-        setMaxAge([]);
-        setMaxPart([]);
-        setEtiquetesFilter([]);
-        setQuerySearch();
+       stopCurrentSong()
       };
-    
-  
+      
       router.events.on("routeChangeStart", handleStart);
   
       return () => {
         router.events.off("routeChangeStart", handleStart);
+       
       };
-    }, [router]);
+    }, [router, stopCurrentSong]);
 
   
-
+ 
+   
   useEffect(()=>{
     const newActivities = activitiesData.filter((activity) => activity.isSong && activity)
     setActivities(newActivities)
@@ -159,6 +159,8 @@ import {
         setLocalActivities(myActivities)
       }
     }
+
+  
 
 
     return <div className={filteredFinal.length === 0 ? "bg-gray-50 shadow overflow-hidden sm:rounded-md" : " bg-white shadow overflow-hidden sm:rounded-md" }>
@@ -253,7 +255,10 @@ import {
                 }}
               />
               <p className="h-5 w-6 mx-10">
-               {(activity.isSong && !activity.isCustom) && <PlayButton id={activity.title}
+               {(activity.isSong && !activity.isCustom) && <PlayButton onPlay={(stop) => {
+                  stopCurrentSong()
+                  setStopCurrentSong(() => stop)
+               }} id={activity.title} prevId={prevId} setPrevId={setPrevId}
                />} 
                </p>
                {activity.etiquetes.includes("Custom") && 

@@ -2,8 +2,10 @@
 import {CursorClickIcon, EmojiHappyIcon, FireIcon, MusicNoteIcon} from '@heroicons/react/solid'
 import Link from "next/link";
 import Image from "next/image"
-
-
+import useGlobalState from './ListState';
+import { useEffect } from 'react';
+import useGlobalStateHot from './topState';
+import useGlobalStateSongs from "./songsState"
 const features = [
   {
     name: 'Jocs',
@@ -29,13 +31,37 @@ const features = [
   {
     name: 'Desestressador',
     description:
-      "Si el teu grup de nens no et fa cas, no et preocupis ! Desestresa't aquí fins que es calmin",
+      "Si el teu grup de nens no et fa cas, no et preocupis ! Desestresa't aquí fins que es calmin.",
     icon: CursorClickIcon,
     value: "desestressador"
   },
 ]
 
 export default function Example() {
+
+  const [maxAge, setMaxAge] = useGlobalState('maxAge')
+  const [etiquetesFilter, setEtiquetesFilter] = useGlobalState('etiquetesFilter');
+  const [maxPart, setMaxPart] = useGlobalState('maxPart');
+  const [maxAgeHot, setMaxAgeHot] = useGlobalStateHot('maxAgeHot')
+  const [etiquetesFilterHot, setEtiquetesFilterHot] = useGlobalStateHot('etiquetesFilterHot');
+  const [maxPartHot, setMaxPartHot] = useGlobalStateHot('maxPartHot');
+  const [maxAgeSongs, setMaxAgeSongs] = useGlobalStateSongs('maxAgeSong')
+  const [etiquetesFilterSongs, setEtiquetesFilterSongs] = useGlobalStateSongs('etiquetesFilterSong');
+  const [maxPartSongs, setMaxPartSongs] = useGlobalStateSongs('maxPartSong');
+  
+  
+  useEffect(()=>{
+    setMaxAge([])
+    setEtiquetesFilter([])
+    setMaxPart([])
+    setMaxAgeHot([])
+    setEtiquetesFilterHot([])
+    setMaxPartHot([])
+    setMaxAgeSongs([])
+    setEtiquetesFilterSongs([])
+    setMaxPartSongs([])
+  },[])
+
   return (
     <div className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

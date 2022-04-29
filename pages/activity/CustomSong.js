@@ -1,4 +1,9 @@
 import { useRouter } from "next/router";
+import useGlobalState from "../../components/ListState";
+import useGlobalStateHot from "../../components/topState";
+import useGlobalStateSongs from "../../components/songsState";
+
+
 
 const CustomActivity = {
   id: "",
@@ -31,15 +36,30 @@ export default function SongList() {
     []
   );
   const [isEnabled, setIsEnabled] = useState(true);
+  
+  const [maxAge, setMaxAge] = useGlobalState('maxAge')
+  const [etiquetesFilter, setEtiquetesFilter] = useGlobalState('etiquetesFilter');
+  const [maxPart, setMaxPart] = useGlobalState('maxPart');
+  const [maxAgeHot, setMaxAgeHot] = useGlobalStateHot('maxAgeHot')
+  const [etiquetesFilterHot, setEtiquetesFilterHot] = useGlobalStateHot('etiquetesFilterHot');
+  const [maxPartHot, setMaxPartHot] = useGlobalStateHot('maxPartHot');
+  const [maxAgeSongs, setMaxAgeSongs] = useGlobalStateSongs('maxAgeSong')
+  const [etiquetesFilterSongs, setEtiquetesFilterSongs] = useGlobalStateSongs('etiquetesFilterSong');
+  const [maxPartSongs, setMaxPartSongs] = useGlobalStateSongs('maxPartSong');
+  
+  
+  useEffect(()=>{
+    setMaxAge([])
+    setEtiquetesFilter([])
+    setMaxPart([])
+    setMaxAgeHot([])
+    setEtiquetesFilterHot([])
+    setMaxPartHot([])
+    setMaxAgeSongs([])
+    setEtiquetesFilterSongs([])
+    setMaxPartSongs([])
+  },[])
 
-  const [selectedFile, setSelectedFile] = useState();
-  const [isFilePicked, setIsFilePicked] = useState(false);
-  const [isSelected, setIsSelected] = useState(false);
-
-  const changeHandler = (event) => {
-    setSelectedFile(event.target.files[0]);
-    setIsSelected(true);
-  };
 
   function validURL(str) {
     var pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
@@ -115,7 +135,7 @@ export default function SongList() {
     });
   }, [customActivity]);
 
-  const MbSize = selectedFile?.size / 1000000;
+
 
   return (
     <Layout

@@ -65,7 +65,7 @@ const Post = () => {
       { name: 'Cançoner', href: '/activity/songs', current: true},
       { name: activity?.title, href: '/activity/list', current: false},
     ] : activity?.isHot ? [
-      { name: 'Tendències', href: '/activity/favorites', current: true},
+      { name: 'Tendències', href: '/activity/topgames', current: true},
       { name: activity?.title, href: '/activity/list', current: false},
     ] : [
       { name: 'Activitats', href: '/activity/list', current: true},

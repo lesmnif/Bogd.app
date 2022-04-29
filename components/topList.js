@@ -14,6 +14,9 @@ import {
   import NoResults from "../components/NoResults";
   import toast, { Toaster } from 'react-hot-toast'
   import { useRouter } from 'next/router'
+  import { createGlobalState } from 'react-hooks-global-state';
+  import useListState from "./ListState";
+  import useListHotState from "./topState"
   // Hook
   const defaultSearcher = new Searcher(activitiesData, {
     keySelector: (activity) => {
@@ -32,35 +35,46 @@ import {
     return range[0] <= value && range[1] > value;
   }
 
-  
+  const initialState = { etiquetesFilter: [], maxAge: [], maxPart: [] };
+  const { useGlobalState } = createGlobalState(initialState);
 
   export default function List({ query, setQuerySearch }) {
 
     const [activities, setActivities] = useState([...activitiesData]);
     const [searcher, setSearcher] = useState(defaultSearcher);
-    const [etiquetesFilter, setEtiquetesFilter] = useState([]);
-    const [maxAge, setMaxAge] = useState([]);
-    const [maxPart, setMaxPart] = useState([]);
+    const [etiquetesFilter, setEtiquetesFilter] = useListHotState('etiquetesFilterHot');
+    const [maxAge, setMaxAge] = useListHotState('maxAgeHot');
+    const [maxPart, setMaxPart] = useListHotState('maxPartHot');
     const [favoritesIds, setFavoritesIds] = useLocalStorage("favorites", []);
     
+    const [etiquetesFilterList, setEtiquetesFilterList] = useListState('etiquetesFilter');
+    const [maxPartList, setMaxPartList] = useListState('maxPart');
+    const [maxAgeList, setMaxAgeList] = useListState('maxAge');
+
+
+    useEffect(()=>{
+      setMaxAgeList([])
+      setEtiquetesFilterList([])
+      setMaxPartList([])
+    },[])
     const router = useRouter();
   
-    useEffect(() => {
-      const handleStart = (url) => {
-        console.log(`Loading: ${url}`);
-        setMaxAge([]);
-        setMaxPart([]);
-        setEtiquetesFilter([]);
-        setQuerySearch();
-      };
+    // useEffect(() => {
+    //   const handleStart = (url) => {
+    //     console.log(`Loading: ${url}`);
+    //     setMaxAge([]);
+    //     setMaxPart([]);
+    //     setEtiquetesFilter([]);
+    //     setQuerySearch();
+    //   };
     
       
-      router.events.on("routeChangeStart", handleStart);
+    //   router.events.on("routeChangeStart", handleStart);
   
-      return () => {
-        router.events.off("routeChangeStart", handleStart);
-      };
-    }, [router]);
+    //   return () => {
+    //     router.events.off("routeChangeStart", handleStart);
+    //   };
+    // }, [router]);
     
     useEffect(()=>{
       const newActivities = activitiesData.filter((activity) => activity.isHot && activity)
@@ -137,91 +151,76 @@ import {
       }
     }
     
-    return filteredFinal.length === 0 ? (
+    return <div className={filteredFinal.length === 0 ? "bg-gray-50 shadow overflow-hidden sm:rounded-md" : " bg-white shadow overflow-hidden sm:rounded-md" }>
+    <div className="my-4">
+      <CustomFilter
+    etiquetesFilter={etiquetesFilter}
+    maxAge={maxAge}
+    maxPart={maxPart}
+    onQueryChangePart={(newQuery) => {
+      setMaxPart((prevState) => {
+        const newPart = [...prevState];
+        const alreadyHasNewQuery = newQuery.every((element) => {
+          return maxPart.some((interval) => interval.includes(element));
+        });
+  
+        if (alreadyHasNewQuery) {
+          const index = newPart.indexOf(newQuery);
+          newPart.splice(index, 1);
+          return newPart;
+        } else {
+          newPart.push(newQuery);
+          return newPart;
+        }
+      });
+    }}
+    onQueryChangeEtiquetes={(newQuery) => {
+      setEtiquetesFilter((prevState) => {
+        const newEtiquetes = [...prevState];
+        if (!etiquetesFilter.includes(newQuery)) {
+          newEtiquetes.push(newQuery);
+          return newEtiquetes;
+        } else if (etiquetesFilter.includes(newQuery)) {
+          const index = newEtiquetes.indexOf(newQuery);
+          newEtiquetes.splice(index, 1);
+          return newEtiquetes;
+        }
+      });
+    }}
+    onQueryChangeAge={(newQuery) => {
+      setMaxAge((prevState) => {
+        const newAges = [...prevState];
+        if (
+          newQuery.every((element) => {
+            return (
+              maxAge[0]?.includes(element) ||
+              maxAge[1]?.includes(element) ||
+              maxAge[2]?.includes(element) ||
+              maxAge[3]?.includes(element)
+            );
+          }) === false
+        ) {
+          newAges.push(newQuery);
+          return newAges;
+        } else if (
+          newQuery.every((element) => {
+            return (
+              maxAge[0]?.includes(element) ||
+              maxAge[1]?.includes(element) ||
+              maxAge[2]?.includes(element) ||
+              maxAge[3]?.includes(element)
+            );
+          }) === true
+        ) {
+          const index = newAges.indexOf(newQuery);
+          newAges.splice(index, 1);
+          return newAges;
+        }
+      });
+    }}
+  /> {filteredFinal.length === 0 ? (
         <NoResults/>
     ) : (
-      <div className="bg-white shadow overflow-hidden sm:rounded-md">
-
-        <div className=" my-4">
-          {/* <Checkbox
-            onQueryChange={() => setExterior(!exterior)}
-            onQueryChangeInt={() => setInterior(!interior)}
-            Interior={interior}
-            Exterior={exterior}
-          /> */}
-          <CustomFilter
-            etiquetesFilter={etiquetesFilter}
-            maxAge={maxAge}
-            maxPart={maxPart}
-            onQueryChangePart={(newQuery) => {
-              setMaxPart((prevState) => {
-                const newPart = [...prevState];
-                const alreadyHasNewQuery = newQuery.every((element) => {
-                  return maxPart.some((interval) => interval.includes(element));
-                });
-  
-                if (alreadyHasNewQuery) {
-                  const index = newPart.indexOf(newQuery);
-                  newPart.splice(index, 1);
-                  return newPart;
-                } else {
-                  newPart.push(newQuery);
-                  return newPart;
-                }
-              });
-            }}
-            onQueryChangeEtiquetes={(newQuery) => {
-              setEtiquetesFilter((prevState) => {
-                const newEtiquetes = [...prevState];
-                if (!etiquetesFilter.includes(newQuery)) {
-                  newEtiquetes.push(newQuery);
-                  return newEtiquetes;
-                } else if (etiquetesFilter.includes(newQuery)) {
-                  const index = newEtiquetes.indexOf(newQuery);
-                  newEtiquetes.splice(index, 1);
-                  return newEtiquetes;
-                }
-              });
-            }}
-            onQueryChangeAge={(newQuery) => {
-              setMaxAge((prevState) => {
-                const newAges = [...prevState];
-                if (
-                  newQuery.every((element) => {
-                    return (
-                      maxAge[0]?.includes(element) ||
-                      maxAge[1]?.includes(element) ||
-                      maxAge[2]?.includes(element) ||
-                      maxAge[3]?.includes(element)
-                    );
-                  }) === false
-                ) {
-                  newAges.push(newQuery);
-                  return newAges;
-                } else if (
-                  newQuery.every((element) => {
-                    return (
-                      maxAge[0]?.includes(element) ||
-                      maxAge[1]?.includes(element) ||
-                      maxAge[2]?.includes(element) ||
-                      maxAge[3]?.includes(element)
-                    );
-                  }) === true
-                ) {
-                  const index = newAges.indexOf(newQuery);
-                  newAges.splice(index, 1);
-                  return newAges;
-                }
-              });
-            }}
-          />
-          {/* <DiscreteSlider
-            onQueryChange={(newQuery) => setSliderage(newQuery)}
-            onQueryChangePart={(newQuery) => setSliderpart(newQuery)}
-            sliderage={sliderage}
-            sliderpart={sliderpart}
-          /> */}
-        </div>
         <ul role="list" className="divide-y divide-gray-200">
           {filteredFinal.map((activity) => (
             <li key={activity.id}>
@@ -256,8 +255,8 @@ import {
                   <div className="px-4 py-4 sm:px-6  ">
                     <div className="flex items-center justify-between">
                       <div className="sm:flex bg-">
-                        <p className={activity.isSong ? "flex text-sm font-medium text-purple-600 truncate mr-6" : activity.etiquetes.includes("Custom") ? "flex text-sm font-medium text-red-700 truncate mr-6" : activity.isHot ? "flex text-sm font-medium text-amber-600 truncate mr-6" : "flex text-sm font-medium text-indigo-600 truncate mr-6"}>
-                          {activity.isSong ? `${activity.title} 🎵`: activity.title}
+                        <p className={activity.etiquetes.includes("Custom") ? "flex text-sm font-medium text-red-700 truncate mr-6" : activity.isHot ? "flex text-sm font-medium text-amber-600 truncate mr-6" : "flex text-sm font-medium text-indigo-600 truncate mr-6"}>
+                          {activity.title}
                         </p>
                         <div className="flex-shrink-0 flex flex-wrap">
                           {activity.etiquetes.map((etiqueta) => (
@@ -306,8 +305,9 @@ import {
               </Link>
             </li>
           ))}
-        </ul>
-      </div>
-    );
+        </ul> 
+    )}
+    </div>
+    </div>
   }
   

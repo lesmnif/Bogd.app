@@ -17,6 +17,7 @@ import { useRouter } from 'next/router'
 import Code from 'react-content-loader'
 import Countdown from "../components/CountDown";
 import { createGlobalState } from 'react-hooks-global-state';
+import useListState from "./ListState"
 
 
 
@@ -39,54 +40,41 @@ function isValueInRange(range, value) {
 }
 
 
-const initialState = { count: 0 };
-const { useGlobalState } = createGlobalState(initialState);
-
-const Counter = () => {
-  const [count, setCount] = useGlobalState('count');
-  return (
-    <div>
-      <span>Counter: {count}</span>
-      {/* update state by passing callback function */}
-      <button onClick={() => setCount(v => v + 1)}>+1</button>
-      {/* update state by passing new value */}
-      <button onClick={() => setCount(count - 1)}>-1</button>
-    </div>
-  );
-};
-
 
 
 export default function List({ query, setQuerySearch, breadcrumbs }) {
+ 
   const [activities, setActivities] = useState([...activitiesData]);
   const [searcher, setSearcher] = useState(defaultSearcher);
-  const [etiquetesFilter, setEtiquetesFilter] = useState([]);
-  const [maxAge, setMaxAge] = useState([]);
-  const [maxPart, setMaxPart] = useState([]);
+  const [etiquetesFilter, setEtiquetesFilter] = useListState('etiquetesFilter');
+  const [maxPart, setMaxPart] = useListState('maxPart');
+  const [maxAge, setMaxAge] = useListState('maxAge');
   const [favoritesIds, setFavoritesIds] = useLocalStorage("favorites", []);
   const [localActivities, setLocalActivities] = useLocalStorage(
     "localActivities",
     []
   );
   
+  console.log("this is my global state", etiquetesFilter)
+
   const router = useRouter();
 
-  useEffect(() => {
-    const handleStart = (url) => {
-      console.log(`Loading: ${url}`);
-      setMaxAge([]);
-      setMaxPart([]);
-      setEtiquetesFilter([]);
-      setQuerySearch();
-    };
+  // useEffect(() => {
+  //   const handleStart = (url) => {
+  //     console.log(`Loading: ${url}`);
+  //     setMaxAge([]);
+  //     setMaxPart([]);
+  //     setEtiquetesFilter([]);
+  //     setQuerySearch();
+  //   };
   
 
-    router.events.on("routeChangeStart", handleStart);
+  //   router.events.on("routeChangeStart", handleStart);
 
-    return () => {
-      router.events.off("routeChangeStart", handleStart);
-    };
-  }, [router]);
+  //   return () => {
+  //     router.events.off("routeChangeStart", handleStart);
+  //   };
+  // }, [router]);
   
   useEffect(() =>{
     setActivities((prevState) => prevState.filter((activity) => !activity.isSong))

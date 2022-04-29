@@ -7002,9 +7002,9 @@ const activities = [
   },
   {
     id: 172,
-    title: "La polca d'ors",
+    title: "La polca d'Ours",
     descripció:
-    `Dansa de la polca d'ors`,
+    `Dansa de la polca d'Ours`,
     edatmin: 4,
     edatmax: 18,
     desenvolupament:"La polca d’Ours és una de les moltes cançons tradicionals dels Pirineus, en els seus orígens era una dansa dedicada a l’ós, (Ours en francès significa ós) i encara que s’anomeni polca, es balla com una xampanya.  És un ball col·lectiu i es sol ballar en fila, però també es pot ballar en cercle i d’aquesta manera permet fer un canvi de parella cada vegada que es repeteix la música . La cançó s’ha estès tant, que és difícil trobar un grup de grallers que no la tingui al seu repertori.  La podreu sentir en passa carrers, balls de gegants i inclús en grups de castellers.",
