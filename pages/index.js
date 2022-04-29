@@ -1,11 +1,13 @@
 import Layout from "../components/Layout"
-import Card from "../components/Card"
-import activites from "../data/activities"
+import { useState } from "react"
 import List from "../components/List"
+import Sections from "../components/Sections"
+import Footer from "../components/Footer"
+
 
 export default function Index() {
-  return <Layout>
-    <List />
-  </Layout>
+  return <div><Sections/>
+  <Footer/>
+  </div>
 }
 
