@@ -113,7 +113,7 @@ export default function Example() {
       });
     } else if (clicks > 0) {
       toast(
-        `No has pogut superar el teu récord (${records[gameDuration]}), la próxima vegada esforça't més!`,
+        `Llàstima, has fet ${clicks} clicks, no has pogut superar el teu récord de ${records[gameDuration]}, la próxima vegada esforça't més!`,
         {
           icon: "😰​",
           style: {
