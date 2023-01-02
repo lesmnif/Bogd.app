@@ -8,7 +8,6 @@ function MyApp({ Component, pageProps }) {
         <title >Bogd.app</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="manifest" href="manifest.webmanifest"></link>
-
       </Head>
       <Toaster/>
     <Component {...pageProps} />

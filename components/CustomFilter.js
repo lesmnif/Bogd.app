@@ -98,7 +98,8 @@ export default function Example({
   maxPart,
   onQueryChangePart,
 }) {
-  const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
+  const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false)
+  
 console.log("this is my maxAge lol", maxAge)
   return (
     <div>
